@@ -2,37 +2,78 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Chiphell 帖子跳转</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family: -apple-system, sans-serif; background: #f5f5f5; display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px; }
   .card { background:#fff; border-radius:12px; padding:30px; max-width:400px; width:100%; text-align:center; box-shadow:0 2px 12px rgba(0,0,0,0.1); }
-  .card h2 { font-size:18px; margin-bottom:12px; color:#333; }
-  .card p { font-size:14px; color:#666; margin-bottom:20px; }
-  .card .btn { display:block; width:100%; padding:14px; background:#1677ff; color:#fff; border:none; border-radius:8px; font-size:16px; cursor:pointer; text-decoration:none; margin-bottom:10px; }
-  .card .btn:active { background:#0958d9; }
-  .card .url { font-size:12px; color:#999; word-break:break-all; margin-top:16px; padding:10px; background:#f8f8f8; border-radius:6px; }
+  .card h2 { font-size:18px; margin-bottom:8px; color:#333; }
+  .card .tip { font-size:13px; color:#999; margin-bottom:20px; }
+  .btn { display:block; width:100%; padding:14px; border:none; border-radius:8px; font-size:16px; cursor:pointer; text-decoration:none; margin-bottom:10px; font-weight:500; }
+  .btn-copy { background:#1677ff; color:#fff; }
+  .btn-copy:active { background:#0958d9; }
+  .btn-open { background:#f0f0f0; color:#333; }
+  .btn-open:active { background:#e0e0e0; }
+  .url-box { font-size:12px; color:#999; word-break:break-all; margin-top:16px; padding:10px; background:#f8f8f8; border-radius:6px; text-align:left; }
+  .toast { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.8); color:#fff; padding:12px 24px; border-radius:8px; font-size:14px; z-index:999; display:none; }
+  .toast.show { display:block; animation: fadeInOut 2s ease; }
+  @keyframes fadeInOut { 0%{opacity:0;} 15%{opacity:1;} 85%{opacity:1;} 100%{opacity:0;} }
 </style>
 </head>
 <body>
 <div class="card">
   <h2>🔗 Chiphell 帖子</h2>
-  <p>点击下方按钮在系统浏览器中打开</p>
-  <a id="chipLink" class="btn" href="#">在浏览器中打开</a>
-  <div class="url" id="urlDisplay"></div>
+  <p class="tip">Chiphell 限制了内置浏览器，请复制链接到系统浏览器打开</p>
+  <button id="btnCopy" class="btn btn-copy" onclick="copyLink()">📋 复制链接</button>
+  <a id="btnOpen" class="btn btn-open" href="#" target="_blank">🌐 尝试直接打开</a>
+  <div class="url-box" id="urlDisplay"></div>
 </div>
+<div id="toast" class="toast"></div>
 <script>
 (function() {
   var id = new URLSearchParams(window.location.search).get('id');
+  var url = '';
   if (id) {
-    var url = 'https://www.chiphell.com/thread-' + id + '-1-1.html';
-    document.getElementById('chipLink').href = url;
-    document.getElementById('chipLink').textContent = '📱 在浏览器中打开';
+    url = 'https://www.chiphell.com/thread-' + id + '-1-1.html';
+    document.getElementById('btnOpen').href = url;
     document.getElementById('urlDisplay').textContent = url;
   } else {
-    document.getElementById('chipLink').textContent = '未指定帖子ID';
-    document.getElementById('chipLink').style.opacity = '0.5';
+    document.getElementById('urlDisplay').textContent = '未指定帖子ID';
+  }
+  window._chipUrl = url;
+
+  window.copyLink = function() {
+    var url = window._chipUrl;
+    if (!url) return;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function() {
+        showToast('✅ 链接已复制！请粘贴到浏览器打开');
+      }).catch(function() {
+        fallbackCopy(url);
+      });
+    } else {
+      fallbackCopy(url);
+    }
+  };
+
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); showToast('✅ 链接已复制！请粘贴到浏览器打开'); }
+    catch(e) { showToast('⚠️ 复制失败，请手动复制下方链接'); }
+    document.body.removeChild(ta);
+  }
+
+  function showToast(msg) {
+    var t = document.getElementById('toast');
+    t.textContent = msg;
+    t.className = 'toast show';
+    setTimeout(function() { t.className = 'toast'; }, 2000);
   }
 })();
 </script>
