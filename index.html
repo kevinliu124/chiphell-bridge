@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiphell 帖子跳转</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, sans-serif; background: #f5f5f5; display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px; }
+  .card { background:#fff; border-radius:12px; padding:30px; max-width:400px; width:100%; text-align:center; box-shadow:0 2px 12px rgba(0,0,0,0.1); }
+  .card h2 { font-size:18px; margin-bottom:12px; color:#333; }
+  .card p { font-size:14px; color:#666; margin-bottom:20px; }
+  .card .btn { display:block; width:100%; padding:14px; background:#1677ff; color:#fff; border:none; border-radius:8px; font-size:16px; cursor:pointer; text-decoration:none; margin-bottom:10px; }
+  .card .btn:active { background:#0958d9; }
+  .card .url { font-size:12px; color:#999; word-break:break-all; margin-top:16px; padding:10px; background:#f8f8f8; border-radius:6px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>🔗 Chiphell 帖子</h2>
+  <p>点击下方按钮在系统浏览器中打开</p>
+  <a id="chipLink" class="btn" href="#">在浏览器中打开</a>
+  <div class="url" id="urlDisplay"></div>
+</div>
+<script>
+(function() {
+  var id = new URLSearchParams(window.location.search).get('id');
+  if (id) {
+    var url = 'https://www.chiphell.com/thread-' + id + '-1-1.html';
+    document.getElementById('chipLink').href = url;
+    document.getElementById('chipLink').textContent = '📱 在浏览器中打开';
+    document.getElementById('urlDisplay').textContent = url;
+  } else {
+    document.getElementById('chipLink').textContent = '未指定帖子ID';
+    document.getElementById('chipLink').style.opacity = '0.5';
+  }
+})();
+</script>
+</body>
+</html>
