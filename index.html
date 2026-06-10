@@ -16,39 +16,51 @@
   .btn-open { background:#f0f0f0; color:#333; }
   .btn-open:active { background:#e0e0e0; }
   .url-box { font-size:12px; color:#999; word-break:break-all; margin-top:16px; padding:10px; background:#f8f8f8; border-radius:6px; text-align:left; }
-  .toast { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.8); color:#fff; padding:12px 24px; border-radius:8px; font-size:14px; z-index:999; display:none; }
-  .toast.show { display:block; animation: fadeInOut 2s ease; }
-  @keyframes fadeInOut { 0%{opacity:0;} 15%{opacity:1;} 85%{opacity:1;} 100%{opacity:0;} }
+  .toast { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.8); color:#fff; padding:12px 24px; border-radius:8px; font-size:14px; z-index:999; display:none; pointer-events:none; }
+  .toast.show { display:block; animation: fadeInOut 2.5s ease; }
+  @keyframes fadeInOut { 0%{opacity:0;} 12%{opacity:1;} 80%{opacity:1;} 100%{opacity:0;} }
 </style>
 </head>
 <body>
 <div class="card">
   <h2>🔗 Chiphell 帖子</h2>
-  <p class="tip">Chiphell 限制了内置浏览器，请复制链接到系统浏览器打开</p>
-  <button id="btnCopy" class="btn btn-copy" onclick="copyLink()">📋 复制链接</button>
-  <a id="btnOpen" class="btn btn-open" href="#" target="_blank">🌐 尝试直接打开</a>
+  <p class="tip" id="tip">Chiphell 限制了内置浏览器，正在尝试跳转...</p>
+  <button id="btnCopy" class="btn btn-copy" onclick="copyLink()" style="display:none">📋 复制链接到剪贴板</button>
+  <a id="btnOpen" class="btn btn-open" href="#" style="display:none">🌐 尝试浏览器打开</a>
   <div class="url-box" id="urlDisplay"></div>
 </div>
 <div id="toast" class="toast"></div>
 <script>
 (function() {
   var id = new URLSearchParams(window.location.search).get('id');
-  var url = '';
-  if (id) {
-    url = 'https://www.chiphell.com/thread-' + id + '-1-1.html';
-    document.getElementById('btnOpen').href = url;
-    document.getElementById('urlDisplay').textContent = url;
-  } else {
+  if (!id) {
     document.getElementById('urlDisplay').textContent = '未指定帖子ID';
+    document.getElementById('tip').textContent = '缺少帖子ID参数';
+    return;
   }
+
+  var url = 'https://www.chiphell.com/thread-' + id + '-1-1.html';
+  document.getElementById('urlDisplay').textContent = url;
+  document.getElementById('btnOpen').href = url;
+  document.getElementById('btnCopy').style.display = 'block';
+  document.getElementById('btnOpen').style.display = 'block';
+  document.getElementById('tip').textContent = '请复制链接到系统浏览器中打开';
   window._chipUrl = url;
+
+  // Auto-try to open in browser immediately
+  // Some platforms support opening in system browser via window.open with features
+  setTimeout(function() {
+    var w = window.open(url, '_blank', 'noreferrer,noopener');
+    // If window.open returned null (blocked), that's expected in webview
+    // The user can use the copy button as fallback
+  }, 300);
 
   window.copyLink = function() {
     var url = window._chipUrl;
     if (!url) return;
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(url).then(function() {
-        showToast('✅ 链接已复制！请粘贴到浏览器打开');
+        showToast('✅ 已复制！请粘贴到 Safari/Chrome 打开');
       }).catch(function() {
         fallbackCopy(url);
       });
@@ -64,7 +76,7 @@
     ta.style.left = '-9999px';
     document.body.appendChild(ta);
     ta.select();
-    try { document.execCommand('copy'); showToast('✅ 链接已复制！请粘贴到浏览器打开'); }
+    try { document.execCommand('copy'); showToast('✅ 已复制！请粘贴到浏览器打开'); }
     catch(e) { showToast('⚠️ 复制失败，请手动复制下方链接'); }
     document.body.removeChild(ta);
   }
@@ -73,7 +85,7 @@
     var t = document.getElementById('toast');
     t.textContent = msg;
     t.className = 'toast show';
-    setTimeout(function() { t.className = 'toast'; }, 2000);
+    setTimeout(function() { t.className = 'toast'; }, 2500);
   }
 })();
 </script>
