@@ -43,14 +43,33 @@
             font-size: 12px;
             font-weight: bold;
         }
-        .post-title { 
-            font-size: 18px; 
-            font-weight: bold; 
-            color: #333; 
-            text-decoration: none;
+        .post-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            flex: 1;
         }
-        .post-title:hover { 
-            color: #667eea; 
+        .post-title:hover {
+            color: #667eea;
+        }
+        .expand-icon {
+            font-size: 14px;
+            color: #999;
+            transition: transform 0.2s;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+        }
+        .expand-icon.open {
+            transform: rotate(90deg);
+        }
+        .post-body {
+            animation: fadeIn 0.2s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .post-meta { 
             display: flex; 
@@ -165,20 +184,22 @@
     <div class="container">
         <div class="header">
             <h1>📰 Chiphell 每日精选</h1>
-            <p>2026/6/4 · 共 58 篇帖子</p>
+            <p>2026/6/4 · 共 56 篇帖子</p>
         </div>
         
-        <div class="post">
+        <div class="post" id="post-0">
             <div class="post-header">
                 <span class="post-number">#1</span>
-                <span class="post-title">关于一直用intel平台，其实是因为年龄大了 懒了</span>
+                <span class="post-title" onclick="togglePost(0)">关于一直用intel平台，其实是因为年龄大了 懒了</span>
+                <span class="expand-icon" id="icon-0">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 寒蝉鸣泣</span>
                 <span>📅 2026-6-10 16:20</span>
-                <span>💬 91 回复</span>
-                <span>👁️ 2365 浏览</span>
+                <span>💬 93 回复</span>
+                <span>👁️ 2410 浏览</span>
             </div>
+            <div class="post-body" id="body-0" style="display:none">
             
             <div class="post-content">
                 其实从13 14代缩肛开始，intel不给力，AMD崛起是有目共睹的，但是我在用AMD的时候遇到一些麻烦，真实的问题，并且没找到解决方案：  偶尔会卡一下，无论是玩战舰世界，暗黑破坏神，还是魔兽世界，都会出现，偶尔就是会卡顿一下，至于为什么 不知道，散热器都是瓦尔基里的DX140也没换过，硅脂用的TF7 也不是啥好玩意儿，但是日常使用其实也应该够了。我买过7800X3D 搭B650E  还有9800X3D 最后都卖掉了，实在是很折腾， 另外AMD偶尔在一些软件上也不友好，一些游戏的外挂机翻，部分工程上用的专业软件，用AMD平台的时候用着用着闪退........  也不知道是不是我不会调教AMD平台，最后为了省事，在PDD上下单265K 板U套装。 感受上，Z890主板看上去比B650E豪华得多，大板 接口很齐全。 然后就是用到265K后，这些屁事就全没了，散热器没换，机箱没换，显卡内存都没换。  就这个体验来说，我是不会换到AMD的，不管它X3D 在FPS类游戏里能跑多高的帧数。  不是水军，不是水军 不是水军，全是真实体验。
@@ -217,22 +238,104 @@
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-1">
             <div class="post-header">
                 <span class="post-number">#2</span>
-                <span class="post-title">帮我看下配置合理不</span>
+                <span class="post-title" onclick="togglePost(1)">深夜发帖，thinkpad X14的游戏体验</span>
+                <span class="expand-icon" id="icon-1">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 时光清浅</span>
+                <span>📅 2026-6-10 00:19</span>
+                <span>💬 20 回复</span>
+                <span>👁️ 926 浏览</span>
+            </div>
+            <div class="post-body" id="body-1" style="display:none">
+            
+            <div class="post-content">
+                晚上填完请假单，看着手里的x14和桌面上的古墓丽影暗影，一不小心就打开了图标，又一不小心点开了设置。
+
+结论就是，358H的x14真的可以！
+
+30+%电量，离电，电源模式平衡，2.8K分辨率，DX12，高画质，xess平衡档，结果如图
+
+_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=725036217060642160&skey=@crypt_7e5da.jpg (314.02 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-10 00:18 上传
+
+这个结果，从夯到拉大家给个评价
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/10/001828cod2ke2v1um7mhm2.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/10/210714zdu9kqrrfigrktz6.jpg" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (5条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">时光清浅</span>
+                    <span class="comment-text">晚上填完请假单，看着手里的x14和桌面上的古墓丽影暗影，一不小心就打开了图标，又一不小心点开了设置。
+
+结论就是，358H的x14真的可以！
+
+30+%电量，离电，电源模式平衡，2.8K分辨率，DX12，高画质，xess平衡档，结果如图
+_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=725036217060642160&skey=@crypt_7e5da.jpg (314.02 KB, 下载次数:
+0)
+
+下载附件
+2026-6-10 00:18 上传
+这个结果，从夯到拉大家给个评价</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Kay.man</span>
+                    <span class="comment-text">平均帧率:24？ 挺好了，毕竟塞尔达是天也才30帧</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">瓦罗斯</span>
+                    <span class="comment-text">真有人拿这个玩游戏啊</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">用户</span>
+                    <span class="comment-text">便宜点买来凑合两年没问题。这个级别的显卡一般两年后开始卡。
+
+桌面60可能能撑个5年，但整机也贵，算算账吧。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">海阔天空大人</span>
+                    <span class="comment-text">插电模式呢 是什么水平？</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-2">
+            <div class="post-header">
+                <span class="post-number">#3</span>
+                <span class="post-title" onclick="togglePost(2)">帮我看下配置合理不</span>
+                <span class="expand-icon" id="icon-2">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 1995pewe</span>
                 <span>📅 2026-6-10 15:06</span>
-                <span>💬 26 回复</span>
-                <span>👁️ 628 浏览</span>
+                <span>💬 27 回复</span>
+                <span>👁️ 641 浏览</span>
             </div>
+            <div class="post-body" id="body-2" style="display:none">
             
             <div class="post-content">
                 朋友帮我转的，说先过渡，等下一代12核的X3D
@@ -272,22 +375,22 @@
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-3">
             <div class="post-header">
-                <span class="post-number">#3</span>
-                <span class="post-title">关于intel arc pro的sriov</span>
+                <span class="post-number">#4</span>
+                <span class="post-title" onclick="togglePost(3)">关于intel arc pro的sriov</span>
+                <span class="expand-icon" id="icon-3">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 goat</span>
                 <span>📅 2026-6-10 22:01</span>
                 <span>💬 9 回复</span>
-                <span>👁️ 553 浏览</span>
+                <span>👁️ 567 浏览</span>
             </div>
+            <div class="post-body" id="body-3" style="display:none">
             
             <div class="post-content">
                 本帖最后由 goat 于 2026-6-10 22:05 编辑
@@ -338,22 +441,22 @@ homelab 本质最多需要99%两个VF.毕竟homelab多数只有一个用户，�
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-4">
             <div class="post-header">
-                <span class="post-number">#4</span>
-                <span class="post-title">MF400 意料之外的装机加换机箱</span>
+                <span class="post-number">#5</span>
+                <span class="post-title" onclick="togglePost(4)">MF400 意料之外的装机加换机箱</span>
+                <span class="expand-icon" id="icon-4">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 cmbb2314</span>
                 <span>📅 2026-6-10 23:25</span>
                 <span>💬 4 回复</span>
-                <span>👁️ 510 浏览</span>
+                <span>👁️ 530 浏览</span>
             </div>
+            <div class="post-body" id="body-4" style="display:none">
             
             <div class="post-content">
                 本帖最后由 cmbb2314 于 2026-6-10 23:46 编辑
@@ -465,22 +568,22 @@ Abee 的，很实在，AMD 专用的这个，推荐</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-5">
             <div class="post-header">
-                <span class="post-number">#5</span>
-                <span class="post-title">(阿三是真草但)Windows 11不卡了! CPU加速新功能开始推送：老设备流畅度质变</span>
+                <span class="post-number">#6</span>
+                <span class="post-title" onclick="togglePost(5)">(阿三是真草但)Windows 11不卡了! CPU加速新功能开始推送：老设备流畅度质变</span>
+                <span class="expand-icon" id="icon-5">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 vasomax</span>
                 <span>📅 2026-6-10 23:27</span>
                 <span>💬 10 回复</span>
-                <span>👁️ 1366 浏览</span>
+                <span>👁️ 1398 浏览</span>
             </div>
+            <div class="post-body" id="body-5" style="display:none">
             
             <div class="post-content">
                 微软今日推送的6月二更新KB5094126中包含一项实用的性能改进：低延迟配置（Low Latency Profile）。
@@ -532,22 +635,22 @@ Abee 的，很实在，AMD 专用的这个，推荐</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-6">
             <div class="post-header">
-                <span class="post-number">#6</span>
-                <span class="post-title">淘宝真是恶心呀！</span>
+                <span class="post-number">#7</span>
+                <span class="post-title" onclick="togglePost(6)">淘宝真是恶心呀！</span>
+                <span class="expand-icon" id="icon-6">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 yahochina</span>
                 <span>📅 2026-6-8 14:47</span>
                 <span>💬 54 回复</span>
-                <span>👁️ 4421 浏览</span>
+                <span>👁️ 4439 浏览</span>
             </div>
+            <div class="post-body" id="body-6" style="display:none">
             
             <div class="post-content">
                 抢淘宝618百补大额券，你准点点进去，他还没开始，你返回再进，就抢光了，他比北京时间慢2秒！
@@ -593,22 +696,22 @@ Abee 的，很实在，AMD 专用的这个，推荐</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-7">
             <div class="post-header">
-                <span class="post-number">#7</span>
-                <span class="post-title">5070ti比5080弱不了太多，而supet的定位又低于ti，这卡该怎么出呢？？</span>
+                <span class="post-number">#8</span>
+                <span class="post-title" onclick="togglePost(7)">5070ti比5080弱不了太多，而supet的定位又低于ti，这卡该怎么出呢？？</span>
+                <span class="expand-icon" id="icon-7">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 qxx97483</span>
                 <span>📅 2026-6-9 11:06</span>
                 <span>💬 77 回复</span>
-                <span>👁️ 3065 浏览</span>
+                <span>👁️ 3076 浏览</span>
             </div>
+            <div class="post-body" id="body-7" style="display:none">
             
             <div class="post-content">
                 不必焦虑5080已经是和3090ti一样的完整核心了 后续有24G显存的版本价格肯定1.2W起步 目前8000的5080放心买吧
@@ -646,22 +749,22 @@ Abee 的，很实在，AMD 专用的这个，推荐</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-8">
             <div class="post-header">
-                <span class="post-number">#8</span>
-                <span class="post-title">最近几个信息的汇总放在一起就很有意思了~</span>
+                <span class="post-number">#9</span>
+                <span class="post-title" onclick="togglePost(8)">最近几个信息的汇总放在一起就很有意思了~</span>
+                <span class="expand-icon" id="icon-8">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 nApoleon</span>
                 <span>📅 2026-6-8 09:04</span>
                 <span>💬 112 回复</span>
-                <span>👁️ 6221 浏览</span>
+                <span>👁️ 6227 浏览</span>
             </div>
+            <div class="post-body" id="body-8" style="display:none">
             
             <div class="post-content">
                 美股芯片类崩盘~
@@ -740,22 +843,22 @@ Abee 的，很实在，AMD 专用的这个，推荐</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-9">
             <div class="post-header">
-                <span class="post-number">#9</span>
-                <span class="post-title">询问大伙，为了玩原神该怎么升级旧电脑</span>
+                <span class="post-number">#10</span>
+                <span class="post-title" onclick="togglePost(9)">询问大伙，为了玩原神该怎么升级旧电脑</span>
+                <span class="expand-icon" id="icon-9">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 wspjy</span>
                 <span>📅 2026-6-10 08:59</span>
                 <span>💬 94 回复</span>
-                <span>👁️ 1462 浏览</span>
+                <span>👁️ 1464 浏览</span>
             </div>
+            <div class="post-body" id="body-9" style="display:none">
             
             <div class="post-content">
                 本帖最后由 wspjy 于 2026-6-10 10:26 编辑
@@ -829,22 +932,22 @@ CPU：intel i3-8100，内存：32G DD4 2400，显卡：GF1060，硬盘：INTEL 3
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-10">
             <div class="post-header">
-                <span class="post-number">#10</span>
-                <span class="post-title">【求助】DS916+迁移到DS925+后，3号盘"严重"状态无法清除，是否只能重建？</span>
+                <span class="post-number">#11</span>
+                <span class="post-title" onclick="togglePost(10)">【求助】DS916+迁移到DS925+后，3号盘"严重"状态无法清除，是否只能重建？</span>
+                <span class="expand-icon" id="icon-10">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Nakor</span>
                 <span>📅 2026-6-10 20:33</span>
                 <span>💬 9 回复</span>
-                <span>👁️ 348 浏览</span>
+                <span>👁️ 353 浏览</span>
             </div>
+            <div class="post-body" id="body-10" style="display:none">
             
             <div class="post-content">
                 原来用的是DS916+，3号+4号盘组的RAID1，出问题的3号位是HC550 18T，用了6000小时左右。五一的时候提示存储池降级，3号位硬盘提示显示“严重”，所在存储池显示“堪用”，插件日志发现2月份开始，3号盘位的"硬盘重新连接次数"开始上涨，2月132次，3月143次，4月436次，5月6日看到的时候170多次，已经接近一小时重连一次。
@@ -898,22 +1001,22 @@ CPU：intel i3-8100，内存：32G DD4 2400，显卡：GF1060，硬盘：INTEL 3
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-11">
             <div class="post-header">
-                <span class="post-number">#11</span>
-                <span class="post-title">mac os和群晖的兼容问题</span>
+                <span class="post-number">#12</span>
+                <span class="post-title" onclick="togglePost(11)">mac os和群晖的兼容问题</span>
+                <span class="expand-icon" id="icon-11">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 wx9181239</span>
                 <span>📅 2026-6-9 22:28</span>
                 <span>💬 7 回复</span>
-                <span>👁️ 592 浏览</span>
+                <span>👁️ 596 浏览</span>
             </div>
+            <div class="post-body" id="body-11" style="display:none">
             
             <div class="post-content">
                 mac os下只要打开群晖下的文件夹内文件，就会自动修改文件夹的修改日期为打开时间，怎么处理？
@@ -957,22 +1060,22 @@ CPU：intel i3-8100，内存：32G DD4 2400，显卡：GF1060，硬盘：INTEL 3
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-12">
             <div class="post-header">
-                <span class="post-number">#12</span>
-                <span class="post-title">咨询个3.5mm耳机 麦克风没声音问题</span>
+                <span class="post-number">#13</span>
+                <span class="post-title" onclick="togglePost(12)">咨询个3.5mm耳机 麦克风没声音问题</span>
+                <span class="expand-icon" id="icon-12">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 好球男</span>
                 <span>📅 2026-6-10 09:11</span>
                 <span>💬 13 回复</span>
-                <span>👁️ 435 浏览</span>
+                <span>👁️ 439 浏览</span>
             </div>
+            <div class="post-body" id="body-12" style="display:none">
             
             <div class="post-content">
                 问题是这样，耳机用的是雷蛇旋风黑鲨V2，它是3.5mm单线接口，也就是一根线负责耳机输出+麦克风功能，之前接在机箱前置上完美使用（DF700 Flux），但昨天开始突然电脑认不到麦克风了，看瑞昱驱动控制里正常，但teamspeek（打战地用的语音软件）和系统里就是认不到。
@@ -1047,22 +1150,22 @@ CPU：intel i3-8100，内存：32G DD4 2400，显卡：GF1060，硬盘：INTEL 3
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-13">
             <div class="post-header">
-                <span class="post-number">#13</span>
-                <span class="post-title">求助突然关机原因！！！</span>
+                <span class="post-number">#14</span>
+                <span class="post-title" onclick="togglePost(13)">求助突然关机原因！！！</span>
+                <span class="expand-icon" id="icon-13">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 苏格拉底</span>
                 <span>📅 2026-6-10 23:41</span>
                 <span>💬 13 回复</span>
-                <span>👁️ 436 浏览</span>
+                <span>👁️ 445 浏览</span>
             </div>
+            <div class="post-body" id="body-13" style="display:none">
             
             <div class="post-content">
                 本帖最后由 苏格拉底 于 2026-6-11 08:59 编辑
@@ -1127,22 +1230,22 @@ cpu是  amd 7950x3d，
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-14">
             <div class="post-header">
-                <span class="post-number">#14</span>
-                <span class="post-title">360白色一体水散热器，预算600~1000元，大家推荐什么呢？</span>
+                <span class="post-number">#15</span>
+                <span class="post-title" onclick="togglePost(14)">360白色一体水散热器，预算600~1000元，大家推荐什么呢？</span>
+                <span class="expand-icon" id="icon-14">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Sly</span>
                 <span>📅 2026-6-5 10:51</span>
                 <span>💬 5 回复</span>
-                <span>👁️ 511 浏览</span>
+                <span>👁️ 515 浏览</span>
             </div>
+            <div class="post-body" id="body-14" style="display:none">
             
             <div class="post-content">
                 本帖最后由 Sly 于 2026-6-5 10:54 编辑
@@ -1201,22 +1304,22 @@ https://item.jd.com/100239596330.html
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-15">
             <div class="post-header">
-                <span class="post-number">#15</span>
-                <span class="post-title">记录一下5090dd降压过程（0.9v），显卡为七彩虹advance非oc，2077与战地6两个游戏测试</span>
+                <span class="post-number">#16</span>
+                <span class="post-title" onclick="togglePost(15)">记录一下5090dd降压过程（0.9v），显卡为七彩虹advance非oc，2077与战地6两个游戏测试</span>
+                <span class="expand-icon" id="icon-15">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 arboby</span>
                 <span>📅 2026-6-7 02:30</span>
                 <span>💬 23 回复</span>
-                <span>👁️ 888 浏览</span>
+                <span>👁️ 894 浏览</span>
             </div>
+            <div class="post-body" id="body-15" style="display:none">
             
             <div class="post-content">
                 本帖最后由 arboby 于 2026-6-7 08:36 编辑
@@ -1339,22 +1442,22 @@ https://www.chiphell.com/thread-2700195-1-1.html</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-16">
             <div class="post-header">
-                <span class="post-number">#16</span>
-                <span class="post-title">PA401有点看腻了，求推荐</span>
+                <span class="post-number">#17</span>
+                <span class="post-title" onclick="togglePost(16)">PA401有点看腻了，求推荐</span>
+                <span class="expand-icon" id="icon-16">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 junior_zhou</span>
                 <span>📅 2026-6-8 15:59</span>
                 <span>💬 26 回复</span>
-                <span>👁️ 1776 浏览</span>
+                <span>👁️ 1781 浏览</span>
             </div>
+            <div class="post-body" id="body-16" style="display:none">
             
             <div class="post-content">
                 转眼间上次装机也过去一年多了。PA401的确是个好箱子，可惜有点审美疲劳了。
@@ -1404,22 +1507,22 @@ https://www.chiphell.com/thread-2700195-1-1.html</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-17">
             <div class="post-header">
-                <span class="post-number">#17</span>
-                <span class="post-title">专门发帖回复：机箱放桌子底下巨热，怎么改善比较好</span>
+                <span class="post-number">#18</span>
+                <span class="post-title" onclick="togglePost(17)">专门发帖回复：机箱放桌子底下巨热，怎么改善比较好</span>
+                <span class="expand-icon" id="icon-17">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 寒蝉鸣泣</span>
                 <span>📅 2026-6-10 04:54</span>
                 <span>💬 40 回复</span>
-                <span>👁️ 1427 浏览</span>
+                <span>👁️ 1432 浏览</span>
             </div>
+            <div class="post-body" id="body-17" style="display:none">
             
             <div class="post-content">
                 专门发帖回复 ：机箱放桌子底下巨热，怎么改善比较好
@@ -1551,22 +1654,22 @@ https://www.chiphell.com/thread-2807322-1-1.html
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-18">
             <div class="post-header">
-                <span class="post-number">#18</span>
-                <span class="post-title">帮主的Z890i居然现身台北电脑展，还有一款TRYX的ITX机箱挺别致</span>
+                <span class="post-number">#19</span>
+                <span class="post-title" onclick="togglePost(18)">帮主的Z890i居然现身台北电脑展，还有一款TRYX的ITX机箱挺别致</span>
+                <span class="expand-icon" id="icon-18">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 unschief</span>
                 <span>📅 2026-6-10 21:27</span>
                 <span>💬 1 回复</span>
-                <span>👁️ 578 浏览</span>
+                <span>👁️ 584 浏览</span>
             </div>
+            <div class="post-body" id="body-18" style="display:none">
             
             <div class="post-content">
                 帮主的Z890i居然诈尸，记得说鸽了
@@ -1601,22 +1704,22 @@ https://www.techpowerup.com/3498 ... motherboard-support
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-19">
             <div class="post-header">
-                <span class="post-number">#19</span>
-                <span class="post-title">想問下那種3脚三電機電動升降桌會搖晃嗎</span>
+                <span class="post-number">#20</span>
+                <span class="post-title" onclick="togglePost(19)">想問下那種3脚三電機電動升降桌會搖晃嗎</span>
+                <span class="expand-icon" id="icon-19">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 kark511</span>
                 <span>📅 2026-6-6 15:34</span>
                 <span>💬 14 回复</span>
-                <span>👁️ 889 浏览</span>
+                <span>👁️ 890 浏览</span>
             </div>
+            <div class="post-body" id="body-19" style="display:none">
             
             <div class="post-content">
                 家裏裝修準備換電腦桌,想換電腦桌,
@@ -1687,22 +1790,22 @@ kark511 发表于 2026-6-6 16:10
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-20">
             <div class="post-header">
-                <span class="post-number">#20</span>
-                <span class="post-title">低噪音笔记本散热底座感受</span>
+                <span class="post-number">#21</span>
+                <span class="post-title" onclick="togglePost(20)">低噪音笔记本散热底座感受</span>
+                <span class="expand-icon" id="icon-20">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 emd601</span>
                 <span>📅 2026-6-10 11:12</span>
                 <span>💬 20 回复</span>
-                <span>👁️ 672 浏览</span>
+                <span>👁️ 678 浏览</span>
             </div>
+            <div class="post-body" id="body-20" style="display:none">
             
             <div class="post-content">
                 1600701327.jpg (359.77 KB, 下载次数:
@@ -1819,22 +1922,22 @@ kark511 发表于 2026-6-6 16:10
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-21">
             <div class="post-header">
-                <span class="post-number">#21</span>
-                <span class="post-title">请问大佬们有没有34曲面屏推荐谢谢啦</span>
+                <span class="post-number">#22</span>
+                <span class="post-title" onclick="togglePost(21)">请问大佬们有没有34曲面屏推荐谢谢啦</span>
+                <span class="expand-icon" id="icon-21">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 water00000</span>
                 <span>📅 2026-6-10 00:48</span>
                 <span>💬 8 回复</span>
-                <span>👁️ 400 浏览</span>
+                <span>👁️ 401 浏览</span>
             </div>
+            <div class="post-body" id="body-21" style="display:none">
             
             <div class="post-content">
                 很长时间没怎么关注硬件 之前看外星人34曲面屏挺热门的 38也有很多推荐 而且那时国行在京东看都要一万多
@@ -1894,22 +1997,22 @@ kark511 发表于 2026-6-6 16:10
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-22">
             <div class="post-header">
-                <span class="post-number">#22</span>
-                <span class="post-title">最好不要在开空调的房间使用开放式机箱，或者把机箱侧面板打开！！！</span>
+                <span class="post-number">#23</span>
+                <span class="post-title" onclick="togglePost(22)">最好不要在开空调的房间使用开放式机箱，或者把机箱侧面板打开！！！</span>
+                <span class="expand-icon" id="icon-22">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 qxx97483</span>
                 <span>📅 2026-6-10 10:16</span>
                 <span>💬 17 回复</span>
-                <span>👁️ 1780 浏览</span>
+                <span>👁️ 1791 浏览</span>
             </div>
+            <div class="post-body" id="body-22" style="display:none">
             
             <div class="post-content">
                 热空气碰到冷金属才会有冷凝水，电脑比空气热哪来的冷凝水
@@ -1949,22 +2052,22 @@ kark511 发表于 2026-6-6 16:10
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-23">
             <div class="post-header">
-                <span class="post-number">#23</span>
-                <span class="post-title">猫头鹰的NH-D15 G2打过折吗？</span>
+                <span class="post-number">#24</span>
+                <span class="post-title" onclick="togglePost(23)">猫头鹰的NH-D15 G2打过折吗？</span>
+                <span class="expand-icon" id="icon-23">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 chhorange</span>
                 <span>📅 2026-6-9 19:40</span>
                 <span>💬 37 回复</span>
-                <span>👁️ 1750 浏览</span>
+                <span>👁️ 1754 浏览</span>
             </div>
+            <div class="post-body" id="body-23" style="display:none">
             
             <div class="post-content">
                 猫头鹰的NH-D15 G2打过折吗？
@@ -2020,22 +2123,22 @@ kark511 发表于 2026-6-6 16:10
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 1 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-24">
             <div class="post-header">
-                <span class="post-number">#24</span>
-                <span class="post-title">GEN8有没有合适的替代者？</span>
+                <span class="post-number">#25</span>
+                <span class="post-title" onclick="togglePost(24)">GEN8有没有合适的替代者？</span>
+                <span class="expand-icon" id="icon-24">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 IDK</span>
                 <span>📅 2026-6-5 20:26</span>
                 <span>💬 5 回复</span>
-                <span>👁️ 925 浏览</span>
+                <span>👁️ 927 浏览</span>
             </div>
+            <div class="post-body" id="body-24" style="display:none">
             
             <div class="post-content">
                 GEN8应该7-8年有了吧，怕它暴毙，所以想着换台主设备，因为还是想用windows server，所以大家推荐看看有没有合适的，4盘位以上，最好是8盘位的这种，谢谢
@@ -2074,22 +2177,22 @@ kark511 发表于 2026-6-6 16:10
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-25">
             <div class="post-header">
-                <span class="post-number">#25</span>
-                <span class="post-title">DLSS四倍插帧晃动视角模糊怎么办？</span>
+                <span class="post-number">#26</span>
+                <span class="post-title" onclick="togglePost(25)">DLSS四倍插帧晃动视角模糊怎么办？</span>
+                <span class="expand-icon" id="icon-25">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 notg</span>
                 <span>📅 2026-6-10 15:58</span>
                 <span>💬 28 回复</span>
-                <span>👁️ 698 浏览</span>
+                <span>👁️ 700 浏览</span>
             </div>
+            <div class="post-body" id="body-25" style="display:none">
             
             <div class="post-content">
                 使用5060显卡游戏内开启插帧，但是游戏晃动视角感觉特别模糊，有没什么办法开启了插帧然后晃动视角和不开插帧的感觉是一样的
@@ -2133,22 +2236,22 @@ kark511 发表于 2026-6-6 16:10
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-26">
             <div class="post-header">
-                <span class="post-number">#26</span>
-                <span class="post-title">上海电信 2000M 宽带 问题</span>
+                <span class="post-number">#27</span>
+                <span class="post-title" onclick="togglePost(26)">上海电信 2000M 宽带 问题</span>
+                <span class="expand-icon" id="icon-26">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 pklinqi</span>
                 <span>📅 2026-6-9 22:40</span>
                 <span>💬 46 回复</span>
-                <span>👁️ 1427 浏览</span>
+                <span>👁️ 1432 浏览</span>
             </div>
+            <div class="post-body" id="body-26" style="display:none">
             
             <div class="post-content">
                 本帖最后由 pklinqi 于 2026-6-9 22:42 编辑
@@ -2269,22 +2372,22 @@ speedtest 上海电信没问题2000 和 300
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-27">
             <div class="post-header">
-                <span class="post-number">#27</span>
-                <span class="post-title">RTX 6000d的参数数据</span>
+                <span class="post-number">#28</span>
+                <span class="post-title" onclick="togglePost(27)">RTX 6000d的参数数据</span>
+                <span class="expand-icon" id="icon-27">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 purityWang</span>
                 <span>📅 2026-6-10 22:47</span>
                 <span>💬 5 回复</span>
-                <span>👁️ 596 浏览</span>
+                <span>👁️ 608 浏览</span>
             </div>
+            <div class="post-body" id="body-27" style="display:none">
             
             <div class="post-content">
                 本帖最后由 purityWang 于 2026-6-10 22:52 编辑
@@ -2330,104 +2433,22 @@ speedtest 上海电信没问题2000 和 300
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
-            <div class="post-header">
-                <span class="post-number">#28</span>
-                <span class="post-title">深夜发帖，thinkpad X14的游戏体验</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 时光清浅</span>
-                <span>📅 2026-6-10 00:19</span>
-                <span>💬 18 回复</span>
-                <span>👁️ 910 浏览</span>
-            </div>
-            
-            <div class="post-content">
-                晚上填完请假单，看着手里的x14和桌面上的古墓丽影暗影，一不小心就打开了图标，又一不小心点开了设置。
-
-结论就是，358H的x14真的可以！
-
-30+%电量，离电，电源模式平衡，2.8K分辨率，DX12，高画质，xess平衡档，结果如图
-
-_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=725036217060642160&skey=@crypt_7e5da.jpg (314.02 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-10 00:18 上传
-
-这个结果，从夯到拉大家给个评价
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/10/001828cod2ke2v1um7mhm2.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/10/210714zdu9kqrrfigrktz6.jpg" loading="lazy" onerror="this.style.display='none'" />
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (5条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">时光清浅</span>
-                    <span class="comment-text">晚上填完请假单，看着手里的x14和桌面上的古墓丽影暗影，一不小心就打开了图标，又一不小心点开了设置。
-
-结论就是，358H的x14真的可以！
-
-30+%电量，离电，电源模式平衡，2.8K分辨率，DX12，高画质，xess平衡档，结果如图
-_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=725036217060642160&skey=@crypt_7e5da.jpg (314.02 KB, 下载次数:
-0)
-
-下载附件
-2026-6-10 00:18 上传
-这个结果，从夯到拉大家给个评价</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Kay.man</span>
-                    <span class="comment-text">平均帧率:24？ 挺好了，毕竟塞尔达是天也才30帧</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">瓦罗斯</span>
-                    <span class="comment-text">真有人拿这个玩游戏啊</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">用户</span>
-                    <span class="comment-text">便宜点买来凑合两年没问题。这个级别的显卡一般两年后开始卡。
-
-桌面60可能能撑个5年，但整机也贵，算算账吧。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">海阔天空大人</span>
-                    <span class="comment-text">插电模式呢 是什么水平？</span>
-                </div>
-                
-            </div>
-            
-            
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
-            </div>
-        </div>
-    
-        <div class="post">
+        <div class="post" id="post-28">
             <div class="post-header">
                 <span class="post-number">#29</span>
-                <span class="post-title">兮克的i226没办法更新2.32固件啊</span>
+                <span class="post-title" onclick="togglePost(28)">兮克的i226没办法更新2.32固件啊</span>
+                <span class="expand-icon" id="icon-28">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Phil_Libra</span>
                 <span>📅 2026-6-10 16:21</span>
                 <span>💬 2 回复</span>
-                <span>👁️ 380 浏览</span>
+                <span>👁️ 381 浏览</span>
             </div>
+            <div class="post-body" id="body-28" style="display:none">
             
             <div class="post-content">
                 本帖最后由 Phil_Libra 于 2026-6-10 17:40 编辑
@@ -2474,22 +2495,22 @@ uefi支持I226，可以百度搜索“畅网微控 通过uefi shell 更新网卡
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-29">
             <div class="post-header">
                 <span class="post-number">#30</span>
-                <span class="post-title">华硕最新bios有问题么？</span>
+                <span class="post-title" onclick="togglePost(29)">华硕最新bios有问题么？</span>
+                <span class="expand-icon" id="icon-29">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 天空的故事</span>
                 <span>📅 2026-6-10 09:16</span>
                 <span>💬 11 回复</span>
-                <span>👁️ 870 浏览</span>
+                <span>👁️ 872 浏览</span>
             </div>
+            <div class="post-body" id="body-29" style="display:none">
             
             <div class="post-content">
                 本帖最后由 天空的故事 于 2026-6-10 09:49 编辑
@@ -2556,22 +2577,22 @@ ScreenShot_2026-06-10_094805_882.png (267.34 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-30">
             <div class="post-header">
                 <span class="post-number">#31</span>
-                <span class="post-title">猫头鹰那个无泵一体水冷好像挺牛的！</span>
+                <span class="post-title" onclick="togglePost(30)">猫头鹰那个无泵一体水冷好像挺牛的！</span>
+                <span class="expand-icon" id="icon-30">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 勇敢牛牛</span>
                 <span>📅 2026-6-10 21:14</span>
                 <span>💬 6 回复</span>
-                <span>👁️ 752 浏览</span>
+                <span>👁️ 758 浏览</span>
             </div>
+            <div class="post-body" id="body-30" style="display:none">
             
             <div class="post-content">
                 很有可能是未来一体水冷新形态，其实早在很多年前就有机电厂家出过类似概念产品但都没有量产，不知道猫头鹰这个是不是又是概念产品不打算量产...
@@ -2612,22 +2633,22 @@ ScreenShot_2026-06-10_094805_882.png (267.34 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-31">
             <div class="post-header">
                 <span class="post-number">#32</span>
-                <span class="post-title">Pro 5000 72g现在值不值得买？</span>
+                <span class="post-title" onclick="togglePost(31)">Pro 5000 72g现在值不值得买？</span>
+                <span class="expand-icon" id="icon-31">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 purityWang</span>
                 <span>📅 2026-6-6 16:28</span>
                 <span>💬 49 回复</span>
-                <span>👁️ 2332 浏览</span>
+                <span>👁️ 2333 浏览</span>
             </div>
+            <div class="post-body" id="body-31" style="display:none">
             
             <div class="post-content">
                 5万应该能买到。现阶段值不值得买？
@@ -2671,22 +2692,22 @@ ScreenShot_2026-06-10_094805_882.png (267.34 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-32">
             <div class="post-header">
                 <span class="post-number">#33</span>
-                <span class="post-title">x870 Itx主板求推荐</span>
+                <span class="post-title" onclick="togglePost(32)">x870 Itx主板求推荐</span>
+                <span class="expand-icon" id="icon-32">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 zy_zlj</span>
                 <span>📅 2026-6-9 15:55</span>
                 <span>💬 20 回复</span>
-                <span>👁️ 1067 浏览</span>
+                <span>👁️ 1068 浏览</span>
             </div>
+            <div class="post-body" id="body-32" style="display:none">
             
             <div class="post-content">
                 上周刷到ncase m3，一冲动就下单了，然后想着这箱子对matx支持没那么好，就想着换个itx主板，B850也成
@@ -2729,22 +2750,22 @@ B850I 也有</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-33">
             <div class="post-header">
                 <span class="post-number">#34</span>
-                <span class="post-title">5080FE 水冷头~~~木有！？</span>
+                <span class="post-title" onclick="togglePost(33)">5080FE 水冷头~~~木有！？</span>
+                <span class="expand-icon" id="icon-33">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 deigo_block</span>
                 <span>📅 2026-6-9 09:57</span>
                 <span>💬 12 回复</span>
-                <span>👁️ 1298 浏览</span>
+                <span>👁️ 1300 浏览</span>
             </div>
+            <div class="post-body" id="body-33" style="display:none">
             
             <div class="post-content">
                 逛了一圈各个品牌，居然没有80FE的水冷头
@@ -2785,22 +2806,22 @@ B850I 也有</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-34">
             <div class="post-header">
                 <span class="post-number">#35</span>
-                <span class="post-title">新买的板U的板载网卡到手就是坏的</span>
+                <span class="post-title" onclick="togglePost(34)">新买的板U的板载网卡到手就是坏的</span>
+                <span class="expand-icon" id="icon-34">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 梅柒</span>
                 <span>📅 2026-6-9 19:47</span>
                 <span>💬 24 回复</span>
-                <span>👁️ 1471 浏览</span>
+                <span>👁️ 1472 浏览</span>
             </div>
+            <div class="post-body" id="body-34" style="display:none">
             
             <div class="post-content">
                 在淘宝趁着618下单了2200的盒装250K+技嘉Z890M Force Dual，250K是大雷，稳定过测只能5.4-4.8 D2D-3000 NGU-3200
@@ -2847,22 +2868,22 @@ B850I 也有</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-35">
             <div class="post-header">
                 <span class="post-number">#36</span>
-                <span class="post-title">哎不是，联想搞出来的用13寸3840x2560 144Hz的……平板，这面板给平板用都不给笔记本</span>
+                <span class="post-title" onclick="togglePost(35)">哎不是，联想搞出来的用13寸3840x2560 144Hz的……平板，这面板给平板用都不给笔记本</span>
+                <span class="expand-icon" id="icon-35">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Sly</span>
                 <span>📅 2026-6-6 21:16</span>
                 <span>💬 45 回复</span>
-                <span>👁️ 2481 浏览</span>
+                <span>👁️ 2483 浏览</span>
             </div>
+            <div class="post-body" id="body-35" style="display:none">
             
             <div class="post-content">
                 本帖最后由 Sly 于 2026-6-6 21:23 编辑
@@ -2926,22 +2947,22 @@ Screenshot 2026-06-06 at 21.16.17.png (300.12 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-36">
             <div class="post-header">
                 <span class="post-number">#37</span>
-                <span class="post-title">目前您都分别用什么工具和模型来进行Vibe Coding AI编程，每个月投入多少￥？</span>
+                <span class="post-title" onclick="togglePost(36)">目前您都分别用什么工具和模型来进行Vibe Coding AI编程，每个月投入多少￥？</span>
+                <span class="expand-icon" id="icon-36">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Sly</span>
                 <span>📅 2026-6-8 16:04</span>
                 <span>💬 39 回复</span>
-                <span>👁️ 1832 浏览</span>
+                <span>👁️ 1833 浏览</span>
             </div>
+            <div class="post-body" id="body-36" style="display:none">
             
             <div class="post-content">
                 本帖最后由 Sly 于 2026-6-8 16:19 编辑
@@ -2996,22 +3017,22 @@ claude CLI、codex 桌面版
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-37">
             <div class="post-header">
                 <span class="post-number">#38</span>
-                <span class="post-title">显示器决赛圈 3 远 1 求教</span>
+                <span class="post-title" onclick="togglePost(37)">显示器决赛圈 3 远 1 求教</span>
+                <span class="expand-icon" id="icon-37">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 like3166</span>
                 <span>📅 2026-6-4 22:10</span>
                 <span>💬 31 回复</span>
-                <span>👁️ 2035 浏览</span>
+                <span>👁️ 2038 浏览</span>
             </div>
+            <div class="post-body" id="body-37" style="display:none">
             
             <div class="post-content">
                 本帖最后由 like3166 于 2026-6-10 15:28 编辑
@@ -3067,22 +3088,22 @@ claude CLI、codex 桌面版
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-38">
             <div class="post-header">
                 <span class="post-number">#39</span>
-                <span class="post-title">Computex2026海盗船展出AX1600i Shift，部分信息</span>
+                <span class="post-title" onclick="togglePost(38)">Computex2026海盗船展出AX1600i Shift，部分信息</span>
+                <span class="expand-icon" id="icon-38">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 nekotheo</span>
                 <span>📅 2026-6-4 13:20</span>
                 <span>💬 37 回复</span>
-                <span>👁️ 2254 浏览</span>
+                <span>👁️ 2255 浏览</span>
             </div>
+            <div class="post-body" id="body-38" style="display:none">
             
             <div class="post-content">
                 1、长度缩到了170mm
@@ -3177,22 +3198,22 @@ CPU/PCIE接口是不是少了点
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-39">
             <div class="post-header">
                 <span class="post-number">#40</span>
-                <span class="post-title">有没有插单条DDR5的，实际使用下来感觉如何。</span>
+                <span class="post-title" onclick="togglePost(39)">有没有插单条DDR5的，实际使用下来感觉如何。</span>
+                <span class="expand-icon" id="icon-39">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 powerduke</span>
                 <span>📅 2026-6-8 16:19</span>
                 <span>💬 31 回复</span>
-                <span>👁️ 1994 浏览</span>
+                <span>👁️ 1995 浏览</span>
             </div>
+            <div class="post-body" id="body-39" style="display:none">
             
             <div class="post-content">
                 看着板U价格不贵，想着怎么低成本装个itx核显机玩。机箱电源散热器风扇都是现成的，现阶段买内存又是不考虑的。“灵机一动”，主力机上的96G内存用不完闲着也是闲着，拔一根48G装新机的话，主力机玩暗黑4速度会否断崖下跌，按理还有48G内存，应该不至于爆内存。
@@ -3240,22 +3261,22 @@ D5 单根差 5%-10%</span>
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-40">
             <div class="post-header">
                 <span class="post-number">#41</span>
-                <span class="post-title">610.52驱动来咯~！</span>
+                <span class="post-title" onclick="togglePost(40)">610.52驱动来咯~！</span>
+                <span class="expand-icon" id="icon-40">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 sun1a2b3c4d</span>
                 <span>📅 2026-6-9 12:10</span>
                 <span>💬 36 回复</span>
-                <span>👁️ 3559 浏览</span>
+                <span>👁️ 3562 浏览</span>
             </div>
+            <div class="post-body" id="body-40" style="display:none">
             
             <div class="post-content">
                 本帖最后由 sun1a2b3c4d 于 2026-6-9 12:22 编辑
@@ -3350,22 +3371,22 @@ GeForce 驱动是极其复杂的软件，我们有一支软件工程师军队不
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-41">
             <div class="post-header">
                 <span class="post-number">#42</span>
-                <span class="post-title">广州电信发布5g 1599 10g万兆宽带套餐 天河区首年699元月</span>
+                <span class="post-title" onclick="togglePost(41)">广州电信发布5g 1599 10g万兆宽带套餐 天河区首年699元月</span>
+                <span class="expand-icon" id="icon-41">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 youx</span>
                 <span>📅 2026-6-5 21:35</span>
                 <span>💬 51 回复</span>
-                <span>👁️ 2332 浏览</span>
+                <span>👁️ 2334 浏览</span>
             </div>
+            <div class="post-body" id="body-41" style="display:none">
             
             <div class="post-content">
                 本帖最后由 youx 于 2026-6-5 22:20 编辑
@@ -3451,22 +3472,22 @@ lzhdim 发表于 2026-6-5 21:48
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-42">
             <div class="post-header">
                 <span class="post-number">#43</span>
-                <span class="post-title">7800x3d现在真便宜啊</span>
+                <span class="post-title" onclick="togglePost(42)">7800x3d现在真便宜啊</span>
+                <span class="expand-icon" id="icon-42">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 秦南瓜</span>
                 <span>📅 2026-6-8 08:19</span>
                 <span>💬 75 回复</span>
-                <span>👁️ 4315 浏览</span>
+                <span>👁️ 4319 浏览</span>
             </div>
+            <div class="post-body" id="body-42" style="display:none">
             
             <div class="post-content">
                 本帖最后由 秦南瓜 于 2026-6-8 08:21 编辑
@@ -3533,22 +3554,22 @@ lzhdim 发表于 2026-6-5 21:48
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-43">
             <div class="post-header">
                 <span class="post-number">#44</span>
-                <span class="post-title">最近出现一个很神奇的WIFI 或者网卡故障</span>
+                <span class="post-title" onclick="togglePost(43)">最近出现一个很神奇的WIFI 或者网卡故障</span>
+                <span class="expand-icon" id="icon-43">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 kuram</span>
                 <span>📅 2026-6-7 17:44</span>
                 <span>💬 38 回复</span>
-                <span>👁️ 1917 浏览</span>
+                <span>👁️ 1918 浏览</span>
             </div>
+            <div class="post-body" id="body-43" style="display:none">
             
             <div class="post-content">
                 本帖最后由 kuram 于 2026-6-9 09:43 编辑
@@ -3601,22 +3622,22 @@ lzhdim 发表于 2026-6-5 21:48
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-44">
             <div class="post-header">
                 <span class="post-number">#45</span>
-                <span class="post-title">试着拿本地部署的qwen3.6_27b_nvfp4做了套2026上海高考数学试卷</span>
+                <span class="post-title" onclick="togglePost(44)">试着拿本地部署的qwen3.6_27b_nvfp4做了套2026上海高考数学试卷</span>
+                <span class="expand-icon" id="icon-44">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 kongzheng3333</span>
                 <span>📅 2026-6-10 11:58</span>
                 <span>💬 41 回复</span>
-                <span>👁️ 2001 浏览</span>
+                <span>👁️ 2005 浏览</span>
             </div>
+            <div class="post-body" id="body-44" style="display:none">
             
             <div class="post-content">
                 本帖最后由 kongzheng3333 于 2026-6-10 12:07 编辑
@@ -3693,22 +3714,22 @@ lzhdim 发表于 2026-6-5 21:48
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-45">
             <div class="post-header">
                 <span class="post-number">#46</span>
-                <span class="post-title">50Super系列如果出来对于玩家来说并不是啥好事</span>
+                <span class="post-title" onclick="togglePost(45)">50Super系列如果出来对于玩家来说并不是啥好事</span>
+                <span class="expand-icon" id="icon-45">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 sthuasheng</span>
                 <span>📅 2026-6-7 11:07</span>
                 <span>💬 79 回复</span>
-                <span>👁️ 4907 浏览</span>
+                <span>👁️ 4909 浏览</span>
             </div>
+            <div class="post-body" id="body-45" style="display:none">
             
             <div class="post-content">
                 本帖最后由 sthuasheng 于 2026-6-7 11:18 编辑
@@ -3767,22 +3788,22 @@ lzhdim 发表于 2026-6-5 21:48
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-46">
             <div class="post-header">
                 <span class="post-number">#47</span>
-                <span class="post-title">移动宽带的IPV6公访问好不好用？</span>
+                <span class="post-title" onclick="togglePost(46)">移动宽带的IPV6公访问好不好用？</span>
+                <span class="expand-icon" id="icon-46">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 yahochina</span>
                 <span>📅 2026-6-10 11:41</span>
                 <span>💬 34 回复</span>
-                <span>👁️ 834 浏览</span>
+                <span>👁️ 835 浏览</span>
             </div>
+            <div class="post-body" id="body-46" style="display:none">
             
             <div class="post-content">
                 我现在用的是电信239套餐，带一条1000M宽带，带一个IPTV，1100分钟通话，270G流量，刚刚收到一个本地的陌生电话，她说她是移动的，我现在的电信号码可以携号转网到移动，所有套餐都不变，月费只要70元，副卡一个1元！！
@@ -3841,22 +3862,22 @@ lzhdim 发表于 2026-6-5 21:48
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-47">
             <div class="post-header">
                 <span class="post-number">#48</span>
-                <span class="post-title">一时没忍住，又买了一台微型7735HS小主机，1600性价比爆棚（在当下这个疯狂的时代）</span>
+                <span class="post-title" onclick="togglePost(47)">一时没忍住，又买了一台微型7735HS小主机，1600性价比爆棚（在当下这个疯狂的时代）</span>
+                <span class="expand-icon" id="icon-47">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 happyDJ</span>
                 <span>📅 2026-6-4 22:06</span>
                 <span>💬 20 回复</span>
-                <span>👁️ 2429 浏览</span>
+                <span>👁️ 2430 浏览</span>
             </div>
+            <div class="post-body" id="body-47" style="display:none">
             
             <div class="post-content">
                 本帖最后由 happyDJ 于 2026-6-4 22:09 编辑
@@ -3950,22 +3971,22 @@ amazon上429刀欸，你咋买得这么便宜
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-48">
             <div class="post-header">
                 <span class="post-number">#49</span>
-                <span class="post-title">现在裸眼3D 360水冷该怎么选？</span>
+                <span class="post-title" onclick="togglePost(48)">现在裸眼3D 360水冷该怎么选？</span>
+                <span class="expand-icon" id="icon-48">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 RaulMee</span>
                 <span>📅 2026-6-10 15:39</span>
                 <span>💬 3 回复</span>
-                <span>👁️ 333 浏览</span>
+                <span>👁️ 336 浏览</span>
             </div>
+            <div class="post-body" id="body-48" style="display:none">
             
             <div class="post-content">
                 本帖最后由 RaulMee 于 2026-6-11 09:12 编辑
@@ -4043,22 +4064,22 @@ PS，性能版是换成无光扇，SE版是Astek Adela头+27mm薄排+ARGB风扇�
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-49">
             <div class="post-header">
                 <span class="post-number">#50</span>
-                <span class="post-title">诚心求问一个很奇葩的问题。。。关于耳机的。。。</span>
+                <span class="post-title" onclick="togglePost(49)">诚心求问一个很奇葩的问题。。。关于耳机的。。。</span>
+                <span class="expand-icon" id="icon-49">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 FeelleonE_[C].</span>
                 <span>📅 2026-6-8 16:56</span>
                 <span>💬 32 回复</span>
-                <span>👁️ 1149 浏览</span>
+                <span>👁️ 1151 浏览</span>
             </div>
+            <div class="post-body" id="body-49" style="display:none">
             
             <div class="post-content">
                 唯独不考虑音质的情况下，15000左右的价位，选什么耳机？不听歌不看电影没有出街需求。。。手上有之前瞎买的小尾巴和台放。。。想配个正经牌子的耳机。。。不考虑游戏耳机&耳塞。。。 虽然很奇葩 但真心求问
@@ -4102,22 +4123,22 @@ PS，性能版是换成无光扇，SE版是Astek Adela头+27mm薄排+ARGB风扇�
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-50">
             <div class="post-header">
                 <span class="post-number">#51</span>
-                <span class="post-title">二款二手显示器 怎么选呢？</span>
+                <span class="post-title" onclick="togglePost(50)">二款二手显示器 怎么选呢？</span>
+                <span class="expand-icon" id="icon-50">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 menglica</span>
                 <span>📅 2026-6-9 18:22</span>
                 <span>💬 6 回复</span>
-                <span>👁️ 678 浏览</span>
+                <span>👁️ 680 浏览</span>
             </div>
+            <div class="post-body" id="body-50" style="display:none">
             
             <div class="post-content">
                 1、AOC GQ3908VW 支持116%sRGB、98%NTSC
@@ -4177,22 +4198,22 @@ AOC 除 色深只有8BIT外，其它都完胜泰坦军团。可是只有8BIT色�
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-51">
             <div class="post-header">
                 <span class="post-number">#52</span>
-                <span class="post-title">intel平台D5 Single Boost实测</span>
+                <span class="post-title" onclick="togglePost(51)">intel平台D5 Single Boost实测</span>
+                <span class="expand-icon" id="icon-51">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 hhya</span>
                 <span>📅 2026-6-9 10:33</span>
                 <span>💬 13 回复</span>
-                <span>👁️ 1034 浏览</span>
+                <span>👁️ 1035 浏览</span>
             </div>
+            <div class="post-body" id="body-51" style="display:none">
             
             <div class="post-content">
                 最近也是看到技嘉更新了一个D5 Single Boost功能，简单来说就是能在intel平台让单条ddr5内存带宽接近双条，也是来实测一下
@@ -4322,22 +4343,22 @@ bios更新.png (49.58 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-52">
             <div class="post-header">
                 <span class="post-number">#53</span>
-                <span class="post-title">话说Apple M1处理器会在哪一个macOS和iOS版本正式放弃支持呢？</span>
+                <span class="post-title" onclick="togglePost(52)">话说Apple M1处理器会在哪一个macOS和iOS版本正式放弃支持呢？</span>
+                <span class="expand-icon" id="icon-52">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Sly</span>
                 <span>📅 2026-6-10 10:34</span>
                 <span>💬 20 回复</span>
-                <span>👁️ 1198 浏览</span>
+                <span>👁️ 1201 浏览</span>
             </div>
+            <div class="post-body" id="body-52" style="display:none">
             
             <div class="post-content">
                 macOS 27放弃Intel处理器这是去年就确定的了，没啥可说的。
@@ -4383,22 +4404,22 @@ bios更新.png (49.58 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-53">
             <div class="post-header">
                 <span class="post-number">#54</span>
-                <span class="post-title">护眼显示器，U4025qw是最好选择吗？</span>
+                <span class="post-title" onclick="togglePost(53)">护眼显示器，U4025qw是最好选择吗？</span>
+                <span class="expand-icon" id="icon-53">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 chen1z1</span>
                 <span>📅 2026-6-5 17:57</span>
                 <span>💬 17 回复</span>
-                <span>👁️ 1415 浏览</span>
+                <span>👁️ 1417 浏览</span>
             </div>
+            <div class="post-body" id="body-53" style="display:none">
             
             <div class="post-content">
                 需要每天十个小时以上对着屏幕，所以想选一个护眼，对眼睛负担不大的。
@@ -4454,22 +4475,22 @@ bios更新.png (49.58 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-54">
             <div class="post-header">
                 <span class="post-number">#55</span>
-                <span class="post-title">CH270求推荐风扇</span>
+                <span class="post-title" onclick="togglePost(54)">CH270求推荐风扇</span>
+                <span class="expand-icon" id="icon-54">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 star_liu</span>
                 <span>📅 2026-6-8 16:35</span>
                 <span>💬 16 回复</span>
-                <span>👁️ 995 浏览</span>
+                <span>👁️ 996 浏览</span>
             </div>
+            <div class="post-body" id="body-54" style="display:none">
             
             <div class="post-content">
                 最近给14600换了CH270机箱，散热是PA120，5060ti双风扇，现在没加机箱风扇的情况下烤鸡90多度，基于我的配置，求大佬们给推荐几把性价比高的风扇，PA120白色自带的风扇也挺脏了，如果有合适的麻烦也给推荐下
@@ -4510,22 +4531,22 @@ bios更新.png (49.58 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
-        <div class="post">
+        <div class="post" id="post-55">
             <div class="post-header">
                 <span class="post-number">#56</span>
-                <span class="post-title">记一次由CPU散热瓶颈引发的机箱升级</span>
+                <span class="post-title" onclick="togglePost(55)">记一次由CPU散热瓶颈引发的机箱升级</span>
+                <span class="expand-icon" id="icon-55">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 zzcgh1928</span>
                 <span>📅 2026-6-10 00:07</span>
                 <span>💬 26 回复</span>
-                <span>👁️ 1182 浏览</span>
+                <span>👁️ 1183 浏览</span>
             </div>
+            <div class="post-body" id="body-55" style="display:none">
             
             <div class="post-content">
                 本帖最后由 zzcgh1928 于 2026-6-10 01:19 编辑
@@ -4607,143 +4628,27 @@ bios更新.png (49.58 KB, 下载次数:
             </div>
             
             
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
-            </div>
-        </div>
-    
-        <div class="post">
-            <div class="post-header">
-                <span class="post-number">#57</span>
-                <span class="post-title">1080P换显示器现在应该选2K还是4K呢？</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 zs009</span>
-                <span>📅 2026-6-8 20:03</span>
-                <span>💬 65 回复</span>
-                <span>👁️ 1812 浏览</span>
-            </div>
-            
-            <div class="post-content">
-                一直用1080好多年了，以上2和4都没有用过，所以对2和4的区别只停留在各种文字和视频上，实际使用感受没有。
-想换的想法是1080用的时间有点久了，刷小破站看视频感觉显示器小了，特别是遇到追的动漫有4K的时候，确实能感受到1和4清晰度还是很明显，马上凡人要重播了，想看4K片源。
-至于游戏需求，晕3D，所以偶尔会玩下3A，网游适当会多一点点，更多是看视频这些，基本27寸144HZ刷新率就够了。
-做过一些作业，有说显卡决定选2K还是4K，也有说4K比2K画面这些更细腻。
-目前用的显卡是5070，个人感觉都有点浪费。
-那么是选2K还是4k呢，价格二千以内，各位正在用2K和4K的大佬推荐一下或有没有合适的。
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (5条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">zs009</span>
-                    <span class="comment-text">一直用1080好多年了，以上2和4都没有用过，所以对2和4的区别只停留在各种文字和视频上，实际使用感受没有。
-想换的想法是1080用的时间有点久了，刷小破站看视频感觉显示器小了，特别是遇到追的动漫有4K的时候，确实能感受到1和4清晰度还是很明显，马上凡人要重播了，想看4K片源。
-至于游戏需求，晕3D，所以偶尔会玩下3A，网游适当会多一点点，更多是看视频这些，基本27寸144HZ刷新率就够了。
-做过一些作业，有说显卡决定选2K还是4K，也有说4K比2K画面这些更细腻。
-目前用的显卡是5070，个人感觉都有点浪费。
-那么是选2K还是4k呢，价格二千以内，各位正在用2K和4K的大佬推荐一下或有没有合适的。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">CristalKing</span>
-                    <span class="comment-text">你这个需求直接就4k拉满，毕竟游戏只是调剂</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">练习</span>
-                    <span class="comment-text">游戏类型，显卡，CPU决定你显示器选择~</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">jaycty</span>
-                    <span class="comment-text">27寸选2K
-32寸选4K
-
-偶尔玩3A的话就闭眼选32寸 4K，5070也能凑合凑合（有时候会爆显存）</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">aquafortis</span>
-                    <span class="comment-text">5070可以带4k,不过有一部分吃显存严重的游戏有可能爆显存</span>
-                </div>
-                
-            </div>
-            
-            
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
-            </div>
-        </div>
-    
-        <div class="post">
-            <div class="post-header">
-                <span class="post-number">#58</span>
-                <span class="post-title">给主机做了个支架</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 eiicne</span>
-                <span>📅 2026-6-10 12:50</span>
-                <span>💬 6 回复</span>
-                <span>👁️ 833 浏览</span>
-            </div>
-            
-            <div class="post-content">
-                cnc的，简约设计，应该还有优化空间，比如有些边缘可以倒下角不至于有割手感啥的，但随便了，要的就是工业粗犷风。
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (5条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">eiicne</span>
-                    <span class="comment-text">cnc的，简约设计，应该还有优化空间，比如有些边缘可以倒下角不至于有割手感啥的，但随便了，要的就是工业粗犷风。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">chris024</span>
-                    <span class="comment-text">这怎么做的，3d打印吗</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">casc</span>
-                    <span class="comment-text">为啥要设计的这么歪
-就是为了设计而设计么</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">eiicne</span>
-                    <span class="comment-text">chris024 发表于 2026-6-10 14:45
-这怎么做的，3d打印吗
-
-不是啊，cnc的啊，3d打印金属很贵的吧，并且应该也没有这么光。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">eiicne</span>
-                    <span class="comment-text">casc 发表于 2026-6-10 15:17
-为啥要设计的这么歪
-就是为了设计而设计么
-
-问得好，其实这是一个ai缺陷，一下跟你讲不清楚，反正是为了让愚蠢的ai或是程序不识别错误而做了一点妥协，
-当然，歪也其实不是真正的歪，其实是一个正方形取的对角线，不然尺寸就不够长了，
-并且这样看上去歪的也有点意思不是嘛，哈哈。</span>
-                </div>
-                
-            </div>
-            
-            
-            <div class="post-actions">
-                <span class="post-page">📄 第 2 页</span>
             </div>
         </div>
     
         <div class="footer">
-            <p>由 OpenClaw 自动生成 · 2026/6/11 10:31:20</p>
+            <p>由 OpenClaw 自动生成 · 2026/6/11 10:38:30</p>
         </div>
     </div>
+    <script>
+        function togglePost(idx) {
+            var body = document.getElementById('body-' + idx);
+            var icon = document.getElementById('icon-' + idx);
+            if (body.style.display === 'none') {
+                body.style.display = 'block';
+                icon.textContent = '▾';
+                icon.classList.add('open');
+            } else {
+                body.style.display = 'none';
+                icon.textContent = '▸';
+                icon.classList.remove('open');
+            }
+        }
+    </script>
 </body>
 </html>
