@@ -1,93 +1,577 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Chiphell 帖子跳转</title>
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, sans-serif; background: #f5f5f5; display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px; }
-  .card { background:#fff; border-radius:12px; padding:30px; max-width:400px; width:100%; text-align:center; box-shadow:0 2px 12px rgba(0,0,0,0.1); }
-  .card h2 { font-size:18px; margin-bottom:8px; color:#333; }
-  .card .tip { font-size:13px; color:#999; margin-bottom:20px; }
-  .btn { display:block; width:100%; padding:14px; border:none; border-radius:8px; font-size:16px; cursor:pointer; text-decoration:none; margin-bottom:10px; font-weight:500; }
-  .btn-copy { background:#1677ff; color:#fff; }
-  .btn-copy:active { background:#0958d9; }
-  .btn-open { background:#f0f0f0; color:#333; }
-  .btn-open:active { background:#e0e0e0; }
-  .url-box { font-size:12px; color:#999; word-break:break-all; margin-top:16px; padding:10px; background:#f8f8f8; border-radius:6px; text-align:left; }
-  .toast { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.8); color:#fff; padding:12px 24px; border-radius:8px; font-size:14px; z-index:999; display:none; pointer-events:none; }
-  .toast.show { display:block; animation: fadeInOut 2.5s ease; }
-  @keyframes fadeInOut { 0%{opacity:0;} 12%{opacity:1;} 80%{opacity:1;} 100%{opacity:0;} }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiphell 每日精选 - 2026/6/10</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: #f5f5f5; 
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            margin-bottom: 20px;
+        }
+        .header h1 { font-size: 24px; margin-bottom: 10px; }
+        .header p { opacity: 0.9; }
+        .post { 
+            background: white; 
+            margin-bottom: 20px; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .post-header { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+        .post-number { 
+            background: #667eea; 
+            color: white; 
+            padding: 2px 8px; 
+            border-radius: 4px; 
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .post-title { 
+            font-size: 18px; 
+            font-weight: bold; 
+            color: #333; 
+            text-decoration: none;
+        }
+        .post-title:hover { 
+            color: #667eea; 
+        }
+        .post-meta { 
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 15px; 
+            color: #666; 
+            font-size: 13px; 
+            margin-bottom: 15px;
+        }
+        .post-actions { 
+            margin-top: 15px; 
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .view-link { 
+            color: #667eea; 
+            text-decoration: none; 
+            padding: 6px 12px;
+            border: 1px solid #667eea;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .view-link:hover {
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+        }
+        .post-page {
+            color: #999;
+            font-size: 12px;
+        }
+        .post-content {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 15px;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .post-images {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        .post-images img {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+        .footer { 
+            text-align: center; 
+            color: #999; 
+            padding: 20px; 
+            font-size: 12px;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        .empty-state h2 { margin-bottom: 10px; color: #999; }
+        .header p { 
+            opacity: 0.9; 
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .header { padding: 20px; }
+            .post { padding: 15px; }
+            .post-meta { gap: 10px; font-size: 12px; }
+            .post-actions { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
+    </style>
 </head>
 <body>
-<div class="card">
-  <h2>🔗 Chiphell 帖子</h2>
-  <p class="tip" id="tip">Chiphell 限制了内置浏览器，正在尝试跳转...</p>
-  <button id="btnCopy" class="btn btn-copy" onclick="copyLink()" style="display:none">📋 复制链接到剪贴板</button>
-  <a id="btnOpen" class="btn btn-open" href="#" style="display:none">🌐 尝试浏览器打开</a>
-  <div class="url-box" id="urlDisplay"></div>
-</div>
-<div id="toast" class="toast"></div>
-<script>
-(function() {
-  var id = new URLSearchParams(window.location.search).get('id');
-  if (!id) {
-    document.getElementById('urlDisplay').textContent = '未指定帖子ID';
-    document.getElementById('tip').textContent = '缺少帖子ID参数';
-    return;
-  }
+    <div class="container">
+        <div class="header">
+            <h1>📰 Chiphell 每日精选</h1>
+            <p>2026/6/10 · 共 17 篇帖子</p>
+        </div>
+        
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#1</span>
+                <a href="https://www.chiphell.com/thread-2820587-1-1.html" class="post-title" target="_blank">(阿三是真草但)Windows 11不卡了! CPU加速新功能开始推送：老设备流畅度质变</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 vasomax</span>
+                <span>📅 2026-6-10 23:27</span>
+                <span>💬 8 回复</span>
+                <span>👁️ 512 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                微软今日推送的6月二更新KB5094126中包含一项实用的性能改进：低延迟配置（Low Latency Profile）。
+该更新适用于Win11 25H2（Build 26200.8655）和24H2（Build 26100.8655），微软在更新日志中仅用一句“加速应用启动和核心Shell体验”一笔带过，但目前并未向所有人推送，想提前体验的话需要手动开启。
 
-  var url = 'https://www.chiphell.com/thread-' + id + '-1-1.html';
-  document.getElementById('urlDisplay').textContent = url;
-  document.getElementById('btnOpen').href = url;
-  document.getElementById('btnCopy').style.display = 'block';
-  document.getElementById('btnOpen').style.display = 'block';
-  document.getElementById('tip').textContent = '请复制链接到系统浏览器中打开';
-  window._chipUrl = url;
+阿三是真的沙比,活该那块地在高温杀毒,
+实际就是啥也不开鼠标晃2下就满频率,温度直接50多,风扇呼呼响,原来的策略不适合了.....
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820587-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#2</span>
+                <a href="https://www.chiphell.com/thread-2820346-1-1.html" class="post-title" target="_blank">关于一直用intel平台，其实是因为年龄大了 懒了</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 寒蝉鸣泣</span>
+                <span>📅 2026-6-10 16:20</span>
+                <span>💬 67 回复</span>
+                <span>👁️ 1674 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                其实从13 14代缩肛开始，intel不给力，AMD崛起是有目共睹的，但是我在用AMD的时候遇到一些麻烦，真实的问题，并且没找到解决方案：  偶尔会卡一下，无论是玩战舰世界，暗黑破坏神，还是魔兽世界，都会出现，偶尔就是会卡顿一下，至于为什么 不知道，散热器都是瓦尔基里的DX140也没换过，硅脂用的TF7 也不是啥好玩意儿，但是日常使用其实也应该够了。我买过7800X3D 搭B650E  还有9800X3D 最后都卖掉了，实在是很折腾， 另外AMD偶尔在一些软件上也不友好，一些游戏的外挂机翻，部分工程上用的专业软件，用AMD平台的时候用着用着闪退........  也不知道是不是我不会调教AMD平台，最后为了省事，在PDD上下单265K 板U套装。 感受上，Z890主板看上去比B650E豪华得多，大板 接口很齐全。 然后就是用到265K后，这些屁事就全没了，散热器没换，机箱没换，显卡内存都没换。  就这个体验来说，我是不会换到AMD的，不管它X3D 在FPS类游戏里能跑多高的帧数。  不是水军，不是水军 不是水军，全是真实体验。
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820346-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#3</span>
+                <a href="https://www.chiphell.com/thread-2820319-1-1.html" class="post-title" target="_blank">DLSS四倍插帧晃动视角模糊怎么办？</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 notg</span>
+                <span>📅 2026-6-10 15:58</span>
+                <span>💬 28 回复</span>
+                <span>👁️ 554 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                使用5060显卡游戏内开启插帧，但是游戏晃动视角感觉特别模糊，有没什么办法开启了插帧然后晃动视角和不开插帧的感觉是一样的
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820319-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#4</span>
+                <a href="https://www.chiphell.com/thread-2820523-1-1.html" class="post-title" target="_blank">关于intel arc pro的sriov</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 goat</span>
+                <span>📅 2026-6-10 22:01</span>
+                <span>💬 3 回复</span>
+                <span>👁️ 249 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                本帖最后由 goat 于 2026-6-10 22:05 编辑
 
-  // Auto-try to open in browser immediately
-  // Some platforms support opening in system browser via window.open with features
-  setTimeout(function() {
-    var w = window.open(url, '_blank', 'noreferrer,noopener');
-    // If window.open returned null (blocked), that's expected in webview
-    // The user can use the copy button as fallback
-  }, 300);
+这卡除了llm能看的应该也就是这个了吧？但是有几个不明白的问题想请教一下
+公版最新固件[url=https://forum.level1techs.com/t/arc-pro-b50-b60-or-b70-for-sr-iov-and-maybe-light-llm-advice/249816]vf数量是b50：2vf/b70：4vf？b50有最初支持sriov后的12vf版本，但是b70只有4vf的版本？要更多只能找如碇的7vf？另外一个是拆vf之后只能用固定大小显存，初始完成后修改的话也还是只有根据固件初始化vf设置数量的显存生效？主要是修改超过bar的显存也不能超过固件已分配的大小？
 
-  window.copyLink = function() {
-    var url = window._chipUrl;
-    if (!url) return;
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(url).then(function() {
-        showToast('✅ 已复制！请粘贴到 Safari/Chrome 打开');
-      }).catch(function() {
-        fallbackCopy(url);
-      });
-    } else {
-      fallbackCopy(url);
-    }
-  };
+要是理解没错好像也没那么诱人了
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820523-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#5</span>
+                <a href="https://www.chiphell.com/thread-2820023-1-1.html" class="post-title" target="_blank">询问大伙，为了玩原神该怎么升级旧电脑</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 wspjy</span>
+                <span>📅 2026-6-10 08:59</span>
+                <span>💬 90 回复</span>
+                <span>👁️ 1334 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                本帖最后由 wspjy 于 2026-6-10 10:26 编辑
 
-  function fallbackCopy(text) {
-    var ta = document.createElement('textarea');
-    ta.value = text;
-    ta.style.position = 'fixed';
-    ta.style.left = '-9999px';
-    document.body.appendChild(ta);
-    ta.select();
-    try { document.execCommand('copy'); showToast('✅ 已复制！请粘贴到浏览器打开'); }
-    catch(e) { showToast('⚠️ 复制失败，请手动复制下方链接'); }
-    document.body.removeChild(ta);
-  }
+本人最近从父母家搬来了一套旧的DIY整机，想用它玩《原神》，不太顺利，正好赶上618，想着怎么给升级一下。
 
-  function showToast(msg) {
-    var t = document.getElementById('toast');
-    t.textContent = msg;
-    t.className = 'toast show';
-    setTimeout(function() { t.className = 'toast'; }, 2500);
-  }
-})();
-</script>
+这台机器是当初自己攒的，配置如下：
+CPU：intel i3-8100，内存：32G DD4 2400，显卡：GF1060，硬盘：INTEL 335 180G固态、海淘拆机8T机械。
+
+在父母家用1080显示器，还能凑合着玩，到了现在自己家，接上我的4KOLED显示器，感觉这台老爷机跑不动4K的《原神》了，试着修改过一些显示选项，也没见得明显好转。
+
+我之前在家，用的是一台笔记本接4K显示器，外接键鼠使用，这台笔记本显卡是4070，算是能跑的动4K《原神》.
+
+之所以要重新启用老台式机，有两个理由：
+1.现在的笔记本虽然能跑动，但每次进入游戏后，散热风扇都像飞机起飞似的，噪声不小，让人烦躁。
+
+而那台老机器，由于我折腾过静音（200左右的风扇买了好几个），所以噪声比笔记本低得多；
+
+2.那个海淘拆机8T机械硬盘里，存放着大量这些年搜罗的网上资源，如果不用台式机，这些资源以后想欣赏就很麻烦了。
+
+故而，我想借着本
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820023-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#6</span>
+                <a href="https://www.chiphell.com/thread-2819947-1-1.html" class="post-title" target="_blank">请问大佬们有没有34曲面屏推荐谢谢啦</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 water00000</span>
+                <span>📅 2026-6-10 00:48</span>
+                <span>💬 6 回复</span>
+                <span>👁️ 341 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                很长时间没怎么关注硬件 之前看外星人34曲面屏挺热门的 38也有很多推荐 而且那时国行在京东看都要一万多
+现在看外星人最新款的34 只要5千多
+是现在34的不热门了吗 还是别的什么原因
+这几天在论坛学习 好像都在推荐rog的32ucdm3
+对于普通家用 打游戏看网页电影视频 手游直播 曲面屏还合适吗
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/11/004001ozs4a77a6jsj7vij.jpg" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2819947-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#7</span>
+                <a href="https://www.chiphell.com/thread-2820537-1-1.html" class="post-title" target="_blank">RTX 6000d的参数数据</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 purityWang</span>
+                <span>📅 2026-6-10 22:47</span>
+                <span>💬 5 回复</span>
+                <span>👁️ 364 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                本帖最后由 purityWang 于 2026-6-10 22:52 编辑
+
+来自于国内一个正规的算力公司，他们跟我说来自于靠谱渠道。目前唯一有疑问的就是里面的default gemm是小于280瓦意味着什么。还是发出来看看吧。fp16 tensor 148tflops，fp8 tensor 296tflops，不如4090
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820537-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#8</span>
+                <a href="https://www.chiphell.com/thread-2820298-1-1.html" class="post-title" target="_blank">帮我看下配置合理不</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 1995pewe</span>
+                <span>📅 2026-6-10 15:06</span>
+                <span>💬 17 回复</span>
+                <span>👁️ 444 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                朋友帮我转的，说先过渡，等下一代12核的X3D
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820298-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#9</span>
+                <a href="https://www.chiphell.com/thread-2820456-1-1.html" class="post-title" target="_blank">【求助】DS916+迁移到DS925+后，3号盘"严重"状态无法清除，是否只能重建？</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 Nakor</span>
+                <span>📅 2026-6-10 20:33</span>
+                <span>💬 5 回复</span>
+                <span>👁️ 176 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820456-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#10</span>
+                <a href="https://www.chiphell.com/thread-2820590-1-1.html" class="post-title" target="_blank">求助突然关机原因！！！</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 苏格拉底</span>
+                <span>📅 2026-6-10 23:41</span>
+                <span>💬 6 回复</span>
+                <span>👁️ 154 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820590-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#11</span>
+                <a href="https://www.chiphell.com/thread-2819942-1-1.html" class="post-title" target="_blank">深夜发帖，thinkpad X14的游戏体验</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 时光清浅</span>
+                <span>📅 2026-6-10 00:19</span>
+                <span>💬 18 回复</span>
+                <span>👁️ 815 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2819942-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#12</span>
+                <a href="https://www.chiphell.com/thread-2820348-1-1.html" class="post-title" target="_blank">兮克的i226没办法更新2.32固件啊</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 Phil_Libra</span>
+                <span>📅 2026-6-10 16:21</span>
+                <span>💬 2 回复</span>
+                <span>👁️ 280 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820348-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#13</span>
+                <a href="https://www.chiphell.com/thread-2820586-1-1.html" class="post-title" target="_blank">MF400 意料之外的装机加换机箱</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 cmbb2314</span>
+                <span>📅 2026-6-10 23:25</span>
+                <span>💬 2 回复</span>
+                <span>👁️ 178 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820586-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#14</span>
+                <a href="https://www.chiphell.com/thread-2820043-1-1.html" class="post-title" target="_blank">华硕最新bios有问题么？</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 天空的故事</span>
+                <span>📅 2026-6-10 09:16</span>
+                <span>💬 11 回复</span>
+                <span>👁️ 786 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820043-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#15</span>
+                <a href="https://www.chiphell.com/thread-2820488-1-1.html" class="post-title" target="_blank">猫头鹰那个无泵一体水冷好像挺牛的！</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 勇敢牛牛</span>
+                <span>📅 2026-6-10 21:14</span>
+                <span>💬 6 回复</span>
+                <span>👁️ 538 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820488-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#16</span>
+                <a href="https://www.chiphell.com/thread-2820097-1-1.html" class="post-title" target="_blank">最好不要在开空调的房间使用开放式机箱，或者把机箱侧面板打开！！！</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 qxx97483</span>
+                <span>📅 2026-6-10 10:16</span>
+                <span>💬 16 回复</span>
+                <span>👁️ 1469 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820097-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="post">
+            <div class="post-header">
+                <span class="post-number">#17</span>
+                <a href="https://www.chiphell.com/thread-2820502-1-1.html" class="post-title" target="_blank">帮主的Z890i居然现身台北电脑展，还有一款TRYX的ITX机箱挺别致</a>
+            </div>
+            <div class="post-meta">
+                <span>👤 unschief</span>
+                <span>📅 2026-6-10 21:27</span>
+                <span>💬 0 回复</span>
+                <span>👁️ 309 浏览</span>
+            </div>
+            
+            <div class="post-content">
+                (无法提取正文)
+            </div>
+            
+            
+            <div class="post-actions">
+                <a href="https://www.chiphell.com/thread-2820502-1-1.html" class="view-link" target="_blank">🔗 查看原帖</a>
+                <span class="post-page">📄 来自第 1 页</span>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <p>由 OpenClaw 自动生成 · 2026/6/11 02:30:50</p>
+        </div>
+    </div>
 </body>
 </html>
