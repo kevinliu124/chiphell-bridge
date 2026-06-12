@@ -190,122 +190,33 @@
         <div class="post" id="post-0">
             <div class="post-header">
                 <span class="post-number">#1</span>
-                <span class="post-title" onclick="togglePost(0)">别看到WHEA 18就判CPU死刑！记录一次被显卡伪装的“CPU故障”全历程</span>
+                <span class="post-title" onclick="togglePost(0)">升级了群晖备份套件需不要重新制作还原U盘？</span>
                 <span class="expand-icon" id="icon-0">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 红色狂想</span>
-                <span>📅 2026-6-11 22:03</span>
-                <span>💬 8 回复</span>
-                <span>👁️ 589 浏览</span>
+                <span>👤 ccx1234</span>
+                <span>📅 2026-6-11 08:55</span>
+                <span>💬 2 回复</span>
+                <span>👁️ 217 浏览</span>
             </div>
             <div class="post-body" id="body-0" style="display:none">
             
             <div class="post-content">
-                引言：估计我是全网第一个发现 WHEA 18 报错与CPU无关的用户
-
-各位基友、硬件大佬们好，今天替我一位朋友发个硬核的求证和讨论帖。
-
-大家都知道，AMD平台（尤其是Zen3）如果频繁遭遇 WHEA-Logger Event 18（通常伴随Cache Hierarchy Error和随机核心ID），网上的主流舆论基本都是“CPU缩缸/体质不行，直接Rip或售后”。但我朋友最近经历了一场极限排查，结果表明：WHEA 18报错，真不一定是CPU的锅，甚至可能是新显卡引起的！
-
-以下是他硬核的测试历程和倒逼真相的过程，供大家参考和讨论。
-
-一、 故障起因
-o 初始症状： 玩《三角洲行动》时突然掉帧，角色衣服贴图加载不出。随后某天开始，低负载待机时频繁死机并自动重启。
-o 日志查看： 系统日志疯狂弹 WHEA 18错误，且报错的核心ID完全随机，几乎每个核心都轮流报了一遍。
-
-二、 初始配置与测试平台
-o CPU： AMD Ryzen 9 5950X（2025年新出厂的 B2 步进）
-o 显卡： AMD Radeon RX 9070 XT
-o 主板： 微星 X470
-o 电源： 长城 G20（额定 2000W）
-
-朋友一开始也参考了网上的常规解法：恢复BIOS默认、定压定频、调整PBO等，但待机依然死机报错。按常理，B2步进的5950X不至于这么脆弱，而且不可能“全核心同时暴毙”，况且各种双烤压测一切正常。为了彻底揪出元凶，他开始了漫长的控制变量测试。
-
-三、 极限控制变量排查历程
-o 第1步：换CPU（排除CPU单体故障）
-
-测试： 换上闲置的 3700X + 9070 XT + X470 + G20
-
-结果： 依然报 WHEA 18 错误！ 同时显卡在设备管理器中被自动禁用。要知道这颗3700X以前搭配旧显卡用得好好的。两代CPU都报同一个错，CPU本身大概率是清白的。
-o
+                升级了群晖Synology Active Backup for Business套件需不要重新使用Synology Restore Media Creator制作还原U盘？
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (9条)</div>
+                <div class="comments-title">💬 热门评论 (2条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">红色狂想</span>
-                    <span class="comment-text">引言：估计我是全网第一个发现 WHEA 18 报错与CPU无关的用户
-
-各位基友、硬件大佬们好，今天替我一位朋友发个硬核的求证和讨论帖。
-
-大家都知道，AMD平台（尤其是Zen3）如果频繁遭遇 WHEA-Logger Event 18（通常伴随Cache Hierarchy Error和随机核心ID），网上的主流舆论基本都是“CPU缩缸/体质不行，直接Rip或售后”。但我朋友最近经历了一场极限排查，结果表明：WHEA 18报错，真不一定是CPU的锅，甚至可能是新显卡引起的！
-
-以下是他硬核的测试历程和倒逼真相的过程，供大家参考和讨论。
-
-一、 故障起因
-o 初始症状： 玩《三角洲行动》时突然掉帧，角色衣服贴图加载不出。随后某天开始，低负载待机时频繁死机并自动重启。
-o 日志查看： 系统日志疯狂弹 WHEA 18错误，且报错的核心ID完全随机，几乎每个核心都轮流报了一遍。
-
-二、 初始配置与</span>
+                    <span class="comment-author">ccx1234</span>
+                    <span class="comment-text">升级了群晖Synology Active Backup for Business套件需不要重新使用Synology Restore Media Creator制作还原U盘？</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">Eoniva</span>
-                    <span class="comment-text">角色衣服贴图加载不出是全果的吗</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">seasky002</span>
-                    <span class="comment-text">zen3 flck顶不住会有whea18的问题，降到1800 1600试试，如果问题依旧，那估计就是显卡或者pcie问题了。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xuting77</span>
-                    <span class="comment-text">zen3都多少年了还全网第一 也太自信了吧 
-从农企开始整smartassmemory的活就有这种问题了好吧
-随便一搜到处都是
-https://linustechtips.com/topic/ ... tart-woes-on-my-pc/
-
-February 23, 2023
-In conclusion:
-The RX5600XT card is a lost cause, I still don't know what causes it to cause the WHEA 18 errors to this day, and neither does the repair shop.
-...
-I replaced both these cards with a GTX1070. No crashes ever since.</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xuting77</span>
-                    <span class="comment-text">seasky002 发表于 2026-6-11 22:08
-zen3 flck顶不住会有whea18的问题，降到1800 1600试试，如果问题依旧，那估计就是显卡或者pcie问题了。 ...
-
-fclk一般是whea19
-18是核心或者pcie设备</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zh21688</span>
-                    <span class="comment-text">为什么9070 XT 那么便宜是有道理的！现在阶段只能买N卡！首发买！</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">futurejl</span>
-                    <span class="comment-text">大概率是显卡的金手指脏了，比如之前用手把玩过，弄了油脂上去。用橡皮擦大法试试。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">秦南瓜</span>
-                    <span class="comment-text">我之前玩天邦q1hy itx。那个板子插50系，能pcie5.0*16，3dmark 带宽测试没问题。但就是事件查看器会有一大堆whea18。然后我到bios把pcie速率限制到pcie4.0。就不报错了。。。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">RuthlessJie</span>
-                    <span class="comment-text">Eoniva 发表于 2026-6-11 22:06
-角色衣服贴图加载不出是全果的吗
-
-咋可能，没建模的东西又不能凭空生成出来</span>
+                    <span class="comment-author">mosigan</span>
+                    <span class="comment-text">应该不用的，理论上硬件没变Pe启动环境不需要调整，你把新版abb里的还原工具软件复制到U盘上覆盖旧版本试试，我都是直接找个系统服务比较完整的pe镜像直接运行还原程序的</span>
                 </div>
                 
             </div>
@@ -317,16 +228,224 @@ fclk一般是whea19
         <div class="post" id="post-1">
             <div class="post-header">
                 <span class="post-number">#2</span>
-                <span class="post-title" onclick="togglePost(1)">5090弟中弟又要涨价了</span>
+                <span class="post-title" onclick="togglePost(1)">古董电脑废物利用 改装部署飞牛系统</span>
                 <span class="expand-icon" id="icon-1">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 bz888</span>
+                <span>📅 2026-6-11 15:53</span>
+                <span>💬 3 回复</span>
+                <span>👁️ 541 浏览</span>
+            </div>
+            <div class="post-body" id="body-1" style="display:none">
+            
+            <div class="post-content">
+                本帖最后由 bz888 于 2026-6-11 15:53 编辑
+
+家里翻出 一台闲置多年的dell Vostro 3470 老古董电脑和几块盘，现阶段nas 比较流行、加上飞牛团队研发的固件比较火，最主要免费、免费、免费 点赞，抽点时间 改装下玩玩（原机箱只能装一块3.5寸盘、一个sata 口）目前部署了 fnos 系统，安装了相册、影视、Docker 、和 roon 听听无损音乐，备份 手机全部照片、视频、和微信（自动上传）感觉挺好，目前未发现掉盘现象，唯一 前置改装80*80*25风扇全速（主板预留了FAN2焊点，只有正负电源能用无测速、智能控制）晚上有点噪音，硬盘有点动静能接受（设置1小时睡眠）购买水泥电阻5W-30R准备安排上，目前硬盘温度比较理想，室温 25-30度，除了机箱看着有点丑，使用目前未发现问题，功耗能接受，每度电0.5元，每年电费150元打住了，全家人均可用，方便不少，目前2块盘没法做 RAID，另准备一块10T盘 做冷备，防止重要数据丢失。
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (4条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">bz888</span>
+                    <span class="comment-text">本帖最后由 bz888 于 2026-6-11 15:53 编辑
+家里翻出 一台闲置多年的dell Vostro 3470 老古董电脑和几块盘，现阶段nas 比较流行、加上飞牛团队研发的固件比较火，最主要免费、免费、免费 点赞，抽点时间 改装下玩玩（原机箱只能装一块3.5寸盘、一个sata 口）目前部署了 fnos 系统，安装了相册、影视、Docker 、和 roon 听听无损音乐，备份 手机全部照片、视频、和微信（自动上传）感觉挺好，目前未发现掉盘现象，唯一 前置改装80*80*25风扇全速（主板预留了FAN2焊点，只有正负电源能用无测速、智能控制）晚上有点噪音，硬盘有点动静能接受（设置1小时睡眠）购买水泥电阻5W-30R准备安排上，目前硬盘温度比较理想，室温 25-30度，除了机箱看着有点丑，使用目前未发现问题，功耗能接受，每度电0.5元，每年电费150元打住了，全家人均可用，方便不少</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">gaoyi124</span>
+                    <span class="comment-text">够用够用,想当够用</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Xelento</span>
+                    <span class="comment-text">别放私密文件</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">卡卡下车</span>
+                    <span class="comment-text">有usb3.0.扣也叫古董？</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-2">
+            <div class="post-header">
+                <span class="post-number">#3</span>
+                <span class="post-title" onclick="togglePost(2)">老骥伏枥 志在千里 - Quadro P620</span>
+                <span class="expand-icon" id="icon-2">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 zzc02063</span>
+                <span>📅 2026-6-11 09:15</span>
+                <span>💬 7 回复</span>
+                <span>👁️ 588 浏览</span>
+            </div>
+            <div class="post-body" id="body-2" style="display:none">
+            
+            <div class="post-content">
+                本帖最后由 zzc02063 于 2026-6-11 09:42 编辑
+
+话说 三年前 从朋友那儿半买半顺 弄了台1U的服务器
+
+CPU：至强E52407 * 2（LGA1356）
+主板：英特尔S2400SC
+内存：金士顿 64G D3 1066 ECC（16*4）
+电源：全汉 FSP 400W 1U 单电
+
+微信图片_20260611080855_293_84.jpg (204.78 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-11 09:12 上传
+
+也不知道搞来干嘛 反正一贯多吃多占 先拿了再说
+后来闲着没事儿 找了块128G的闪迪 装了个win10 扔公司当文件服务器使 
+前年太阳耀斑 一按电源 peng~~~~ 电源挂了 只能小黄鱼又搞了一个~
+
+ScreenShot_2026-06-11_090604_700.png (797.97 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-11 09:12 上传
+
+后来朋友陆陆续续给了个勤诚的2U机箱 一块Adaptec阵列卡 又陆陆续续找了几块3T硬盘
+正式搞成文件服务器了
+
+最近有开始闲 没啥也捣鼓的 只能捣鼓这老古董了
+因为平时有达芬奇剪辑的需求 就想能不能加块显卡 做个转码
+
+然后 淘宝搜了搜 发现了P620 半高单槽 还不用外接供电 因为这机器电源已经没有额外的线可以插了
+小黄鱼本地收了一张 淘宝又买了四个8025的AVC风扇换上 瞬间清净了（以前勤诚原机带的建准 调速线剪了 只能最高速 巨吵无比）
+
+微信图片_20260611085659_302_84.jpg (274.33 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-11 09:12 上传
+
+微信图片_20260611085657_300_84.jpg (685.11 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-11 0
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/11/091206ccx2iua6pwape24e.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/091204toyyinq2ndzxnfzt.png" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/091210y9e6kr8p9uokh8eo.jpg" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (8条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">zzc02063</span>
+                    <span class="comment-text">本帖最后由 zzc02063 于 2026-6-11 09:42 编辑
+话说 三年前 从朋友那儿半买半顺 弄了台1U的服务器
+CPU：至强E52407 * 2（LGA1356）
+主板：英特尔S2400SC
+内存：金士顿 64G D3 1066 ECC（16*4）
+电源：全汉 FSP 400W 1U 单电
+微信图片_20260611080855_293_84.jpg (204.78 KB, 下载次数:
+0)
+
+下载附件
+2026-6-11 09:12 上传
+也不知道搞来干嘛 反正一贯多吃多占 先拿了再说
+后来闲着没事儿 找了块128G的闪迪 装了个win10 扔公司当文件服务器使 
+前年太阳耀斑 一按电源 peng~~~~ 电源挂了 只能小黄鱼又搞了一个~
+ScreenShot_2026-06-11_090604_700.png (797.97 KB, 下载次数:
+0)
+
+下载附件
+2026</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zzcgh1928</span>
+                    <span class="comment-text">这个卡，前几天我给老板娘机器更新4K高刷显示器刚买了一块，用DP线自定义分辨率可以4K100Hz
+
+尝试自定义4K120Hz没成功，不过理论DP1.4的带宽完全可以支持，不知道是驱动版本问题还是显示器不支持</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">against</span>
+                    <span class="comment-text">cpu百分百，显卡才6%，明显你cpu太弱了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zzc02063</span>
+                    <span class="comment-text">against 发表于 2026-6-11 09:29
+cpu百分百，显卡才6%，明显你cpu太弱了
+
+因为 渲染的时候 选择的是“原生”，用CPU压
+也试了显卡压 没截图~</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zzc02063</span>
+                    <span class="comment-text">zzcgh1928 发表于 2026-6-11 09:24
+这个卡，前几天我给老板娘机器更新4K高刷显示器刚买了一块，用DP线自定义分辨率可以4K100Hz
+
+尝试自定义4K1 ...
+
+哥们你是直接用miniDP转DP线 还是 用转接头 再转DP？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zzcgh1928</span>
+                    <span class="comment-text">zzc02063 发表于 2026-6-11 09:44
+哥们你是直接用miniDP转DP线 还是 用转接头 再转DP？
+
+miniDP转DP线，需要高刷的话可能需要自己设置自定义分辨率</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zzc02063</span>
+                    <span class="comment-text">zzcgh1928 发表于 2026-6-11 09:53
+miniDP转DP线，需要高刷的话可能需要自己设置自定义分辨率
+
+OK
+
+谢</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">gou123</span>
+                    <span class="comment-text">显存太小咯。</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-3">
+            <div class="post-header">
+                <span class="post-number">#4</span>
+                <span class="post-title" onclick="togglePost(3)">5090弟中弟又要涨价了</span>
+                <span class="expand-icon" id="icon-3">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 sthuasheng</span>
                 <span>📅 2026-6-11 19:39</span>
-                <span>💬 34 回复</span>
-                <span>👁️ 1978 浏览</span>
+                <span>💬 39 回复</span>
+                <span>👁️ 2313 浏览</span>
             </div>
-            <div class="post-body" id="body-1" style="display:none">
+            <div class="post-body" id="body-3" style="display:none">
             
             <div class="post-content">
                 本帖最后由 sthuasheng 于 2026-6-11 21:23 编辑
@@ -416,120 +535,26 @@ sthuasheng 发表于 2026-6-11 20:10
             </div>
         </div>
     
-        <div class="post" id="post-2">
+        <div class="post" id="post-4">
             <div class="post-header">
-                <span class="post-number">#3</span>
-                <span class="post-title" onclick="togglePost(2)">iphone手机关屏就断连wifi 求帮助</span>
-                <span class="expand-icon" id="icon-2">▸</span>
+                <span class="post-number">#5</span>
+                <span class="post-title" onclick="togglePost(4)">好奇问下伙伴们，rx9070 16g显卡相当于40 50系列N卡什么级别？</span>
+                <span class="expand-icon" id="icon-4">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 johnada</span>
-                <span>📅 2026-6-11 19:26</span>
-                <span>💬 5 回复</span>
-                <span>👁️ 375 浏览</span>
+                <span>👤 Wolverine</span>
+                <span>📅 2026-6-11 09:25</span>
+                <span>💬 40 回复</span>
+                <span>👁️ 1979 浏览</span>
             </div>
-            <div class="post-body" id="body-2" style="display:none">
+            <div class="post-body" id="body-4" style="display:none">
             
             <div class="post-content">
-                本帖最后由 johnada 于 2026-6-11 19:54 编辑
+                这次618给自己买了一个3450元京东自营的瀚凯9070 16g三风扇的，
+4k高刷显示器，最近只偶尔打打单机游戏，不是数毛党，是不是性价比还可以了？我看9070功耗就是200w出头，比9070xt低了100w，性能也就低10%不到，好像还不错。
 
-路由日志：
-Sep 13 11:55:50 wlceventd: wlceventd_proc_event(527): eth7: Auth CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
-Sep 13 11:55:50 wlceventd: wlceventd_proc_event(556): eth7: Assoc CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
-Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8), rssi:0
-Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8), rssi:0
-Sep 16 09:39:51 wlceventd: wlceventd_proc_event(527): eth7: Auth CC:4B:73:9A:90:A8, status: Successful (0), rssi:-21
-Sep 16 09:39:51 wlceventd: wlceven
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (6条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">johnada</span>
-                    <span class="comment-text">本帖最后由 johnada 于 2026-6-11 19:54 编辑
-路由日志：
-Sep 13 11:55:50 wlceventd: wlceventd_proc_event(527): eth7: Auth CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
-Sep 13 11:55:50 wlceventd: wlceventd_proc_event(556): eth7: Assoc CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
-Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated bec</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">qfmy11</span>
-                    <span class="comment-text">换路由器 绝对能解决</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zi8898</span>
-                    <span class="comment-text">连接邻居家或者饭店WiFi试试</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">ajyz</span>
-                    <span class="comment-text">几年前遇到过，还原iPhone网络可以临时解决，后来好像路由器固件更新后就好了。再之后换了其它品牌路由器，再没出现过</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">johnada</span>
-                    <span class="comment-text">ajyz 发表于 2026-6-11 21:21
-几年前遇到过，还原iPhone网络可以临时解决，后来好像路由器固件更新后就好了。再之后换了其它品牌路由器， ...
-
-可能是这个原因吧 等下一个固件 
-也不是说断线  只是日志一直这样 强迫症受不了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">wuhao0015</span>
-                    <span class="comment-text">本帖最后由 wuhao0015 于 2026-6-12 08:31 编辑
-Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8), rssi:0
-Sep 16 09:39:54 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
-        <div class="post" id="post-3">
-            <div class="post-header">
-                <span class="post-number">#4</span>
-                <span class="post-title" onclick="togglePost(3)">DIY无尘开放水冷系统记录分享</span>
-                <span class="expand-icon" id="icon-3">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 路人丙丁</span>
-                <span>📅 2026-6-11 09:44</span>
-                <span>💬 22 回复</span>
-                <span>👁️ 956 浏览</span>
-            </div>
-            <div class="post-body" id="body-3" style="display:none">
-            
-            <div class="post-content">
-                第一贴！终于注册成功哩，先摆一个成品在这
-
-1781139559211.jpg (777.1 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-11 08:59 上传
-
-23年那会机器一直有一个问题非常困扰，就是一体水的风扇的动平衡好像有点问题，间隔一段时间就是发出“哒哒哒哒”的声音，碰一下改变转速共振变了就消失。这种时好时不好的节奏一直持续到有一天忍不了了，于是往旁边的空净机上一摆
-
-1000016409.jpg (529.44 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-11 09:03 上传
-
-严丝合缝啊！25cmx25cm的巨大无尘风扇，安静的睡眠，我来哩！
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/11/085923pooo3d94kkkkh4t8.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/090354csq3uttu7m43ftuv.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/094912ljqnsqtgs6nvvnpp.png" loading="lazy" onerror="this.style.display='none'" />
+对了，我是matx机箱，显卡供电 要么2x8pin,要么12＋4哪种新接口，3x8pin肯定不考虑了。
+270k plus处理器，8000 c36 16GX2内存。(以前是9850x 3d，解压东西太慢了不喜欢换掉了)
             </div>
             
             
@@ -537,202 +562,73 @@ Sep 16 09:39:54 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">路人丙丁</span>
-                    <span class="comment-text">第一贴！终于注册成功哩，先摆一个成品在这
-1781139559211.jpg (777.1 KB, 下载次数:
-0)
+                    <span class="comment-author">Wolverine</span>
+                    <span class="comment-text">这次618给自己买了一个3450元京东自营的瀚凯9070 16g三风扇的，
+4k高刷显示器，最近只偶尔打打单机游戏，不是数毛党，是不是性价比还可以了？我看9070功耗就是200w出头，比9070xt低了100w，性能也就低10%不到，好像还不错。
 
-下载附件
-2026-6-11 08:59 上传
-23年那会机器一直有一个问题非常困扰，就是一体水的风扇的动平衡好像有点问题，间隔一段时间就是发出“哒哒哒哒”的声音，碰一下改变转速共振变了就消失。这种时好时不好的节奏一直持续到有一天忍不了了，于是往旁边的空净机上一摆
-1000016409.jpg (529.44 KB, 下载次数:
-0)
+对了，我是matx机箱，显卡供电 要么2x8pin,要么12＋4哪种新接口，3x8pin肯定不考虑了。
+270k plus处理器，8000 c36 16GX2内存。(以前是9850x 3d，解压东西太慢了不喜欢换掉了)</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">万鬼Zero</span>
+                    <span class="comment-text">4070ti/5070</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Claudine</span>
+                    <span class="comment-text">显卡ts跑分对应关系：
+9070xt对应5080，大概3w多点，16G显存
+9070对应5070ti，大概2万7，16G显存
+9070gre对应5070，大概2万4，12G显存
+算上游戏优化和光追，再低半档，9070对应也是5070了
+实际表现就得看具体游戏有没有N卡优化和光追优化了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Gaiden</span>
+                    <span class="comment-text">综合来说，没有无脑开DLSS，插帧，以及附加功能的5070吧，但是显存是16G的。
+但是很神秘，我玩D4，同样设置，A卡16G会卡顿纹理要开低，但是N卡直接DLSS就行不会卡，5070和9070XT</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">fpd92axv</span>
+                    <span class="comment-text">看了楼上，原来5070比5070ti才弱10%？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">amenamen</span>
+                    <span class="comment-text">注意传统光栅农企反而白送你10%性能
+再就是软件上差距有点大，比如dlss1代可以说他在偷画质，但4.5就牛逼大了
+可玩性上农企家落后2-3年
 
-下载附件
-2026-6-11 09:03 上传
-严丝合缝啊！25cmx25cm的巨大无尘风扇，安静的睡眠，我来哩！</span>
+哦，农企家超分的热切换比老黄好，别的应该没啥了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">huihuige</span>
-                    <span class="comment-text">空气净化器厂家还没出机箱产品线呢？</span>
+                    <span class="comment-author">PPXG</span>
+                    <span class="comment-text">全默认的话和4070TIS的光栅性能比较近似，光追（不含路径追踪）要再弱10%左右</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">路人丙丁</span>
-                    <span class="comment-text">于是就打算基于空净机做一台水冷系统∶只需要找一个25*25的冷排，或者买两个240冷排肩并肩，安装在出风口，再把整体机器架高留出出风口，空净机产出的巨量无尘空气会自然吹走下落灰尘，冷排更是接触不到一点灰尘，整体有望做成低维护需求机器（
-搜索一下之后，就找到了
-1000016411.png (553.15 KB, 下载次数:
-0)
+                    <span class="comment-author">yahochina</span>
+                    <span class="comment-text">我的5070昨天到货了，上机跑了一番测试，3DMARK全面落后于我的7900XT，连光追都跑不赢，光栅更差的远，本想着 地平线6 可以愉快的开光追了，结果只能跑4K30帧，还提示显存不足！！就这个提示，我A卡重度用户从来没见过，4K+这个价位，首选还是9070XT吧，能把5070甩飞边子</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">gladiator</span>
+                    <span class="comment-text">fpd92axv 发表于 2026-6-11 09:49
+看了楼上，原来5070比5070ti才弱10%？
 
-下载附件
-2026-6-11 09:49 上传
-空调冷排，铜管铝翅，尺寸刚好完美覆盖整个出风口（而且便宜），管径也是g1/4和常规水冷系统管径一模一样
-最大的麻烦解决之后，剩下只需要跟着管径一路接上就行。冷头选择by68，管子是硅胶软管，便宜水箱随便找了一个，水泵最开始随便挑了一个静音水泵（然而并不静音，管径也不对，最后还是上了各种转接口，后来也是折腾了好久），过滤是前置过滤器（30块钱可以买到0.04mm滤眼的，by68有0.08mm的缝，完全够用了）
-最后在</span>
+差20%左右吧，5070 12G显存导致这卡舒适区在2K ，4K 下要帧数差不多DLSS得性能/超级性能+插帧，5070ti 16G是够大部分游戏4K DLSS平衡以上不开插帧也有个能接受的帧数70-90帧这样</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">alibabatadie</span>
-                    <span class="comment-text">这是怼个大号空气净化器来吹散热么，厉害了。。要是换成个小空调，小心起飞。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">路人丙丁</span>
-                    <span class="comment-text">以防万一，防水肯定也得做一下。以框架为边界，把一边画成水区，另一边画成电器区，中间用塑料膜隔开。
-1781143165466.jpg (418.62 KB, 下载次数:
-0)
-
-下载附件
-2026-6-11 09:59 上传
-这个设计最近还真救了电脑一次，就上个月刚搬完家水箱扎带还没榜上，我家猫床头蹦迪把水箱打翻了，直接撒一地水，但是电脑整机，安然无恙！
-
-然后在这么些年的使用中，一个是把水箱换成紫外线杀菌管。。事实证明这操作非常之多余，根本没有什么植物能在水和重金属里面繁殖，反而是管结构导致进水在上面水位稍低就会发出落水声得不停加水，最后只能把管子斜放来降低噪声。
-另一个修改就是换了一个潜水泵，静音的，真的非常静音，就是口是1寸口，市面上甚至找不到g1/4转一寸的转接口最后靠1寸-4分，4分-1/4的转接接转接的方式给连上。这也导致灌水的时候气泡非常难排，进水速度跟不上水泵，非常南蚌</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">辣椒菌</span>
-                    <span class="comment-text">应该是解决了散热问题又无尘了，good idea</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">路人丙丁</span>
-                    <span class="comment-text">用了三年下来，可以说设计整体还是达到预期的。别说冷排不用清灰，整个机器带显卡只有最顶上的铝框架上面有一层非常非常细的少量灰，而且空净机全程开睡眠模式就能满足日常使用，不开空净机差不多两三个小时就会升到70度左右，但是不会过热，纯靠被动散热也能当个上网机使。夜间运行噪声基本可以忽略，大概就是偶尔有一点点水流咕噜一下的样子。
-
-过滤三年换了一次，基本堵死了，花三十买了一个新的，然后才发现有滤网卖，八块钱一个（?
-滤网换完直接重生，冷头应该完全没受影响（</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">yxxkz8</span>
-                    <span class="comment-text">牛逼特拉斯机，这么大的水冷箱</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">tiantian80</span>
-                    <span class="comment-text">牛逼，虽然大了点</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">qgdds</span>
-                    <span class="comment-text">会不会是这3个风扇拍频了
-给中间那个上个减速线会消除拍频</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
-        <div class="post" id="post-4">
-            <div class="post-header">
-                <span class="post-number">#5</span>
-                <span class="post-title" onclick="togglePost(4)">我这12400F+8G*4 内存性能还能提升吗</span>
-                <span class="expand-icon" id="icon-4">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 电脑能吃吗</span>
-                <span>📅 2026-6-11 14:27</span>
-                <span>💬 10 回复</span>
-                <span>👁️ 600 浏览</span>
-            </div>
-            <div class="post-body" id="body-4" style="display:none">
-            
-            <div class="post-content">
-                本帖最后由 电脑能吃吗 于 2026-6-11 16:19 编辑
-
-RT 用着挺稳定的 显卡3080 10G 玩黑猴 美末2 都没啥问题
-2根和4根有%多少差距 稳定的话 有必要换成16g*2吗
-条子是金百达银爵 海力士DJR 这条子XMP配置是4000G2 我是用微星的Memory try it 设置的3600G1..
-
-360截图20260525222421600.jpg (179.96 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-11 14:27 上传
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/11/142716a6zianup6kjhiypi.jpg" loading="lazy" onerror="this.style.display='none'" />
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (9条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">电脑能吃吗</span>
-                    <span class="comment-text">本帖最后由 电脑能吃吗 于 2026-6-11 16:19 编辑
-RT 用着挺稳定的 显卡3080 10G 玩黑猴 美末2 都没啥问题
-2根和4根有%多少差距 稳定的话 有必要换成16g*2吗
-条子是金百达银爵 海力士DJR 这条子XMP配置是4000G2 我是用微星的Memory try it 设置的3600G1..
-360截图20260525222421600.jpg (179.96 KB, 下载次数:
-0)
-
-下载附件
-2026-6-11 14:27 上传</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">nekotheo</span>
-                    <span class="comment-text">四条也能开xmp的前提下，想不到要把4x8换成2x16会有什么变化</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">niqian6666163</span>
-                    <span class="comment-text">nekotheo 发表于 2026-6-11 14:44
-四条也能开xmp的前提下，想不到要把4x8换成2x16会有什么变化
-
-温度是一个因素，特别是幻光鸡这种厚马甲条子，四条挤在一起温度一起奔着60度，报错频率飙升。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">halu86</span>
-                    <span class="comment-text">LZ 需要的是换个可以超外频的主板超个5.2  爽歪歪</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">nekotheo</span>
-                    <span class="comment-text">niqian6666163 发表于 2026-6-11 15:17
-温度是一个因素，特别是幻光鸡这种厚马甲条子，四条挤在一起温度一起奔着60度，报错频率飙升。 ...
-
-这只是DDR4欸，而且楼主说了现在4x8挺稳定的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">niqian6666163</span>
-                    <span class="comment-text">nekotheo 发表于 2026-6-11 15:34
-这只是DDR4欸，而且楼主说了现在4x8挺稳定的
-
-D4温度高了也报错啊，我就是四条幻光🐔，现在这天气，随时都上55度，一到55度闪不闪退就看机魂心情了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">电脑能吃吗</span>
-                    <span class="comment-text">nekotheo 发表于 2026-6-11 14:44
-四条也能开xmp的前提下，想不到要把4x8换成2x16会有什么变化
-
-倒是没开XMP 用的微星主板的 monery try it
-XMP配置是4000 G2...</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">nekotheo</span>
-                    <span class="comment-text">电脑能吃吗 发表于 2026-6-11 16:16
-倒是没开XMP 用的微星主板的 monery try it
-XMP配置是4000 G2...
-
-我以为你是xmp 3600
-
-其实从4x8 3600换到2x16 4000，正常使用应该是几乎无感的。当然如果现在行情可以平换或者只加一点点钱倒是可以满足下强迫症，否则就别换了，主板自己超到3600已经不算低频率了。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">kataphractoi</span>
-                    <span class="comment-text">没问题就别瞎折腾。折腾内存意义不大</span>
+                    <span class="comment-author">LOLI反应堆</span>
+                    <span class="comment-text">本帖最后由 LOLI反应堆 于 2026-6-11 12:09 编辑
+光栅：4070ti super +5%
+光追：4070ti
+路径光追：4070</span>
                 </div>
                 
             </div>
@@ -744,181 +640,16 @@ XMP配置是4000 G2...
         <div class="post" id="post-5">
             <div class="post-header">
                 <span class="post-number">#6</span>
-                <span class="post-title" onclick="togglePost(5)">生成AI视频的话需要什么计算机配置?</span>
+                <span class="post-title" onclick="togglePost(5)">V8发动机越来越少，结果风冷搞了V8出来，直接开箱</span>
                 <span class="expand-icon" id="icon-5">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 monei</span>
-                <span>📅 2026-6-11 16:54</span>
-                <span>💬 19 回复</span>
-                <span>👁️ 1083 浏览</span>
-            </div>
-            <div class="post-body" id="body-5" style="display:none">
-            
-            <div class="post-content">
-                生成AI视频的话需要什么计算机配置? 另外问一下生成ai视频的话用什么软件?
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (10条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">生成AI视频的话需要什么计算机配置? 另外问一下生成ai视频的话用什么软件?</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">chigo_pink</span>
-                    <span class="comment-text">你又不本地跑大模型 ，不需要本地配置高，视频用seedance，充点钱，在服务器端跑的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Kage</span>
-                    <span class="comment-text">本地模型需要32GB内存和RTX5070起步，显存至少16GB</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">要生成1分钟的1080*1920竖屏视频的话用什么软件?</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">cloud</span>
-                    <span class="comment-text">wan和ltx烂的根本不能看 老老实实充值</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">kingsonhhl</span>
-                    <span class="comment-text">本地跑成本太高了。关键又慢。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">donkey_ever</span>
-                    <span class="comment-text">有钱买配置不如给seedance上供</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">kti1234</span>
-                    <span class="comment-text">随便啥电脑，直接用seedance就行了吧。
-开源模型跟seedance不是一个级别的东西吧</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">dreamplayer</span>
-                    <span class="comment-text">monei 发表于 2026-6-11 17:10
-要生成1分钟的1080*1920竖屏视频的话用什么软件?
-
-1080P 需要16G. 1min 持续一整个是不可能的用你的硬件，你需要制作很多10S左右的,然后拼接。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">natt</span>
-                    <span class="comment-text">seedance2.0</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
-        <div class="post" id="post-6">
-            <div class="post-header">
-                <span class="post-number">#7</span>
-                <span class="post-title" onclick="togglePost(6)">联通宽带移机-光猫设置-已解决，感谢各位！</span>
-                <span class="expand-icon" id="icon-6">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 Yaesu</span>
-                <span>📅 2026-6-11 02:02</span>
-                <span>💬 16 回复</span>
-                <span>👁️ 676 浏览</span>
-            </div>
-            <div class="post-body" id="body-6" style="display:none">
-            
-            <div class="post-content">
-                本帖最后由 Yaesu 于 2026-6-12 01:09 编辑
-
-请问各位，我是北京联通1000M宽带，光猫用的7015tv3，小黄鱼买的。搬家移机之后，有哪些参数需要修改，有知道的麻烦指导下怎么操作，有
-图参考更好了，感谢！
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (10条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">Yaesu</span>
-                    <span class="comment-text">本帖最后由 Yaesu 于 2026-6-12 01:09 编辑
-请问各位，我是北京联通1000M宽带，光猫用的7015tv3，小黄鱼买的。搬家移机之后，有哪些参数需要修改，有知道的麻烦指导下怎么操作，有
-图参考更好了，感谢！</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Yaesu</span>
-                    <span class="comment-text">联通的师傅已经上门办完移机了，现在用的光猫是运营商配的那个，但我不想用，还想用回7015tv3.</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">jie_chen</span>
-                    <span class="comment-text">你有问题可以去问装维师傅</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">beasy</span>
-                    <span class="comment-text">我觉得闲的没事干折腾光猫，真的是毫无收益的一件事</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Xun</span>
-                    <span class="comment-text">mac改成跟联通配的光猫一致就行了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">yin19991999</span>
-                    <span class="comment-text">我是都改成和原来一样，pon mac，还有还有个好几个其他mac，sn什么的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">nn1122</span>
-                    <span class="comment-text">先把7015tv3插上光纤看能否注册成功，然后不行的话那就是参数变了，比如LOID，vlan id等等，而运营商给你的光猫都是动态超密，你只能咸鱼花几块钱去查询后登陆联通光猫去查看具体参数</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">tangsongv</span>
-                    <span class="comment-text">送的是光猫拨号吗？ 还是路由拨号  如果是路由拨号的话就无所谓了.还有个如果你不是千兆或者现在送的光猫就是2.5G的就没差别了.小哥上面安装的时候客气点加个微信,很多事就好办了.</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">jiano</span>
-                    <span class="comment-text">先插上试试，不换城市应该不需要重新配置，而且绑定过老猫本身就没问题。换完如果联通找的话，到时候再咸鱼找人重新绑定一下新猫的mac sn之类的。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">sltianzg</span>
-                    <span class="comment-text">光猫复位后，链接光纤可以自动下发配置</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
-        <div class="post" id="post-7">
-            <div class="post-header">
-                <span class="post-number">#8</span>
-                <span class="post-title" onclick="togglePost(7)">V8发动机越来越少，结果风冷搞了V8出来，直接开箱</span>
-                <span class="expand-icon" id="icon-7">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 aeka</span>
                 <span>📅 2026-6-11 17:02</span>
-                <span>💬 13 回复</span>
-                <span>👁️ 1427 浏览</span>
+                <span>💬 15 回复</span>
+                <span>👁️ 1604 浏览</span>
             </div>
-            <div class="post-body" id="body-7" style="display:none">
+            <div class="post-body" id="body-5" style="display:none">
             
             <div class="post-content">
                 本帖最后由 aeka 于 2026-6-11 17:04 编辑
@@ -1092,19 +823,642 @@ IMG_20260601_141207.jpg (296.58 KB, 下载次数:
             </div>
         </div>
     
+        <div class="post" id="post-6">
+            <div class="post-header">
+                <span class="post-number">#7</span>
+                <span class="post-title" onclick="togglePost(6)">DIY无尘开放水冷系统记录分享</span>
+                <span class="expand-icon" id="icon-6">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 路人丙丁</span>
+                <span>📅 2026-6-11 09:44</span>
+                <span>💬 24 回复</span>
+                <span>👁️ 1004 浏览</span>
+            </div>
+            <div class="post-body" id="body-6" style="display:none">
+            
+            <div class="post-content">
+                第一贴！终于注册成功哩，先摆一个成品在这
+
+1781139559211.jpg (777.1 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-11 08:59 上传
+
+23年那会机器一直有一个问题非常困扰，就是一体水的风扇的动平衡好像有点问题，间隔一段时间就是发出“哒哒哒哒”的声音，碰一下改变转速共振变了就消失。这种时好时不好的节奏一直持续到有一天忍不了了，于是往旁边的空净机上一摆
+
+1000016409.jpg (529.44 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-11 09:03 上传
+
+严丝合缝啊！25cmx25cm的巨大无尘风扇，安静的睡眠，我来哩！
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/11/085923pooo3d94kkkkh4t8.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/090354csq3uttu7m43ftuv.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/094912ljqnsqtgs6nvvnpp.png" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (10条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">路人丙丁</span>
+                    <span class="comment-text">第一贴！终于注册成功哩，先摆一个成品在这
+1781139559211.jpg (777.1 KB, 下载次数:
+0)
+
+下载附件
+2026-6-11 08:59 上传
+23年那会机器一直有一个问题非常困扰，就是一体水的风扇的动平衡好像有点问题，间隔一段时间就是发出“哒哒哒哒”的声音，碰一下改变转速共振变了就消失。这种时好时不好的节奏一直持续到有一天忍不了了，于是往旁边的空净机上一摆
+1000016409.jpg (529.44 KB, 下载次数:
+0)
+
+下载附件
+2026-6-11 09:03 上传
+严丝合缝啊！25cmx25cm的巨大无尘风扇，安静的睡眠，我来哩！</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">huihuige</span>
+                    <span class="comment-text">空气净化器厂家还没出机箱产品线呢？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">路人丙丁</span>
+                    <span class="comment-text">于是就打算基于空净机做一台水冷系统∶只需要找一个25*25的冷排，或者买两个240冷排肩并肩，安装在出风口，再把整体机器架高留出出风口，空净机产出的巨量无尘空气会自然吹走下落灰尘，冷排更是接触不到一点灰尘，整体有望做成低维护需求机器（
+搜索一下之后，就找到了
+1000016411.png (553.15 KB, 下载次数:
+0)
+
+下载附件
+2026-6-11 09:49 上传
+空调冷排，铜管铝翅，尺寸刚好完美覆盖整个出风口（而且便宜），管径也是g1/4和常规水冷系统管径一模一样
+最大的麻烦解决之后，剩下只需要跟着管径一路接上就行。冷头选择by68，管子是硅胶软管，便宜水箱随便找了一个，水泵最开始随便挑了一个静音水泵（然而并不静音，管径也不对，最后还是上了各种转接口，后来也是折腾了好久），过滤是前置过滤器（30块钱可以买到0.04mm滤眼的，by68有0.08mm的缝，完全够用了）
+最后在</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">alibabatadie</span>
+                    <span class="comment-text">这是怼个大号空气净化器来吹散热么，厉害了。。要是换成个小空调，小心起飞。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">路人丙丁</span>
+                    <span class="comment-text">以防万一，防水肯定也得做一下。以框架为边界，把一边画成水区，另一边画成电器区，中间用塑料膜隔开。
+1781143165466.jpg (418.62 KB, 下载次数:
+0)
+
+下载附件
+2026-6-11 09:59 上传
+这个设计最近还真救了电脑一次，就上个月刚搬完家水箱扎带还没榜上，我家猫床头蹦迪把水箱打翻了，直接撒一地水，但是电脑整机，安然无恙！
+
+然后在这么些年的使用中，一个是把水箱换成紫外线杀菌管。。事实证明这操作非常之多余，根本没有什么植物能在水和重金属里面繁殖，反而是管结构导致进水在上面水位稍低就会发出落水声得不停加水，最后只能把管子斜放来降低噪声。
+另一个修改就是换了一个潜水泵，静音的，真的非常静音，就是口是1寸口，市面上甚至找不到g1/4转一寸的转接口最后靠1寸-4分，4分-1/4的转接接转接的方式给连上。这也导致灌水的时候气泡非常难排，进水速度跟不上水泵，非常南蚌</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">辣椒菌</span>
+                    <span class="comment-text">应该是解决了散热问题又无尘了，good idea</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">路人丙丁</span>
+                    <span class="comment-text">用了三年下来，可以说设计整体还是达到预期的。别说冷排不用清灰，整个机器带显卡只有最顶上的铝框架上面有一层非常非常细的少量灰，而且空净机全程开睡眠模式就能满足日常使用，不开空净机差不多两三个小时就会升到70度左右，但是不会过热，纯靠被动散热也能当个上网机使。夜间运行噪声基本可以忽略，大概就是偶尔有一点点水流咕噜一下的样子。
+
+过滤三年换了一次，基本堵死了，花三十买了一个新的，然后才发现有滤网卖，八块钱一个（?
+滤网换完直接重生，冷头应该完全没受影响（</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">yxxkz8</span>
+                    <span class="comment-text">牛逼特拉斯机，这么大的水冷箱</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">tiantian80</span>
+                    <span class="comment-text">牛逼，虽然大了点</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">qgdds</span>
+                    <span class="comment-text">会不会是这3个风扇拍频了
+给中间那个上个减速线会消除拍频</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-7">
+            <div class="post-header">
+                <span class="post-number">#8</span>
+                <span class="post-title" onclick="togglePost(7)">别看到WHEA 18就判CPU死刑！记录一次被显卡伪装的“CPU故障”全历程</span>
+                <span class="expand-icon" id="icon-7">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 红色狂想</span>
+                <span>📅 2026-6-11 22:03</span>
+                <span>💬 11 回复</span>
+                <span>👁️ 747 浏览</span>
+            </div>
+            <div class="post-body" id="body-7" style="display:none">
+            
+            <div class="post-content">
+                引言：估计我是全网第一个发现 WHEA 18 报错与CPU无关的用户
+
+各位基友、硬件大佬们好，今天替我一位朋友发个硬核的求证和讨论帖。
+
+大家都知道，AMD平台（尤其是Zen3）如果频繁遭遇 WHEA-Logger Event 18（通常伴随Cache Hierarchy Error和随机核心ID），网上的主流舆论基本都是“CPU缩缸/体质不行，直接Rip或售后”。但我朋友最近经历了一场极限排查，结果表明：WHEA 18报错，真不一定是CPU的锅，甚至可能是新显卡引起的！
+
+以下是他硬核的测试历程和倒逼真相的过程，供大家参考和讨论。
+
+一、 故障起因
+o 初始症状： 玩《三角洲行动》时突然掉帧，角色衣服贴图加载不出。随后某天开始，低负载待机时频繁死机并自动重启。
+o 日志查看： 系统日志疯狂弹 WHEA 18错误，且报错的核心ID完全随机，几乎每个核心都轮流报了一遍。
+
+二、 初始配置与测试平台
+o CPU： AMD Ryzen 9 5950X（2025年新出厂的 B2 步进）
+o 显卡： AMD Radeon RX 9070 XT
+o 主板： 微星 X470
+o 电源： 长城 G20（额定 2000W）
+
+朋友一开始也参考了网上的常规解法：恢复BIOS默认、定压定频、调整PBO等，但待机依然死机报错。按常理，B2步进的5950X不至于这么脆弱，而且不可能“全核心同时暴毙”，况且各种双烤压测一切正常。为了彻底揪出元凶，他开始了漫长的控制变量测试。
+
+三、 极限控制变量排查历程
+o 第1步：换CPU（排除CPU单体故障）
+
+测试： 换上闲置的 3700X + 9070 XT + X470 + G20
+
+结果： 依然报 WHEA 18 错误！ 同时显卡在设备管理器中被自动禁用。要知道这颗3700X以前搭配旧显卡用得好好的。两代CPU都报同一个错，CPU本身大概率是清白的。
+o
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (10条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">红色狂想</span>
+                    <span class="comment-text">引言：估计我是全网第一个发现 WHEA 18 报错与CPU无关的用户
+
+各位基友、硬件大佬们好，今天替我一位朋友发个硬核的求证和讨论帖。
+
+大家都知道，AMD平台（尤其是Zen3）如果频繁遭遇 WHEA-Logger Event 18（通常伴随Cache Hierarchy Error和随机核心ID），网上的主流舆论基本都是“CPU缩缸/体质不行，直接Rip或售后”。但我朋友最近经历了一场极限排查，结果表明：WHEA 18报错，真不一定是CPU的锅，甚至可能是新显卡引起的！
+
+以下是他硬核的测试历程和倒逼真相的过程，供大家参考和讨论。
+
+一、 故障起因
+o 初始症状： 玩《三角洲行动》时突然掉帧，角色衣服贴图加载不出。随后某天开始，低负载待机时频繁死机并自动重启。
+o 日志查看： 系统日志疯狂弹 WHEA 18错误，且报错的核心ID完全随机，几乎每个核心都轮流报了一遍。
+
+二、 初始配置与</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Eoniva</span>
+                    <span class="comment-text">角色衣服贴图加载不出是全果的吗</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">seasky002</span>
+                    <span class="comment-text">zen3 flck顶不住会有whea18的问题，降到1800 1600试试，如果问题依旧，那估计就是显卡或者pcie问题了。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">xuting77</span>
+                    <span class="comment-text">zen3都多少年了还全网第一 也太自信了吧 
+从农企开始整smartassmemory的活就有这种问题了好吧
+随便一搜到处都是
+https://linustechtips.com/topic/ ... tart-woes-on-my-pc/
+
+February 23, 2023
+In conclusion:
+The RX5600XT card is a lost cause, I still don't know what causes it to cause the WHEA 18 errors to this day, and neither does the repair shop.
+...
+I replaced both these cards with a GTX1070. No crashes ever since.</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">xuting77</span>
+                    <span class="comment-text">seasky002 发表于 2026-6-11 22:08
+zen3 flck顶不住会有whea18的问题，降到1800 1600试试，如果问题依旧，那估计就是显卡或者pcie问题了。 ...
+
+fclk一般是whea19
+18是核心或者pcie设备</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zh21688</span>
+                    <span class="comment-text">为什么9070 XT 那么便宜是有道理的！现在阶段只能买N卡！首发买！</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">futurejl</span>
+                    <span class="comment-text">大概率是显卡的金手指脏了，比如之前用手把玩过，弄了油脂上去。用橡皮擦大法试试。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">秦南瓜</span>
+                    <span class="comment-text">我之前玩天邦q1hy itx。那个板子插50系，能pcie5.0*16，3dmark 带宽测试没问题。但就是事件查看器会有一大堆whea18。然后我到bios把pcie速率限制到pcie4.0。就不报错了。。。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">RuthlessJie</span>
+                    <span class="comment-text">Eoniva 发表于 2026-6-11 22:06
+角色衣服贴图加载不出是全果的吗
+
+咋可能，没建模的东西又不能凭空生成出来</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">boreaskal</span>
+                    <span class="comment-text">CPU报错是WHEA 19 啊。。。
+WHEA 18的范围比较广，当然现在小龙虾啥的都比较牛逼，直接让AI调取下日志基本上就分析出原因了</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
         <div class="post" id="post-8">
             <div class="post-header">
                 <span class="post-number">#9</span>
-                <span class="post-title" onclick="togglePost(8)">3070超龙刷bois 求个教程在线等</span>
+                <span class="post-title" onclick="togglePost(8)">iphone手机关屏就断连wifi 求帮助</span>
                 <span class="expand-icon" id="icon-8">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 johnada</span>
+                <span>📅 2026-6-11 19:26</span>
+                <span>💬 5 回复</span>
+                <span>👁️ 426 浏览</span>
+            </div>
+            <div class="post-body" id="body-8" style="display:none">
+            
+            <div class="post-content">
+                本帖最后由 johnada 于 2026-6-11 19:54 编辑
+
+路由日志：
+Sep 13 11:55:50 wlceventd: wlceventd_proc_event(527): eth7: Auth CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
+Sep 13 11:55:50 wlceventd: wlceventd_proc_event(556): eth7: Assoc CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
+Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8), rssi:0
+Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8), rssi:0
+Sep 16 09:39:51 wlceventd: wlceventd_proc_event(527): eth7: Auth CC:4B:73:9A:90:A8, status: Successful (0), rssi:-21
+Sep 16 09:39:51 wlceventd: wlceven
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (6条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">johnada</span>
+                    <span class="comment-text">本帖最后由 johnada 于 2026-6-11 19:54 编辑
+路由日志：
+Sep 13 11:55:50 wlceventd: wlceventd_proc_event(527): eth7: Auth CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
+Sep 13 11:55:50 wlceventd: wlceventd_proc_event(556): eth7: Assoc CC:4B:73:9A:90:A8, status: Successful (0), rssi:-20
+Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated bec</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">qfmy11</span>
+                    <span class="comment-text">换路由器 绝对能解决</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zi8898</span>
+                    <span class="comment-text">连接邻居家或者饭店WiFi试试</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">ajyz</span>
+                    <span class="comment-text">几年前遇到过，还原iPhone网络可以临时解决，后来好像路由器固件更新后就好了。再之后换了其它品牌路由器，再没出现过</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">johnada</span>
+                    <span class="comment-text">ajyz 发表于 2026-6-11 21:21
+几年前遇到过，还原iPhone网络可以临时解决，后来好像路由器固件更新后就好了。再之后换了其它品牌路由器， ...
+
+可能是这个原因吧 等下一个固件 
+也不是说断线  只是日志一直这样 强迫症受不了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">wuhao0015</span>
+                    <span class="comment-text">本帖最后由 wuhao0015 于 2026-6-12 08:31 编辑
+Sep 13 11:55:53 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8), rssi:0
+Sep 16 09:39:54 wlceventd: wlceventd_proc_event(508): eth7: Disassoc CC:4B:73:9A:90:A8, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-9">
+            <div class="post-header">
+                <span class="post-number">#10</span>
+                <span class="post-title" onclick="togglePost(9)">我这12400F+8G*4 内存性能还能提升吗</span>
+                <span class="expand-icon" id="icon-9">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 电脑能吃吗</span>
+                <span>📅 2026-6-11 14:27</span>
+                <span>💬 10 回复</span>
+                <span>👁️ 633 浏览</span>
+            </div>
+            <div class="post-body" id="body-9" style="display:none">
+            
+            <div class="post-content">
+                本帖最后由 电脑能吃吗 于 2026-6-11 16:19 编辑
+
+RT 用着挺稳定的 显卡3080 10G 玩黑猴 美末2 都没啥问题
+2根和4根有%多少差距 稳定的话 有必要换成16g*2吗
+条子是金百达银爵 海力士DJR 这条子XMP配置是4000G2 我是用微星的Memory try it 设置的3600G1..
+
+360截图20260525222421600.jpg (179.96 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-11 14:27 上传
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/11/142716a6zianup6kjhiypi.jpg" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (9条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">电脑能吃吗</span>
+                    <span class="comment-text">本帖最后由 电脑能吃吗 于 2026-6-11 16:19 编辑
+RT 用着挺稳定的 显卡3080 10G 玩黑猴 美末2 都没啥问题
+2根和4根有%多少差距 稳定的话 有必要换成16g*2吗
+条子是金百达银爵 海力士DJR 这条子XMP配置是4000G2 我是用微星的Memory try it 设置的3600G1..
+360截图20260525222421600.jpg (179.96 KB, 下载次数:
+0)
+
+下载附件
+2026-6-11 14:27 上传</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">nekotheo</span>
+                    <span class="comment-text">四条也能开xmp的前提下，想不到要把4x8换成2x16会有什么变化</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">niqian6666163</span>
+                    <span class="comment-text">nekotheo 发表于 2026-6-11 14:44
+四条也能开xmp的前提下，想不到要把4x8换成2x16会有什么变化
+
+温度是一个因素，特别是幻光鸡这种厚马甲条子，四条挤在一起温度一起奔着60度，报错频率飙升。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">halu86</span>
+                    <span class="comment-text">LZ 需要的是换个可以超外频的主板超个5.2  爽歪歪</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">nekotheo</span>
+                    <span class="comment-text">niqian6666163 发表于 2026-6-11 15:17
+温度是一个因素，特别是幻光鸡这种厚马甲条子，四条挤在一起温度一起奔着60度，报错频率飙升。 ...
+
+这只是DDR4欸，而且楼主说了现在4x8挺稳定的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">niqian6666163</span>
+                    <span class="comment-text">nekotheo 发表于 2026-6-11 15:34
+这只是DDR4欸，而且楼主说了现在4x8挺稳定的
+
+D4温度高了也报错啊，我就是四条幻光🐔，现在这天气，随时都上55度，一到55度闪不闪退就看机魂心情了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">电脑能吃吗</span>
+                    <span class="comment-text">nekotheo 发表于 2026-6-11 14:44
+四条也能开xmp的前提下，想不到要把4x8换成2x16会有什么变化
+
+倒是没开XMP 用的微星主板的 monery try it
+XMP配置是4000 G2...</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">nekotheo</span>
+                    <span class="comment-text">电脑能吃吗 发表于 2026-6-11 16:16
+倒是没开XMP 用的微星主板的 monery try it
+XMP配置是4000 G2...
+
+我以为你是xmp 3600
+
+其实从4x8 3600换到2x16 4000，正常使用应该是几乎无感的。当然如果现在行情可以平换或者只加一点点钱倒是可以满足下强迫症，否则就别换了，主板自己超到3600已经不算低频率了。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">kataphractoi</span>
+                    <span class="comment-text">没问题就别瞎折腾。折腾内存意义不大</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-10">
+            <div class="post-header">
+                <span class="post-number">#11</span>
+                <span class="post-title" onclick="togglePost(10)">生成AI视频的话需要什么计算机配置?</span>
+                <span class="expand-icon" id="icon-10">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 monei</span>
+                <span>📅 2026-6-11 16:54</span>
+                <span>💬 19 回复</span>
+                <span>👁️ 1131 浏览</span>
+            </div>
+            <div class="post-body" id="body-10" style="display:none">
+            
+            <div class="post-content">
+                生成AI视频的话需要什么计算机配置? 另外问一下生成ai视频的话用什么软件?
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (10条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">monei</span>
+                    <span class="comment-text">生成AI视频的话需要什么计算机配置? 另外问一下生成ai视频的话用什么软件?</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">chigo_pink</span>
+                    <span class="comment-text">你又不本地跑大模型 ，不需要本地配置高，视频用seedance，充点钱，在服务器端跑的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Kage</span>
+                    <span class="comment-text">本地模型需要32GB内存和RTX5070起步，显存至少16GB</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">monei</span>
+                    <span class="comment-text">要生成1分钟的1080*1920竖屏视频的话用什么软件?</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">cloud</span>
+                    <span class="comment-text">wan和ltx烂的根本不能看 老老实实充值</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">kingsonhhl</span>
+                    <span class="comment-text">本地跑成本太高了。关键又慢。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">donkey_ever</span>
+                    <span class="comment-text">有钱买配置不如给seedance上供</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">kti1234</span>
+                    <span class="comment-text">随便啥电脑，直接用seedance就行了吧。
+开源模型跟seedance不是一个级别的东西吧</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">dreamplayer</span>
+                    <span class="comment-text">monei 发表于 2026-6-11 17:10
+要生成1分钟的1080*1920竖屏视频的话用什么软件?
+
+1080P 需要16G. 1min 持续一整个是不可能的用你的硬件，你需要制作很多10S左右的,然后拼接。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">natt</span>
+                    <span class="comment-text">seedance2.0</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-11">
+            <div class="post-header">
+                <span class="post-number">#12</span>
+                <span class="post-title" onclick="togglePost(11)">联通宽带移机-光猫设置-已解决，感谢各位！</span>
+                <span class="expand-icon" id="icon-11">▸</span>
+            </div>
+            <div class="post-meta">
+                <span>👤 Yaesu</span>
+                <span>📅 2026-6-11 02:02</span>
+                <span>💬 16 回复</span>
+                <span>👁️ 699 浏览</span>
+            </div>
+            <div class="post-body" id="body-11" style="display:none">
+            
+            <div class="post-content">
+                本帖最后由 Yaesu 于 2026-6-12 01:09 编辑
+
+请问各位，我是北京联通1000M宽带，光猫用的7015tv3，小黄鱼买的。搬家移机之后，有哪些参数需要修改，有知道的麻烦指导下怎么操作，有
+图参考更好了，感谢！
+            </div>
+            
+            
+            <div class="comments-section">
+                <div class="comments-title">💬 热门评论 (10条)</div>
+                
+                <div class="comment">
+                    <span class="comment-author">Yaesu</span>
+                    <span class="comment-text">本帖最后由 Yaesu 于 2026-6-12 01:09 编辑
+请问各位，我是北京联通1000M宽带，光猫用的7015tv3，小黄鱼买的。搬家移机之后，有哪些参数需要修改，有知道的麻烦指导下怎么操作，有
+图参考更好了，感谢！</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Yaesu</span>
+                    <span class="comment-text">联通的师傅已经上门办完移机了，现在用的光猫是运营商配的那个，但我不想用，还想用回7015tv3.</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">jie_chen</span>
+                    <span class="comment-text">你有问题可以去问装维师傅</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">beasy</span>
+                    <span class="comment-text">我觉得闲的没事干折腾光猫，真的是毫无收益的一件事</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Xun</span>
+                    <span class="comment-text">mac改成跟联通配的光猫一致就行了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">yin19991999</span>
+                    <span class="comment-text">我是都改成和原来一样，pon mac，还有还有个好几个其他mac，sn什么的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">nn1122</span>
+                    <span class="comment-text">先把7015tv3插上光纤看能否注册成功，然后不行的话那就是参数变了，比如LOID，vlan id等等，而运营商给你的光猫都是动态超密，你只能咸鱼花几块钱去查询后登陆联通光猫去查看具体参数</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">tangsongv</span>
+                    <span class="comment-text">送的是光猫拨号吗？ 还是路由拨号  如果是路由拨号的话就无所谓了.还有个如果你不是千兆或者现在送的光猫就是2.5G的就没差别了.小哥上面安装的时候客气点加个微信,很多事就好办了.</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">jiano</span>
+                    <span class="comment-text">先插上试试，不换城市应该不需要重新配置，而且绑定过老猫本身就没问题。换完如果联通找的话，到时候再咸鱼找人重新绑定一下新猫的mac sn之类的。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">sltianzg</span>
+                    <span class="comment-text">光猫复位后，链接光纤可以自动下发配置</span>
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>
+    
+        <div class="post" id="post-12">
+            <div class="post-header">
+                <span class="post-number">#13</span>
+                <span class="post-title" onclick="togglePost(12)">3070超龙刷bois 求个教程在线等</span>
+                <span class="expand-icon" id="icon-12">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 zyzhon1</span>
                 <span>📅 2026-6-11 12:14</span>
                 <span>💬 12 回复</span>
-                <span>👁️ 451 浏览</span>
+                <span>👁️ 460 浏览</span>
             </div>
-            <div class="post-body" id="body-8" style="display:none">
+            <div class="post-body" id="body-12" style="display:none">
             
             <div class="post-content">
                 因为更新新版驱动，各种无信号，想刷个新bios试试。BIOS地址有了，就是不晓得用啥工具，然后我的U是KF的，不影响刷吧
@@ -1177,19 +1531,19 @@ ps:不知道手机远程桌面能不能刷vbios，可以的话无备用亮机卡
             </div>
         </div>
     
-        <div class="post" id="post-9">
+        <div class="post" id="post-13">
             <div class="post-header">
-                <span class="post-number">#10</span>
-                <span class="post-title" onclick="togglePost(9)">618显卡价格节节高 有个被忽略的卡，或许是不错的替代品</span>
-                <span class="expand-icon" id="icon-9">▸</span>
+                <span class="post-number">#14</span>
+                <span class="post-title" onclick="togglePost(13)">618显卡价格节节高 有个被忽略的卡，或许是不错的替代品</span>
+                <span class="expand-icon" id="icon-13">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 寒蝉鸣泣</span>
                 <span>📅 2026-6-11 04:31</span>
                 <span>💬 32 回复</span>
-                <span>👁️ 2645 浏览</span>
+                <span>👁️ 2687 浏览</span>
             </div>
-            <div class="post-body" id="body-9" style="display:none">
+            <div class="post-body" id="body-13" style="display:none">
             
             <div class="post-content">
                 在5月18日 抖音还可以做到6400的追风5070ti 现在搞不到了，到6月价格越来越高。正好朋友问我想换张显卡，我到是有了个思路。
@@ -1267,19 +1621,19 @@ ps:不知道手机远程桌面能不能刷vbios，可以的话无备用亮机卡
             </div>
         </div>
     
-        <div class="post" id="post-10">
+        <div class="post" id="post-14">
             <div class="post-header">
-                <span class="post-number">#11</span>
-                <span class="post-title" onclick="togglePost(10)">我这个固态是不是快挂了</span>
-                <span class="expand-icon" id="icon-10">▸</span>
+                <span class="post-number">#15</span>
+                <span class="post-title" onclick="togglePost(14)">我这个固态是不是快挂了</span>
+                <span class="expand-icon" id="icon-14">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 farwish</span>
                 <span>📅 2026-6-11 10:32</span>
                 <span>💬 8 回复</span>
-                <span>👁️ 1060 浏览</span>
+                <span>👁️ 1087 浏览</span>
             </div>
-            <div class="post-body" id="body-10" style="display:none">
+            <div class="post-body" id="body-14" style="display:none">
             
             <div class="post-content">
                 本帖最后由 farwish 于 2026-6-11 10:33 编辑
@@ -1362,19 +1716,19 @@ ScreenShot_2026-06-11_103029_750.png (79.18 KB, 下载次数:
             </div>
         </div>
     
-        <div class="post" id="post-11">
+        <div class="post" id="post-15">
             <div class="post-header">
-                <span class="post-number">#12</span>
-                <span class="post-title" onclick="togglePost(11)">今年不是换笔记本的好时机，但我还是换了Y7000X</span>
-                <span class="expand-icon" id="icon-11">▸</span>
+                <span class="post-number">#16</span>
+                <span class="post-title" onclick="togglePost(15)">今年不是换笔记本的好时机，但我还是换了Y7000X</span>
+                <span class="expand-icon" id="icon-15">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 weiweiwitch</span>
                 <span>📅 2026-6-11 21:16</span>
                 <span>💬 2 回复</span>
-                <span>👁️ 342 浏览</span>
+                <span>👁️ 376 浏览</span>
             </div>
-            <div class="post-body" id="body-11" style="display:none">
+            <div class="post-body" id="body-15" style="display:none">
             
             <div class="post-content">
                 根本原因就是需求变了。原来的笔记本其实很够用，这次算是降级换本。但感觉做的选择是对的，因为笔记本到手后的确很好用。
@@ -1446,167 +1800,19 @@ ScreenShot_2026-06-11_103029_750.png (79.18 KB, 下载次数:
             </div>
         </div>
     
-        <div class="post" id="post-12">
+        <div class="post" id="post-16">
             <div class="post-header">
-                <span class="post-number">#13</span>
-                <span class="post-title" onclick="togglePost(12)">好奇问下伙伴们，rx9070 16g显卡相当于40 50系列N卡什么级别？</span>
-                <span class="expand-icon" id="icon-12">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 Wolverine</span>
-                <span>📅 2026-6-11 09:25</span>
-                <span>💬 39 回复</span>
-                <span>👁️ 1958 浏览</span>
-            </div>
-            <div class="post-body" id="body-12" style="display:none">
-            
-            <div class="post-content">
-                这次618给自己买了一个3450元京东自营的瀚凯9070 16g三风扇的，
-4k高刷显示器，最近只偶尔打打单机游戏，不是数毛党，是不是性价比还可以了？我看9070功耗就是200w出头，比9070xt低了100w，性能也就低10%不到，好像还不错。
-
-对了，我是matx机箱，显卡供电 要么2x8pin,要么12＋4哪种新接口，3x8pin肯定不考虑了。
-270k plus处理器，8000 c36 16GX2内存。(以前是9850x 3d，解压东西太慢了不喜欢换掉了)
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (10条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">Wolverine</span>
-                    <span class="comment-text">这次618给自己买了一个3450元京东自营的瀚凯9070 16g三风扇的，
-4k高刷显示器，最近只偶尔打打单机游戏，不是数毛党，是不是性价比还可以了？我看9070功耗就是200w出头，比9070xt低了100w，性能也就低10%不到，好像还不错。
-
-对了，我是matx机箱，显卡供电 要么2x8pin,要么12＋4哪种新接口，3x8pin肯定不考虑了。
-270k plus处理器，8000 c36 16GX2内存。(以前是9850x 3d，解压东西太慢了不喜欢换掉了)</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">万鬼Zero</span>
-                    <span class="comment-text">4070ti/5070</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Claudine</span>
-                    <span class="comment-text">显卡ts跑分对应关系：
-9070xt对应5080，大概3w多点，16G显存
-9070对应5070ti，大概2万7，16G显存
-9070gre对应5070，大概2万4，12G显存
-算上游戏优化和光追，再低半档，9070对应也是5070了
-实际表现就得看具体游戏有没有N卡优化和光追优化了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Gaiden</span>
-                    <span class="comment-text">综合来说，没有无脑开DLSS，插帧，以及附加功能的5070吧，但是显存是16G的。
-但是很神秘，我玩D4，同样设置，A卡16G会卡顿纹理要开低，但是N卡直接DLSS就行不会卡，5070和9070XT</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">fpd92axv</span>
-                    <span class="comment-text">看了楼上，原来5070比5070ti才弱10%？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">amenamen</span>
-                    <span class="comment-text">注意传统光栅农企反而白送你10%性能
-再就是软件上差距有点大，比如dlss1代可以说他在偷画质，但4.5就牛逼大了
-可玩性上农企家落后2-3年
-
-哦，农企家超分的热切换比老黄好，别的应该没啥了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">PPXG</span>
-                    <span class="comment-text">全默认的话和4070TIS的光栅性能比较近似，光追（不含路径追踪）要再弱10%左右</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">yahochina</span>
-                    <span class="comment-text">我的5070昨天到货了，上机跑了一番测试，3DMARK全面落后于我的7900XT，连光追都跑不赢，光栅更差的远，本想着 地平线6 可以愉快的开光追了，结果只能跑4K30帧，还提示显存不足！！就这个提示，我A卡重度用户从来没见过，4K+这个价位，首选还是9070XT吧，能把5070甩飞边子</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">gladiator</span>
-                    <span class="comment-text">fpd92axv 发表于 2026-6-11 09:49
-看了楼上，原来5070比5070ti才弱10%？
-
-差20%左右吧，5070 12G显存导致这卡舒适区在2K ，4K 下要帧数差不多DLSS得性能/超级性能+插帧，5070ti 16G是够大部分游戏4K DLSS平衡以上不开插帧也有个能接受的帧数70-90帧这样</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">LOLI反应堆</span>
-                    <span class="comment-text">本帖最后由 LOLI反应堆 于 2026-6-11 12:09 编辑
-光栅：4070ti super +5%
-光追：4070ti
-路径光追：4070</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
-        <div class="post" id="post-13">
-            <div class="post-header">
-                <span class="post-number">#14</span>
-                <span class="post-title" onclick="togglePost(13)">古董电脑废物利用 改装部署飞牛系统</span>
-                <span class="expand-icon" id="icon-13">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 bz888</span>
-                <span>📅 2026-6-11 15:53</span>
-                <span>💬 2 回复</span>
-                <span>👁️ 521 浏览</span>
-            </div>
-            <div class="post-body" id="body-13" style="display:none">
-            
-            <div class="post-content">
-                本帖最后由 bz888 于 2026-6-11 15:53 编辑
-
-家里翻出 一台闲置多年的dell Vostro 3470 老古董电脑和几块盘，现阶段nas 比较流行、加上飞牛团队研发的固件比较火，最主要免费、免费、免费 点赞，抽点时间 改装下玩玩（原机箱只能装一块3.5寸盘、一个sata 口）目前部署了 fnos 系统，安装了相册、影视、Docker 、和 roon 听听无损音乐，备份 手机全部照片、视频、和微信（自动上传）感觉挺好，目前未发现掉盘现象，唯一 前置改装80*80*25风扇全速（主板预留了FAN2焊点，只有正负电源能用无测速、智能控制）晚上有点噪音，硬盘有点动静能接受（设置1小时睡眠）购买水泥电阻5W-30R准备安排上，目前硬盘温度比较理想，室温 25-30度，除了机箱看着有点丑，使用目前未发现问题，功耗能接受，每度电0.5元，每年电费150元打住了，全家人均可用，方便不少，目前2块盘没法做 RAID，另准备一块10T盘 做冷备，防止重要数据丢失。
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (3条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">bz888</span>
-                    <span class="comment-text">本帖最后由 bz888 于 2026-6-11 15:53 编辑
-家里翻出 一台闲置多年的dell Vostro 3470 老古董电脑和几块盘，现阶段nas 比较流行、加上飞牛团队研发的固件比较火，最主要免费、免费、免费 点赞，抽点时间 改装下玩玩（原机箱只能装一块3.5寸盘、一个sata 口）目前部署了 fnos 系统，安装了相册、影视、Docker 、和 roon 听听无损音乐，备份 手机全部照片、视频、和微信（自动上传）感觉挺好，目前未发现掉盘现象，唯一 前置改装80*80*25风扇全速（主板预留了FAN2焊点，只有正负电源能用无测速、智能控制）晚上有点噪音，硬盘有点动静能接受（设置1小时睡眠）购买水泥电阻5W-30R准备安排上，目前硬盘温度比较理想，室温 25-30度，除了机箱看着有点丑，使用目前未发现问题，功耗能接受，每度电0.5元，每年电费150元打住了，全家人均可用，方便不少</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">gaoyi124</span>
-                    <span class="comment-text">够用够用,想当够用</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Xelento</span>
-                    <span class="comment-text">别放私密文件</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
-        <div class="post" id="post-14">
-            <div class="post-header">
-                <span class="post-number">#15</span>
-                <span class="post-title" onclick="togglePost(14)">AKG n5005美版什么价格入合适</span>
-                <span class="expand-icon" id="icon-14">▸</span>
+                <span class="post-number">#17</span>
+                <span class="post-title" onclick="togglePost(16)">AKG n5005美版什么价格入合适</span>
+                <span class="expand-icon" id="icon-16">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 yx先谢郭嘉</span>
                 <span>📅 2026-6-11 11:07</span>
                 <span>💬 6 回复</span>
-                <span>👁️ 718 浏览</span>
+                <span>👁️ 734 浏览</span>
             </div>
-            <div class="post-body" id="body-14" style="display:none">
+            <div class="post-body" id="body-16" style="display:none">
             
             <div class="post-content">
                 给台式机打游戏用，旧的SE535壳都发黄了，打算换个耳塞。
@@ -1664,19 +1870,19 @@ AKG n5005美版听说打骨折了，这个耳机怎么样，多少米值得入</
             </div>
         </div>
     
-        <div class="post" id="post-15">
+        <div class="post" id="post-17">
             <div class="post-header">
-                <span class="post-number">#16</span>
-                <span class="post-title" onclick="togglePost(15)">5070 pcie3.0 16x够用吗？</span>
-                <span class="expand-icon" id="icon-15">▸</span>
+                <span class="post-number">#18</span>
+                <span class="post-title" onclick="togglePost(17)">5070 pcie3.0 16x够用吗？</span>
+                <span class="expand-icon" id="icon-17">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 realxwq316</span>
                 <span>📅 2026-6-11 10:31</span>
                 <span>💬 9 回复</span>
-                <span>👁️ 1093 浏览</span>
+                <span>👁️ 1103 浏览</span>
             </div>
-            <div class="post-body" id="body-15" style="display:none">
+            <div class="post-body" id="body-17" style="display:none">
             
             <div class="post-content">
                 主板是x570i，其实原生支持pcie4.0，但是g210的机箱默认是带pcie3.0的延长线，切只支持竖装显卡。
@@ -1751,19 +1957,19 @@ AKG n5005美版听说打骨折了，这个耳机怎么样，多少米值得入</
             </div>
         </div>
     
-        <div class="post" id="post-16">
+        <div class="post" id="post-18">
             <div class="post-header">
-                <span class="post-number">#17</span>
-                <span class="post-title" onclick="togglePost(16)">有支持EDID欺骗的DP转HDMI吗？</span>
-                <span class="expand-icon" id="icon-16">▸</span>
+                <span class="post-number">#19</span>
+                <span class="post-title" onclick="togglePost(18)">有支持EDID欺骗的DP转HDMI吗？</span>
+                <span class="expand-icon" id="icon-18">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Brunt1104</span>
                 <span>📅 2026-6-11 00:00</span>
                 <span>💬 9 回复</span>
-                <span>👁️ 616 浏览</span>
+                <span>👁️ 621 浏览</span>
             </div>
-            <div class="post-body" id="body-16" style="display:none">
+            <div class="post-body" id="body-18" style="display:none">
             
             <div class="post-content">
                 本帖最后由 Brunt1104 于 2026-6-12 00:08 编辑
@@ -1828,19 +2034,19 @@ AKG n5005美版听说打骨折了，这个耳机怎么样，多少米值得入</
             </div>
         </div>
     
-        <div class="post" id="post-17">
+        <div class="post" id="post-19">
             <div class="post-header">
-                <span class="post-number">#18</span>
-                <span class="post-title" onclick="togglePost(17)">请教风扇设置</span>
-                <span class="expand-icon" id="icon-17">▸</span>
+                <span class="post-number">#20</span>
+                <span class="post-title" onclick="togglePost(19)">请教风扇设置</span>
+                <span class="expand-icon" id="icon-19">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 eaglerock</span>
                 <span>📅 2026-6-11 13:45</span>
                 <span>💬 15 回复</span>
-                <span>👁️ 500 浏览</span>
+                <span>👁️ 513 浏览</span>
             </div>
-            <div class="post-body" id="body-17" style="display:none">
+            <div class="post-body" id="body-19" style="display:none">
             
             <div class="post-content">
                 285K搭配酷里奥的双塔风冷散热器P60T Pro，主板是ROG的Z890itx，乔思伯T6机箱横置（风道很短）
@@ -1931,19 +2137,19 @@ CPU风扇向后吹
             </div>
         </div>
     
-        <div class="post" id="post-18">
+        <div class="post" id="post-20">
             <div class="post-header">
-                <span class="post-number">#19</span>
-                <span class="post-title" onclick="togglePost(18)">旧贴看不了，想看机箱理线的帖子，看不了</span>
-                <span class="expand-icon" id="icon-18">▸</span>
+                <span class="post-number">#21</span>
+                <span class="post-title" onclick="togglePost(20)">旧贴看不了，想看机箱理线的帖子，看不了</span>
+                <span class="expand-icon" id="icon-20">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 lq521</span>
                 <span>📅 2026-6-11 10:00</span>
                 <span>💬 7 回复</span>
-                <span>👁️ 726 浏览</span>
+                <span>👁️ 736 浏览</span>
             </div>
-            <div class="post-body" id="body-18" style="display:none">
+            <div class="post-body" id="body-20" style="display:none">
             
             <div class="post-content">
                 旧贴永远看不了了？ 还是说我等级太低没有阅读权限？
@@ -2002,19 +2208,19 @@ CPU风扇向后吹
             </div>
         </div>
     
-        <div class="post" id="post-19">
+        <div class="post" id="post-21">
             <div class="post-header">
-                <span class="post-number">#20</span>
-                <span class="post-title" onclick="togglePost(19)">【非技术向】放一个各个热门AI显卡计算能力测试/预估的数值</span>
-                <span class="expand-icon" id="icon-19">▸</span>
+                <span class="post-number">#22</span>
+                <span class="post-title" onclick="togglePost(21)">【非技术向】放一个各个热门AI显卡计算能力测试/预估的数值</span>
+                <span class="expand-icon" id="icon-21">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 Illidan2004</span>
                 <span>📅 2026-6-11 12:18</span>
                 <span>💬 3 回复</span>
-                <span>👁️ 498 浏览</span>
+                <span>👁️ 508 浏览</span>
             </div>
-            <div class="post-body" id="body-19" style="display:none">
+            <div class="post-body" id="body-21" style="display:none">
             
             <div class="post-content">
                 本帖最后由 Illidan2004 于 2026-6-11 12:36 编辑
@@ -2087,19 +2293,19 @@ ruanjianxuqiu 发表于 2026-6-11 12:24
             </div>
         </div>
     
-        <div class="post" id="post-20">
+        <div class="post" id="post-22">
             <div class="post-header">
-                <span class="post-number">#21</span>
-                <span class="post-title" onclick="togglePost(20)">关于打印机连供</span>
-                <span class="expand-icon" id="icon-20">▸</span>
+                <span class="post-number">#23</span>
+                <span class="post-title" onclick="togglePost(22)">关于打印机连供</span>
+                <span class="expand-icon" id="icon-22">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 缓了缓</span>
                 <span>📅 2026-6-11 14:03</span>
                 <span>💬 0 回复</span>
-                <span>👁️ 295 浏览</span>
+                <span>👁️ 304 浏览</span>
             </div>
-            <div class="post-body" id="body-20" style="display:none">
+            <div class="post-body" id="body-22" style="display:none">
             
             <div class="post-content">
                 用的佳能改装的连供，第一次买的是原装墨盒改的，这台墨水去提醒做的非常好
@@ -2141,19 +2347,19 @@ ruanjianxuqiu 发表于 2026-6-11 12:24
             </div>
         </div>
     
-        <div class="post" id="post-21">
+        <div class="post" id="post-23">
             <div class="post-header">
-                <span class="post-number">#22</span>
-                <span class="post-title" onclick="togglePost(21)">放点数据辟谣下关于RTX 6000D离谱的谣言</span>
-                <span class="expand-icon" id="icon-21">▸</span>
+                <span class="post-number">#24</span>
+                <span class="post-title" onclick="togglePost(23)">放点数据辟谣下关于RTX 6000D离谱的谣言</span>
+                <span class="expand-icon" id="icon-23">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 港城钢铁侠</span>
                 <span>📅 2026-6-11 01:25</span>
                 <span>💬 30 回复</span>
-                <span>👁️ 1701 浏览</span>
+                <span>👁️ 1708 浏览</span>
             </div>
-            <div class="post-body" id="body-21" style="display:none">
+            <div class="post-body" id="body-23" style="display:none">
             
             <div class="post-content">
                 本帖最后由 港城钢铁侠 于 2026-6-11 01:37 编辑
@@ -2311,19 +2517,19 @@ RTX 6000是Turing，也就是20系的卡了，我前几个月还搞了4张玩了
             </div>
         </div>
     
-        <div class="post" id="post-22">
+        <div class="post" id="post-24">
             <div class="post-header">
-                <span class="post-number">#23</span>
-                <span class="post-title" onclick="togglePost(22)">要不要趁 618 换掉现在 nas 上的电源</span>
-                <span class="expand-icon" id="icon-22">▸</span>
+                <span class="post-number">#25</span>
+                <span class="post-title" onclick="togglePost(24)">要不要趁 618 换掉现在 nas 上的电源</span>
+                <span class="expand-icon" id="icon-24">▸</span>
             </div>
             <div class="post-meta">
                 <span>👤 mao0312</span>
                 <span>📅 2026-6-11 09:59</span>
                 <span>💬 2 回复</span>
-                <span>👁️ 488 浏览</span>
+                <span>👁️ 496 浏览</span>
             </div>
-            <div class="post-body" id="body-22" style="display:none">
+            <div class="post-body" id="body-24" style="display:none">
             
             <div class="post-content">
                 乔思伯 n6 + i5-8500 +b360m +intel dg1 +7hdd+2ssd
@@ -2379,198 +2585,8 @@ n6 说明书上说最好是4 个硬盘供电口都是独立的，不能串联
             </div>
         </div>
     
-        <div class="post" id="post-23">
-            <div class="post-header">
-                <span class="post-number">#24</span>
-                <span class="post-title" onclick="togglePost(23)">升级了群晖备份套件需不要重新制作还原U盘？</span>
-                <span class="expand-icon" id="icon-23">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 ccx1234</span>
-                <span>📅 2026-6-11 08:55</span>
-                <span>💬 1 回复</span>
-                <span>👁️ 210 浏览</span>
-            </div>
-            <div class="post-body" id="body-23" style="display:none">
-            
-            <div class="post-content">
-                升级了群晖Synology Active Backup for Business套件需不要重新使用Synology Restore Media Creator制作还原U盘？
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (2条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">ccx1234</span>
-                    <span class="comment-text">升级了群晖Synology Active Backup for Business套件需不要重新使用Synology Restore Media Creator制作还原U盘？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">mosigan</span>
-                    <span class="comment-text">应该不用的，理论上硬件没变Pe启动环境不需要调整，你把新版abb里的还原工具软件复制到U盘上覆盖旧版本试试，我都是直接找个系统服务比较完整的pe镜像直接运行还原程序的</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
-        <div class="post" id="post-24">
-            <div class="post-header">
-                <span class="post-number">#25</span>
-                <span class="post-title" onclick="togglePost(24)">老骥伏枥 志在千里 - Quadro P620</span>
-                <span class="expand-icon" id="icon-24">▸</span>
-            </div>
-            <div class="post-meta">
-                <span>👤 zzc02063</span>
-                <span>📅 2026-6-11 09:15</span>
-                <span>💬 6 回复</span>
-                <span>👁️ 575 浏览</span>
-            </div>
-            <div class="post-body" id="body-24" style="display:none">
-            
-            <div class="post-content">
-                本帖最后由 zzc02063 于 2026-6-11 09:42 编辑
-
-话说 三年前 从朋友那儿半买半顺 弄了台1U的服务器
-
-CPU：至强E52407 * 2（LGA1356）
-主板：英特尔S2400SC
-内存：金士顿 64G D3 1066 ECC（16*4）
-电源：全汉 FSP 400W 1U 单电
-
-微信图片_20260611080855_293_84.jpg (204.78 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-11 09:12 上传
-
-也不知道搞来干嘛 反正一贯多吃多占 先拿了再说
-后来闲着没事儿 找了块128G的闪迪 装了个win10 扔公司当文件服务器使 
-前年太阳耀斑 一按电源 peng~~~~ 电源挂了 只能小黄鱼又搞了一个~
-
-ScreenShot_2026-06-11_090604_700.png (797.97 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-11 09:12 上传
-
-后来朋友陆陆续续给了个勤诚的2U机箱 一块Adaptec阵列卡 又陆陆续续找了几块3T硬盘
-正式搞成文件服务器了
-
-最近有开始闲 没啥也捣鼓的 只能捣鼓这老古董了
-因为平时有达芬奇剪辑的需求 就想能不能加块显卡 做个转码
-
-然后 淘宝搜了搜 发现了P620 半高单槽 还不用外接供电 因为这机器电源已经没有额外的线可以插了
-小黄鱼本地收了一张 淘宝又买了四个8025的AVC风扇换上 瞬间清净了（以前勤诚原机带的建准 调速线剪了 只能最高速 巨吵无比）
-
-微信图片_20260611085659_302_84.jpg (274.33 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-11 09:12 上传
-
-微信图片_20260611085657_300_84.jpg (685.11 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-11 0
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/11/091206ccx2iua6pwape24e.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/091204toyyinq2ndzxnfzt.png" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/11/091210y9e6kr8p9uokh8eo.jpg" loading="lazy" onerror="this.style.display='none'" />
-            </div>
-            
-            
-            <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (7条)</div>
-                
-                <div class="comment">
-                    <span class="comment-author">zzc02063</span>
-                    <span class="comment-text">本帖最后由 zzc02063 于 2026-6-11 09:42 编辑
-话说 三年前 从朋友那儿半买半顺 弄了台1U的服务器
-CPU：至强E52407 * 2（LGA1356）
-主板：英特尔S2400SC
-内存：金士顿 64G D3 1066 ECC（16*4）
-电源：全汉 FSP 400W 1U 单电
-微信图片_20260611080855_293_84.jpg (204.78 KB, 下载次数:
-0)
-
-下载附件
-2026-6-11 09:12 上传
-也不知道搞来干嘛 反正一贯多吃多占 先拿了再说
-后来闲着没事儿 找了块128G的闪迪 装了个win10 扔公司当文件服务器使 
-前年太阳耀斑 一按电源 peng~~~~ 电源挂了 只能小黄鱼又搞了一个~
-ScreenShot_2026-06-11_090604_700.png (797.97 KB, 下载次数:
-0)
-
-下载附件
-2026</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zzcgh1928</span>
-                    <span class="comment-text">这个卡，前几天我给老板娘机器更新4K高刷显示器刚买了一块，用DP线自定义分辨率可以4K100Hz
-
-尝试自定义4K120Hz没成功，不过理论DP1.4的带宽完全可以支持，不知道是驱动版本问题还是显示器不支持</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">against</span>
-                    <span class="comment-text">cpu百分百，显卡才6%，明显你cpu太弱了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zzc02063</span>
-                    <span class="comment-text">against 发表于 2026-6-11 09:29
-cpu百分百，显卡才6%，明显你cpu太弱了
-
-因为 渲染的时候 选择的是“原生”，用CPU压
-也试了显卡压 没截图~</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zzc02063</span>
-                    <span class="comment-text">zzcgh1928 发表于 2026-6-11 09:24
-这个卡，前几天我给老板娘机器更新4K高刷显示器刚买了一块，用DP线自定义分辨率可以4K100Hz
-
-尝试自定义4K1 ...
-
-哥们你是直接用miniDP转DP线 还是 用转接头 再转DP？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zzcgh1928</span>
-                    <span class="comment-text">zzc02063 发表于 2026-6-11 09:44
-哥们你是直接用miniDP转DP线 还是 用转接头 再转DP？
-
-miniDP转DP线，需要高刷的话可能需要自己设置自定义分辨率</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zzc02063</span>
-                    <span class="comment-text">zzcgh1928 发表于 2026-6-11 09:53
-miniDP转DP线，需要高刷的话可能需要自己设置自定义分辨率
-
-OK
-
-谢</span>
-                </div>
-                
-            </div>
-            
-            
-            </div>
-        </div>
-    
         <div class="footer">
-            <p>由 OpenClaw 自动生成 · 2026/6/12 09:05:08</p>
+            <p>由 OpenClaw 自动生成 · 2026/6/12 10:04:42</p>
         </div>
     </div>
     <script>
