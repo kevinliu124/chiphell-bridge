@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiphell 每日精选 - 2026/6/14</title>
+    <title>Chiphell 每日精选 - 2026/6/15</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
@@ -184,37 +184,40 @@
     <div class="container">
         <div class="header">
             <h1>📰 Chiphell 每日精选</h1>
-            <p>2026/6/14 · 共 25 篇帖子</p>
+            <p>2026/6/15 · 共 25 篇帖子</p>
         </div>
         
         <div class="post" id="post-0">
             <div class="post-header">
                 <span class="post-number">#1</span>
-                <span class="post-title" onclick="togglePost(0)">一个关于diy无线路由器的想法</span>
+                <span class="post-title" onclick="togglePost(0)">想做一个pcie5.0*16的pcb显卡转接卡，然后好像挖了个神坑，填上成本不小啊</span>
                 <span class="expand-icon" id="icon-0">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 大敛猫</span>
-                <span>📅 2026-6-14 17:57</span>
-                <span>💬 12 回复</span>
-                <span>👁️ 664 浏览</span>
+                <span>👤 lxf1597</span>
+                <span>📅 2026-6-15 02:25</span>
+                <span>💬 27 回复</span>
+                <span>👁️ 1045 浏览</span>
             </div>
             <div class="post-body" id="body-0" style="display:none">
             
             <div class="post-content">
-                介于WiFi 发展的速度太快 想尝试一下 DIY无线路由
+                本帖最后由 lxf1597 于 2026-6-15 06:37 编辑
 
-想法是ARM搭配pcie版本的无线网卡 这样每次更新只需要更换网卡就可以了
+【腾讯文档】PCIe5.0_Riser_项目总编文档_v3.3
+https://docs.qq.com/doc/DSmtmZHJFU0JDZ2hz
+画线画刚开始，就觉得眼花了，这好像给自己挖了个神坑
 
-固件的话开源 openwrt
+20260615022315_14_347.png (214.08 KB, 下载次数:
+0)
 
-现在 相比于 品牌路由的问题是
+下载附件
 
-固件的稳定性
-
-硬件的性能差距
-
-希望各位大佬给点建议！！！！
+2026-6-15 02:25 上传
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/022536mqdzshxxr6t6ddmc.png" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
@@ -222,87 +225,75 @@
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">大敛猫</span>
-                    <span class="comment-text">介于WiFi 发展的速度太快 想尝试一下 DIY无线路由
+                    <span class="comment-author">lxf1597</span>
+                    <span class="comment-text">本帖最后由 lxf1597 于 2026-6-15 06:37 编辑
+【腾讯文档】PCIe5.0_Riser_项目总编文档_v3.3
+https://docs.qq.com/doc/DSmtmZHJFU0JDZ2hz
+画线画刚开始，就觉得眼花了，这好像给自己挖了个神坑
+20260615022315_14_347.png (214.08 KB, 下载次数:
+0)
 
-想法是ARM搭配pcie版本的无线网卡 这样每次更新只需要更换网卡就可以了
-固件的话开源 openwrt
+下载附件
+2026-6-15 02:25 上传</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zhjook</span>
+                    <span class="comment-text">做个东西容易，但是 pcie5.0这要求要达标 太难了，6层板起步 ，差分和时钟最好走 内层 屏蔽好些，转接板应该走的通，就 整个纯直通，别整哪些乱七八糟的，准废</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">lxf1597</span>
+                    <span class="comment-text">本帖最后由 lxf1597 于 2026-6-15 02:49 编辑
+zhjook 发表于 2026-6-15 02:34
+做个东西容易，但是 pcie5.0这要求要达标 太难了，6层板起步 ，差分和时钟最好走 内层 屏蔽好些，转接板应 ...
+是啊，自己做做pcie5.0就知道为啥pcie6.0连amd都发怵了。
+做retimer主要还是考虑回头整个P6000啥的，这玩意太娇贵了，就是retimer的datasheet太难搞到</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zhjook</span>
+                    <span class="comment-text">lxf1597 发表于 2026-6-15 02:48
+是啊，自己做做pcie5.0就知道为啥pcie6.0连amd都发怵了。
+做retimer主要还是考虑回头整个P6000啥的，这玩 ...
 
-现在 相比于 品牌路由的问题是
-固件的稳定性
+retimer  调死 ，很难搞定，不同主板 不同卡  本身就有差异，si完整性问题  叠加 搞死</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Neo_Granzon</span>
+                    <span class="comment-text">家用主板PCIE Gen5直插都已经没多少信号完整性余量了，你这转接板做得再好也只能给服务器用。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">lxf1597</span>
+                    <span class="comment-text">zhjook 发表于 2026-6-15 04:03
+retimer  调死 ，很难搞定，不同主板 不同卡  本身就有差异，si完整性问题  叠加 搞死 ...
 
-硬件的性能差距
+还有PI和散热呢！大坑后续等着的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">lxf1597</span>
+                    <span class="comment-text">Neo_Granzon 发表于 2026-6-15 05:01
+家用主板PCIE Gen5直插都已经没多少信号完整性余量了，你这转接板做得再好也只能给服务器用。 ...
 
-希望各位大佬给点建议！！！！</span>
+嘛，生命在于折腾吗，哈哈哈，看着现在各种软件转接……总得有点变化，LR-link其实有类似产品，但是他们往拆分走存储方向去做的retimer，和我这需求和想法就不是一路。。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">hcym</span>
-                    <span class="comment-text">都是前人走过的歪路
-网卡根本不适合发射，好比耳朵和喉咙倒置
-其他arm，x86都随意，后面接个十块钱的斐讯k2或者加点钱k2p，我的k2p在线有十年了，前面的机器换了无数个</span>
+                    <span class="comment-author">xspeng</span>
+                    <span class="comment-text">术业有专攻，我啥也看不懂</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">大敛猫</span>
-                    <span class="comment-text">hcym 发表于 2026-6-14 18:04
-都是前人走过的歪路
-网卡根本不适合发射，好比耳朵和喉咙倒置
-其他arm，x86都随意，后面接个十块钱的斐讯k2 ...
-
-非常感谢！！~~~~~~果然还是有它的局限性 
-只是没想到 局限居然在 射频芯片上</span>
+                    <span class="comment-author">cpstar</span>
+                    <span class="comment-text">先不说信号损失的问题，非要用板子？用线不行？TB上现成一大堆。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">yin19991999</span>
-                    <span class="comment-text">网卡信号稳定性和范围贼差</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">大敛猫</span>
-                    <span class="comment-text">yin19991999 发表于 2026-6-14 18:14
-网卡信号稳定性和范围贼差
-
-非常感谢</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">采花郎</span>
-                    <span class="comment-text">打无线模块的主意，我看还不如琢磨接一个好的 AP
-无线路由可以用x86也可以 ARM硬路由，自由度高
-无线部分改 AP，可以随自己用 Wifi6 还是 7，自由度也高
-你设想更换无线模块，模块和接口完全没有标准化。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">大敛猫</span>
-                    <span class="comment-text">采花郎 发表于 2026-6-14 18:29
-打无线模块的主意，我看还不如琢磨接一个好的 AP
-无线路由可以用x86也可以 ARM硬路由，自由度高
-无线部分改 ...
-
-也是 AP的选择面还广。。。。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">RyanLR</span>
-                    <span class="comment-text">“网卡根本不适合发射” ----你可以尝试以下，笔记本开无线AP，手机接入，试试水
-
-我当前就跑的这种方式，自我感觉良好：
-联想小主机，开无线热点，手机单终端接入看片</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">蓝影</span>
-                    <span class="comment-text">劝你老实点别折腾了  你对无线的了解很多么？
-你玩玩软路由 openwrt 还挺简单
-无线需要的知识就太难了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">ghwwx</span>
-                    <span class="comment-text">用过x86 openwrt+笔记本无线网卡. 信号比普通的路由器差太多。</span>
+                    <span class="comment-author">aixunxian</span>
+                    <span class="comment-text">如果是直通的，打嘉立创那种普通FR4还不如延长线方案，自己玩玩的倒也无所谓，但是是做出产品卖的话还是整点好的吧，起码是松下M6以上或者同等板材，有条件再上个背钻让差分走内层</span>
                 </div>
                 
             </div>
@@ -314,97 +305,84 @@
         <div class="post" id="post-1">
             <div class="post-header">
                 <span class="post-number">#2</span>
-                <span class="post-title" onclick="togglePost(1)">中年老登的DIY之旅要到尽头了么？</span>
+                <span class="post-title" onclick="togglePost(1)">镁光新颗粒，上8000还挺轻松</span>
                 <span class="expand-icon" id="icon-1">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 wspjy</span>
-                <span>📅 2026-6-14 00:39</span>
-                <span>💬 146 回复</span>
-                <span>👁️ 3933 浏览</span>
+                <span>👤 whb86615</span>
+                <span>📅 2026-6-15 23:45</span>
+                <span>💬 4 回复</span>
+                <span>👁️ 453 浏览</span>
             </div>
             <div class="post-body" id="body-1" style="display:none">
             
             <div class="post-content">
-                如题，今天把新到的主板CPU内存装到老机箱里（Z890M FORCE DUO X+250K+光威(16GBx2) DDR5 6800）；
+                今天刚到手一对，拿AM5分频随便跑了一下8000C36，技嘉四槽板，电压温度很低，TRFC貌似不怎么能压。
 
-按下电源后，听声音是正常启动的动静，但显示器无任何画面，观察主板，发现有个红灯，应该是CPU的灯。
-把散热器和CPU拆下来又重新装了一遍，还是不行。
-难道说，我这个中年老登，终于是连DIY装机都做不好了吗？
+屏幕截图 2026-06-15 210631.jpg (218.45 KB, 下载次数:
+0)
 
-PS:  deepseek说是CPU自检没过，问题是我没听到任何报错声响，把内存拔下只插一条也试了，没变化。
+下载附件
+
+2026-6-15 23:37 上传
+
+屏幕截图 2026-06-15 233341.jpg (264.44 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 23:37 上传
+
+站里有评测，也不算新颗粒，去年就有了
+https://www.chiphell.com/article-34513-1.html
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/233746vevr4jakr8olrvka.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/233750w6cqm4rrbz5d9pp8.jpg" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (10条)</div>
+                <div class="comments-title">💬 热门评论 (5条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">wspjy</span>
-                    <span class="comment-text">如题，今天把新到的主板CPU内存装到老机箱里（Z890M FORCE DUO X+250K+光威(16GBx2) DDR5 6800）；
+                    <span class="comment-author">whb86615</span>
+                    <span class="comment-text">今天刚到手一对，拿AM5分频随便跑了一下8000C36，技嘉四槽板，电压温度很低，TRFC貌似不怎么能压。
+屏幕截图 2026-06-15 210631.jpg (218.45 KB, 下载次数:
+0)
 
-按下电源后，听声音是正常启动的动静，但显示器无任何画面，观察主板，发现有个红灯，应该是CPU的灯。
-把散热器和CPU拆下来又重新装了一遍，还是不行。
-难道说，我这个中年老登，终于是连DIY装机都做不好了吗？
+下载附件
+2026-6-15 23:37 上传
+屏幕截图 2026-06-15 233341.jpg (264.44 KB, 下载次数:
+0)
 
-PS:  deepseek说是CPU自检没过，问题是我没听到任何报错声响，把内存拔下只插一条也试了，没变化。</span>
+下载附件
+2026-6-15 23:37 上传
+站里有评测，也不算新颗粒，去年就有了
+https://www.chiphell.com/article-34513-1.html</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">casc</span>
-                    <span class="comment-text">cpu没插好吧再动动</span>
+                    <span class="comment-author">Cn-Fix</span>
+                    <span class="comment-text">能效怎么只有6W左右啊</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">wspjy</span>
-                    <span class="comment-text">casc 发表于 2026-6-14 00:44
-cpu没插好吧再动动
+                    <span class="comment-author">megathread</span>
+                    <span class="comment-text">1.275VDD？感觉可以买MU股票了 DDR4时期好像镁光也是后期e-die突然变牛</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">可以抱的萝卜</span>
+                    <span class="comment-text">Cn-Fix 发表于 2026-6-15 23:53
+能效怎么只有6W左右啊
 
-防呆对准了啊，放进凹槽就压盖了，能有什么出错的地方？</span>
+FCLK 2000是这样的</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">zhjook</span>
-                    <span class="comment-text">看一下 CPU底座 针脚是否出问题了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">wspjy</span>
-                    <span class="comment-text">zhjook 发表于 2026-6-14 00:47
-看一下 CPU底座 针脚是否出问题了
-
-这个算是吗？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">天空中的污渍</span>
-                    <span class="comment-text">建议先更新下ＢＩＯＳ</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">nanjiqq</span>
-                    <span class="comment-text">FORCE DUO X 新出的不更新BIOS不应该点不亮，双8PIN CPU供电插满了没，电源是老的？是不是电源问题</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">feikaras</span>
-                    <span class="comment-text">装机没测试完怎么会进机箱的。肯定是最小开机组件测试一遍再说。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">niqian6666163</span>
-                    <span class="comment-text">feikaras 发表于 2026-6-14 02:16
-装机没测试完怎么会进机箱的。肯定是最小开机组件测试一遍再说。
-
-我24年也吃了这亏，直接往机箱里一顿怼，结果点不亮，来自中登的自信</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">haotliu</span>
-                    <span class="comment-text">wspjy 发表于 2026-6-14 00:49
-这个算是吗？
-
-我去，你这看着像掉焊盘啊，刚买的时候就这样吗？</span>
+                    <span class="comment-author">nApoleon</span>
+                    <span class="comment-text">为什么是65528…</span>
                 </div>
                 
             </div>
@@ -416,46 +394,118 @@ cpu没插好吧再动动
         <div class="post" id="post-2">
             <div class="post-header">
                 <span class="post-number">#3</span>
-                <span class="post-title" onclick="togglePost(2)">Linux 修补QL41262驱动</span>
+                <span class="post-title" onclick="togglePost(2)">50年入**了，入了个5090弟中弟魔鹰</span>
                 <span class="expand-icon" id="icon-2">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 mdk2000</span>
-                <span>📅 2026-6-14 10:03</span>
-                <span>💬 1 回复</span>
-                <span>👁️ 291 浏览</span>
+                <span>👤 Gaiden</span>
+                <span>📅 2026-6-15 17:33</span>
+                <span>💬 19 回复</span>
+                <span>👁️ 1058 浏览</span>
             </div>
             <div class="post-body" id="body-2" style="display:none">
             
             <div class="post-content">
-                本帖最后由 mdk2000 于 2026-6-14 10:03 编辑
+                之前一直觉得有点贵相等便宜点，最近又起飞
+想想还是买了，人生能有几回爽
+价格都差不多，魔鹰便宜还多一年保修
 
-有个老外做了修复
-https://github.com/alkalimc/QLogic-Everest-FastLinQ-Linux-Drivers
+bd42b624-877b-47fd-8a62-be2fc9040c6d.png (76.67 KB, 下载次数:
+0)
 
-自己在debian13上成功打上了
+下载附件
 
-其他系统没试过,有试的楼下说下
+2026-6-15 17:33 上传
+
+意外凑齐了5060ti-5090dv2，50系只有5050和5060没玩过了 
+如果是反指买在山顶了，那也是值得
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/173300d1k53qv5ytjk321p.png" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (2条)</div>
+                <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">mdk2000</span>
-                    <span class="comment-text">本帖最后由 mdk2000 于 2026-6-14 10:03 编辑
-有个老外做了修复
-https://github.com/alkalimc/QLogic-Everest-FastLinQ-Linux-Drivers
+                    <span class="comment-author">Gaiden</span>
+                    <span class="comment-text">之前一直觉得有点贵相等便宜点，最近又起飞
+想想还是买了，人生能有几回爽
+价格都差不多，魔鹰便宜还多一年保修
+bd42b624-877b-47fd-8a62-be2fc9040c6d.png (76.67 KB, 下载次数:
+0)
 
-自己在debian13上成功打上了
-
-其他系统没试过,有试的楼下说下</span>
+下载附件
+2026-6-15 17:33 上传
+意外凑齐了5060ti-5090dv2，50系只有5050和5060没玩过了 
+如果是反指买在山顶了，那也是值得</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">andyaldi</span>
-                    <span class="comment-text">看到单数的版本，就有一种莫名的不信任，从node12开始……</span>
+                    <span class="comment-author">StevenG</span>
+                    <span class="comment-text">羡慕有想玩游戏的用户~我是完全电子ed了，上次黑猴治好了，结果通关半年，我连steam都卸载了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Illidan2004</span>
+                    <span class="comment-text">其实还行  对于不搞AI的来说 游戏性能差别在5%以下
+当然DLSS性能可能有点差别</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Gaiden</span>
+                    <span class="comment-text">StevenG 发表于 2026-6-15 17:40
+羡慕有想玩游戏的用户~我是完全电子ed了，上次黑猴治好了，结果通关半年，我连steam都卸载了 ...
+
+今年好玩游戏真的多，一堆想玩的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">相见思</span>
+                    <span class="comment-text">Illidan2004 发表于 2026-6-15 17:44
+其实还行  对于不搞AI的来说 游戏性能差别在5%以下
+当然DLSS性能可能有点差别 ...
+
+嗯。就是真个帧生成的帧少那么一点</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">lk_yeah</span>
+                    <span class="comment-text">当前5090弟弟这个价格算是好价了啊，不过相对于去年贵了不少啊。
+我去年双11买的5090d，193xx，京东自营，那会弟弟的价格不会超过15K，丐版13000+就能买到了。
+不过又对比去年8月，18000+能买到全新5090了。。。唉，要是那会屯上几块多好。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">pizza7711</span>
+                    <span class="comment-text">5050有什么玩的？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Gaiden</span>
+                    <span class="comment-text">pizza7711 发表于 2026-6-15 18:18
+5050有什么玩的？
+
+没啥玩的所以没买，显存小的5060同理</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">相见思</span>
+                    <span class="comment-text">同款魔鹰 三月三十号入手，17299
+
+买了就纠结，想换5090，找了个商家给我报了夜神30800，超级雕报了29500。然后和我说回收我的D2只能给15000。。。想了想还是持有了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Gaiden</span>
+                    <span class="comment-text">相见思 发表于 2026-6-15 18:31
+同款魔鹰 三月三十号入手，17299
+
+买了就纠结，想换5090，找了个商家给我报了夜神30800，超级雕报了29500。 ...
+
+最近应该又涨了点Dv2回收价，不过和5090价格还是相去甚远，别琢磨了，安心用吧</span>
                 </div>
                 
             </div>
@@ -467,23 +517,28 @@ https://github.com/alkalimc/QLogic-Everest-FastLinQ-Linux-Drivers
         <div class="post" id="post-3">
             <div class="post-header">
                 <span class="post-number">#4</span>
-                <span class="post-title" onclick="togglePost(3)">DDR4内存默认没有xmp但是默认频率就是3200</span>
+                <span class="post-title" onclick="togglePost(3)">找到了个“零基础Vibe Coding教程”，关于AI编程的，感觉讲的还不错</span>
                 <span class="expand-icon" id="icon-3">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 notg</span>
-                <span>📅 2026-6-14 17:45</span>
-                <span>💬 32 回复</span>
-                <span>👁️ 1076 浏览</span>
+                <span>👤 Sly</span>
+                <span>📅 2026-6-15 09:15</span>
+                <span>💬 33 回复</span>
+                <span>👁️ 1464 浏览</span>
             </div>
             <div class="post-body" id="body-3" style="display:none">
             
             <div class="post-content">
-                DDR4内存默认没有xmp但是默认频率就是3200，然后这个内存导致游戏帧数非常的低，这种内存是怎么回事儿有没有大佬指导
+                本帖最后由 Sly 于 2026-6-15 09:18 编辑
+
+https://www.bilibili.com/video/BV1RPET6tEp2
+科普视频，其假设使用者不具备专业编程能力，感觉是这几年里面讲的最不错的中文视频之一。
+
+P.S. 另外还发现，这家培训机构的Java、前端等培训视频还真是挺开源的。
             </div>
             
             <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/14/214615qeliteijehixmtwj.png" loading="lazy" onerror="this.style.display='none'" />
+                <img src="https://static.chiphell.com/forum/202606/15/113309sme72284f88j934q.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/132424jprlqg321l2ek06h.png" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
@@ -491,66 +546,81 @@ https://github.com/alkalimc/QLogic-Everest-FastLinQ-Linux-Drivers
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">notg</span>
-                    <span class="comment-text">DDR4内存默认没有xmp但是默认频率就是3200，然后这个内存导致游戏帧数非常的低，这种内存是怎么回事儿有没有大佬指导</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">notg</span>
-                    <span class="comment-text">就是这个内存进bios是没有xmp这个功能的，但是默认的频率就是3200，这种内存我见过很多，无一例外，装这种内存的电脑，游戏的网游帧数都是异常的低，而且内存的电压也是1.2不是1.35这个xmp配置的电压，我很好奇这种内存是怎么来的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">continuing</span>
-                    <span class="comment-text">你自己发的图都有答案了
-JEDEC本来就有3200的规范
-而且你发图这台机子网游帧数低不是你只插单条的原因吗，关这内存啥事</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">notg</span>
-                    <span class="comment-text">continuing 发表于 2026-6-14 17:52
-你自己发的图都有答案了
-JEDEC本来就有3200的规范
+                    <span class="comment-author">Sly</span>
+                    <span class="comment-text">本帖最后由 Sly 于 2026-6-15 09:18 编辑
+https://www.bilibili.com/video/BV1RPET6tEp2
+科普视频，其假设使用者不具备专业编程能力，感觉是这几年里面讲的最不错的中文视频之一。
 
-所以说这个内存本来就这个低性能的3200的条是吗 我感觉都没有那些不开xmp的内存性能强</span>
+P.S. 另外还发现，这家培训机构的Java、前端等培训视频还真是挺开源的。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">continuing</span>
-                    <span class="comment-text">notg 发表于 2026-6-14 17:53
-所以说这个内存本来就这个低性能的3200的条是吗 我感觉都没有那些不开xmp的内存性能强 ...
+                    <span class="comment-author">再未见Z</span>
+                    <span class="comment-text">不具备专业编程能力, ai写的代码你都看不懂，现在的ai还不支持完全正确的写完整个代码</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Sly</span>
+                    <span class="comment-text">本帖最后由 Sly 于 2026-6-15 10:33 编辑
+再未见Z 发表于 2026-6-15 10:25
+不具备专业编程能力, ai写的代码你都看不懂，现在的ai还不支持完全正确的写完整个代码 ...
+不具备专业编程能力 != 不具备编程能力
+一个关键点是，非行业人员为了减轻自己工作而编制的程序，其实并不需要掌握很多软件类算法和中间件用法，甚至说很多企业级中间件压根就用不到（比如消息队列之类的）。
 
-时序会比XMP差一点，但是基本上啥U都能跑
-还有你插单条D4就别说性能差了</span>
+这些程序本质就是自己的行业算法（这个作为行业人员自己是肯定掌握的，甚至就算找软件开发人员来写，他们反而也不会）+增删改查+绘制UI而已，这方面AI目前确实是出类拔萃。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">fyc858</span>
-                    <span class="comment-text">你这内存带宽还不如我十几年前的DDR3 2400双通道多呢，但是我的时序只有C11，延迟30都不到</span>
+                    <span class="comment-author">charlie88100</span>
+                    <span class="comment-text">这个时代,最好的老师就是ai,实在要看人说,抖音B站找免费的,10分钟看不懂就换.快糙猛搞起来,ai进化的速度绝对比你学习的速度快.</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">可以抱的萝卜</span>
-                    <span class="comment-text">原生3200的条子是这样的
-你想提升使用体验那就自己抄一个人家的XMP3200C16参数不就好了，</span>
+                    <span class="comment-author">michaelzxp</span>
+                    <span class="comment-text">挺好，现在正在经历这个过程，很快就真 0 基础了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">momoka</span>
-                    <span class="comment-text">这种内存很多人喜欢的哦，默认3200不用 xmp很适合装机和小白的，价格也相对较高。
+                    <span class="comment-author">lumiere</span>
+                    <span class="comment-text">还是看需求，不可能人人都当程序员或具有编程思维。
+我用ai写了四个软件用来调字幕，原来几分钟或几十分钟的工作现在一秒钟搞定。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">PPXG</span>
+                    <span class="comment-text">89729.jpg (113.7 KB, 下载次数:
+0)
 
-要性能自己手动小参。。。</span>
+下载附件
+2026-6-15 11:33 上传</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">a_skywalker</span>
-                    <span class="comment-text">这是正儿八经的JEDEC标准的DDR4 3200内存条，品牌台式机笔记本上的内存都是这个标准的。那些低延迟的内存条基本都支持的是XMP或者EXPO标准，属于官方超频条。</span>
+                    <span class="comment-author">ghwwx</span>
+                    <span class="comment-text">我说一个我自己的例子。
+公司被卖给新买家，原来是用的SAP系统，公司的所以的设备清单都在SAP中，从SAP中导出是有规律的TXT文件。我要把他转成新系统的(非常小众的一个软件)，只认EXCEL文件。大概4000行的设备吧。
+然后我怎么做的呢？我直接把这个文件扔给了deepseek,然后让他帮我转成excel，按照相应的规律。
+然后他不干，他只转了20行，然后告诉我一段python代码。让我把这个python放到编译器内编译就可以转换了。但是我告诉他我没有python运行环境。他就直接告诉我一个google的网页，把这个代码copy进去，运行就可以了。
+后来真的是可以！
+不知道这个算不算ai辅助编程。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">tiantian80</span>
-                    <span class="comment-text">原生3200，这是好条子啊，随便抄一组高频的参数进去就能用</span>
+                    <span class="comment-author">Wilson163abc</span>
+                    <span class="comment-text">ghwwx 发表于 2026-6-15 12:23
+我说一个我自己的例子。
+公司被卖给新买家，原来是用的SAP系统，公司的所以的设备清单都在SAP中，从SAP中导 ...
+
+这种有规律的，好像能把txt直接导入excel，稍微处理下就能用</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">ghwwx</span>
+                    <span class="comment-text">Wilson163abc 发表于 2026-6-15 13:02
+这种有规律的，好像能把txt直接导入excel，稍微处理下就能用
+
+有的可以，简单的按照特殊字符拆分就可以了。
+有的不行。</span>
                 </div>
                 
             </div>
@@ -562,35 +632,22 @@ JEDEC本来就有3200的规范
         <div class="post" id="post-4">
             <div class="post-header">
                 <span class="post-number">#5</span>
-                <span class="post-title" onclick="togglePost(4)">HPE ML350 Gen10搭配双GPU显卡钻研学习AI模型选V100 32G还是RTX 3090 24G？</span>
+                <span class="post-title" onclick="togglePost(4)">27寸2K的显示器有没有推荐？</span>
                 <span class="expand-icon" id="icon-4">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 红色狂想</span>
-                <span>📅 2026-6-14 14:13</span>
-                <span>💬 17 回复</span>
-                <span>👁️ 572 浏览</span>
+                <span>👤 591280714</span>
+                <span>📅 2026-6-15 20:10</span>
+                <span>💬 10 回复</span>
+                <span>👁️ 375 浏览</span>
             </div>
             <div class="post-body" id="body-4" style="display:none">
             
             <div class="post-content">
-                手里有台 HPE ProLiant ML350 Gen10 塔式服务器，打算在家里搭个双 GPU 环境，用来钻研学习 AI 大模型和深度学习微调。
+                本帖最后由 591280714 于 2026-6-15 22:38 编辑
 
-之前从没玩儿过显卡，在硬件选购和服务器适配上遇到了几个拿不准的瓶颈，特来论坛向各位有经验的技术大牛请教。目前我主要纠结在以下三个核心问题上：
-
-❓ 疑问一：选旧时代正统计算卡（V100 32GB），还是消费级过气旗舰（RTX 3090 24GB）？
-目前看二手市场，这两张卡的价格有交集，让我很纠结：
-
-o Tesla V100 32GB PCIe原版：毕竟是正统数据中心卡，32GB 的大显存和 900GB/s 的带宽很诱人，而且在服务器上的兼容性肯定没得说。但我看资料说它属于 Volta 架构，原生不支持 INT8/INT4 硬件量化加速，也不支持 BF16 精度。现在主流的开源大模型（Llama 3、Qwen 2等）全靠量化部署，V100 跑新模型会不会因为架构断代被严重卡脖子？
-
-o RTX 3090 24GB：虽然显存少了 8GB，但有 Ampere 架构红利，手握第 3 代 Tensor Core，完整支持量化和 BF16。用 Ollama 或 Hugging Face 跑双卡（48GB），通过 4-bit 量化吃个 30B~34B 的模型应该更轻松？
-
-想请教大家：纯粹用于本地 AI 钻研和微调学习，这两款卡到底哪一个在目前的生态下性价比更高、更实用？
-
-❓ 疑问二：RTX 3090 涡轮版安装在塔式服务器里，会破坏 ML350 Gen10 的原厂风道吗？
-如果最后选了 RTX 3090，为了能在服务器里塞下两张，我肯定只能找双槽厚度的涡轮版（Blower）。
-
-o 我的理解是：ML350 Gen10 是典型的前吸后排、正压贯穿式风道。涡轮卡是尾部进风、挡板格栅出风，这种“前吸后排”的独立管道模式，理应能融入服务器的
+不需要HDR，可以原生10bit最好，高刷低延迟，有dp2.1最好，IO需要有至少2个或以上的USB口，日常玩游戏和设计，3000内。
+之前一直用的PG279Q, 17年买的，现在用到出现类似隔行扫描的那种纹路了。。
             </div>
             
             
@@ -598,70 +655,60 @@ o 我的理解是：ML350 Gen10 是典型的前吸后排、正压贯穿式风道
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">红色狂想</span>
-                    <span class="comment-text">手里有台 HPE ProLiant ML350 Gen10 塔式服务器，打算在家里搭个双 GPU 环境，用来钻研学习 AI 大模型和深度学习微调。
+                    <span class="comment-author">591280714</span>
+                    <span class="comment-text">本帖最后由 591280714 于 2026-6-15 22:38 编辑
+不需要HDR，可以原生10bit最好，高刷低延迟，有dp2.1最好，IO需要有至少2个或以上的USB口，日常玩游戏和设计，3000内。
+之前一直用的PG279Q, 17年买的，现在用到出现类似隔行扫描的那种纹路了。。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">gladiator</span>
+                    <span class="comment-text">OLED全都是原生10bit，DP2.1 4K都没普及2K就别想了有个HDMI2.1就差不多了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zs009</span>
+                    <span class="comment-text">其它问题不大，就是想DP也2.1有点难，要不价格再往上走走，要不就其它降降要求。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">591280714</span>
+                    <span class="comment-text">zs009 发表于 2026-6-15 21:12
+其它问题不大，就是想DP也2.1有点难，要不价格再往上走走，要不就其它降降要求。 ...
 
-之前从没玩儿过显卡，在硬件选购和服务器适配上遇到了几个拿不准的瓶颈，特来论坛向各位有经验的技术大牛请教。目前我主要纠结在以下三个核心问题上：
-❓ 疑问一：选旧时代正统计算卡（V100 32GB），还是消费级过气旗舰（RTX 3090 24GB）？
-目前看二手市场，这两张卡的价格有交集，让我很纠结：
+没有也没事，我前面说的是有最好，没有也可以看看</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">monei</span>
+                    <span class="comment-text">飞利浦27B2N3500G, 27英寸2K144Hz显示器圆偏光硬件护眼屏幕</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">fjxyx</span>
+                    <span class="comment-text">我推荐32寸2k，大屏幕很爽</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">qfmy11</span>
+                    <span class="comment-text">明基 戴尔 里面选选</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">wangzhiqiang</span>
+                    <span class="comment-text">怎么戴尔还不出u2724d的替代品</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Kay.man</span>
+                    <span class="comment-text">26年就别2k了，2k现在都是下脚料，没有好的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">AreX</span>
+                    <span class="comment-text">现在的2k LCD面板要么主打便宜的丐中丐，显示效果根本不行，要么主打超高刷的电竞型，给一个4k目前无法达到的超高刷新率比如500hz以上，用来割电竞玩家的
 
-o Tesla V100 32GB PCIe原版：毕竟是正统数据中心卡，32GB 的大显存和 900GB/s 的带宽很诱人，而且在服务器上的兼容性肯定没得说。但我看资料说它属于 Volta 架构，原生不支持 INT8/INT4 硬件量化加速，也不支持 BF16 精度。现在主流的开源大模型（Llama 3、Qwen 2等）全靠量化部署，V100 跑</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xy.</span>
-                    <span class="comment-text">这个级别的卡微调 7 - 13b 左右的模型到顶了, 没有任何实用意义啊
-推理的话如 ai 所说看你具体推什么</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">红色狂想</span>
-                    <span class="comment-text">xy. 发表于 2026-6-14 14:25
-这个级别的卡微调 7 - 13b 左右的模型到顶了, 没有任何实用意义啊
-推理的话如 ai 所说看你具体推什么 ...
-
-推理主要就是文生图，图生几秒钟的短视频。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xy.</span>
-                    <span class="comment-text">红色狂想 发表于 2026-6-14 16:37
-推理主要就是文生图，图生几秒钟的短视频。
-
-要我说你这个需求还是别折腾了
-要学习就租赁算力
-生图垃圾硬件随便跑跑
-生视频抛开算力需求不谈, 开源模型全是狗屎</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">yy16432</span>
-                    <span class="comment-text">玩玩就上双3090了，还有NVLink, 保值性还行。  V100太老了，玩腻了卖也不好卖。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">猪圈</span>
-                    <span class="comment-text">3090可能合适点，虽然显存稍微小点</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">老饭</span>
-                    <span class="comment-text">v100性能也不行，软件支持也差不多到头了，单纯显存大没啥意义了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">SuperBeaver</span>
-                    <span class="comment-text">我会选3090。微调我懂的不多，但是v100调模型要转成fp16去跑吧，主流开源bf16转过来再微调能对齐不，感觉坑很大...用fp32调，显存的优势又被抹掉。推理，v100太老，除了模型格式还有很多算子（flashatten，flashinfer）的支持也要考虑，印象里sm7.0对应的cuda和pytorch没啥新算子的预编译了。文生图的gguf推理生态可能有合适的量化，我不熟悉，看楼里有没有大手子。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Neo_Granzon</span>
-                    <span class="comment-text">v100性能根本不够看了，各种开源模型指定最低30系列。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">古明地觉</span>
-                    <span class="comment-text">v100没bf16，驱动支持待遇还不如20系，还是容易暴毙的hbm...相比之下只有nvlink带宽是优势了</span>
+稍微好点儿的产线都拿去生产4k了，还生产2k屏的类似多年前1080p年代造1366x768这种的...效果就一个惨</span>
                 </div>
                 
             </div>
@@ -673,40 +720,43 @@ o Tesla V100 32GB PCIe原版：毕竟是正统数据中心卡，32GB 的大显�
         <div class="post" id="post-5">
             <div class="post-header">
                 <span class="post-number">#6</span>
-                <span class="post-title" onclick="togglePost(5)">拔下散热器AM4处理器也一起下来了这正常么</span>
+                <span class="post-title" onclick="togglePost(5)">谁说5070 2K乱杀的，全拉满地平线都搞不定</span>
                 <span class="expand-icon" id="icon-5">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 chip_discovery</span>
-                <span>📅 2026-6-14 21:54</span>
-                <span>💬 31 回复</span>
-                <span>👁️ 1006 浏览</span>
+                <span>👤 realxwq316</span>
+                <span>📅 2026-6-15 13:48</span>
+                <span>💬 45 回复</span>
+                <span>👁️ 1656 浏览</span>
             </div>
             <div class="post-body" id="body-5" style="display:none">
             
             <div class="post-content">
-                本帖最后由 chip_discovery 于 2026-6-15 10:42 编辑
+                本帖最后由 realxwq316 于 2026-6-15 21:27 编辑
 
-声明，之前还真没拆装过am4处理器，只装过八代英特尔和am5。
-今天因为有个纸片掉到散热器下面，就心血来潮拆开散热器想拿出来，松了4个螺丝，试了试拿不下来，心想可能是硅脂粘住了，左右扭了扭，然后再加了点力气试了试结果，喜闻乐见的环节发现cpu一起下来了
+看了一堆评论，5070在2k光追下乱杀
+然后升级了显卡和显示器
+3700x+x570+8G*2 DDR3200
+从1080ti+1080P显示器升级到5070+2K 300HZ mini led
+地平线6包括光追全部拉满
+DLSS选质量
+帧生成选择自动档
 
-c914e8ac8dd3f11666abf77c6b8d0093.jpeg (423.64 KB, 下载次数:
-0)
+2K分辨率下跑地平线自带测试，平均57帧
 
-下载附件
+在绿色植被比较多泥土路段直接掉到30帧左右了，感觉60hz的显示器就够了
 
-2026-6-14 21:46 上传
+看来光追还是挺耗费性能的。。。2K下5070光追还是不能无脑拉满
 
-我是谁，我在干什么，为什么am4插座还没解锁cpu就下来了
-看了看针脚似乎没有歪，不过这种情况要紧么
-以前还遇到过拆下的cpu随手倒扣在桌面，结果硅脂粘的太牢，我一用力，飞了出去磕角了，然鹅，居然还能开机
-————————————————————————分割线————————————————————————————
-感谢各位的回复,学习了,原来烤鸡加热软化是基操,防拔夹具是个好东西,
-不过突然又想到了一点,既然都能直接拔下,如果扭的太用力带下是不是也有损坏针脚的嫌疑
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/14/214614v9zmfg7905gcg7b4.jpeg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/14/231332s959l65lvczl9053.png" loading="lazy" onerror="this.style.display='none'" />
+不过有一说一，开了光追+mini led的设备升级，和原来的画面真的是有质的升级。就如好基友所说感觉之前就是顶着白内障在打游戏，现在是白内障手术成功之后的感觉
+
+更新于6/15 晚21点25分
+
+好了破案了，年纪大了，自己设置搞错了，上文是没开DLSS和帧生成的成绩。
+
+开了质量档DLSS+2X帧生成 直接130-140帧。。。
+
+你们这些说3700x太拉跨的，有勾引我跳进消费主义陷阱的嫌疑
             </div>
             
             
@@ -714,65 +764,86 @@ c914e8ac8dd3f11666abf77c6b8d0093.jpeg (423.64 KB, 下载次数:
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">chip_discovery</span>
-                    <span class="comment-text">本帖最后由 chip_discovery 于 2026-6-15 10:42 编辑
-声明，之前还真没拆装过am4处理器，只装过八代英特尔和am5。
-今天因为有个纸片掉到散热器下面，就心血来潮拆开散热器想拿出来，松了4个螺丝，试了试拿不下来，心想可能是硅脂粘住了，左右扭了扭，然后再加了点力气试了试结果，喜闻乐见的环节发现cpu一起下来了
-c914e8ac8dd3f11666abf77c6b8d0093.jpeg (423.64 KB, 下载次数:
-0)
+                    <span class="comment-author">realxwq316</span>
+                    <span class="comment-text">本帖最后由 realxwq316 于 2026-6-15 21:27 编辑
+看了一堆评论，5070在2k光追下乱杀
+然后升级了显卡和显示器
+3700x+x570+8G*2 DDR3200
+从1080ti+1080P显示器升级到5070+2K 300HZ mini led
+地平线6包括光追全部拉满
+DLSS选质量
+帧生成选择自动档
 
-下载附件
-2026-6-14 21:46 上传
-我是谁，我在干什么，为什么am4插座还没解锁cpu就下来了
-看了看针脚似乎没有歪，不过这种情况要紧么
-以前还遇到过拆下的cpu随手倒扣在桌面，结果硅脂粘的太牢，我一用力，飞了出去磕角了，然鹅，居然还能开机
-————————————————————————分割线—————————————————</span>
+2K分辨率下跑地平线自带测试，平均57帧
+
+在绿色植被比较多泥土路段直接掉到30帧左右了，感觉60hz的显示器就够了
+
+看来光追还是挺耗费性能的。。。2K下5070光追还是不能无脑拉满
+
+不过有一说一，开了光追+mini led的设备升级，和原来的画面真的是有质的升级。就如好基友所说感觉之前就是顶着白内障在打游戏，现在是白内障手术成功之后的感觉
+更新于6/15 晚21点25分
+
+好了破案了，年纪大了，自己设置搞错了，上文是没开DLSS和帧生成的成绩。
+
+开了质量</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">大光光</span>
-                    <span class="comment-text">鱼线 。zsbd</span>
+                    <span class="comment-author">EVEforever</span>
+                    <span class="comment-text">感觉你帧生成像没生效一样。固定到2倍或者3倍，重启下游戏试试</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">周喆</span>
-                    <span class="comment-text">贴吧每天都有AMD水泥硅脂拔萝卜的，听说还有直接把顶盖拔下来的</span>
+                    <span class="comment-author">amx004</span>
+                    <span class="comment-text">会不会爆内存了
+显卡外的配置有点弱了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">destop</span>
-                    <span class="comment-text">一摸一样的事我干过，后来学乖了，拔之前先开机跑两分钟aida fpu压力测试，硅脂化开了再拔就没事了</span>
+                    <span class="comment-author">zs009</span>
+                    <span class="comment-text">不是RTX6000的显卡都换，5090来了也要换。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">深蓝色海水</span>
-                    <span class="comment-text">基操，勿六，皆坐之
-PS：鱼线就挺好，下次记得拔下来之前烤一下机，然后左右扭一扭再拔</span>
+                    <span class="comment-author">realxwq316</span>
+                    <span class="comment-text">amx004 发表于 2026-6-15 13:54
+会不会爆内存了
+显卡外的配置有点弱了
+
+爆内存游戏内会有提示，并且爆内存但不在植被较多的路段，帧数也还能维持在7 80帧。只有在绿植场景特别多的时候，会跌破40帧。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">富哥V我五万</span>
-                    <span class="comment-text">正常，就算烤鸡也一样会带出来，需要小心的摇晃，有的硅脂比较黏，卸下螺丝后刚碰到塔体力度稍微大一点就能下来。</span>
+                    <span class="comment-author">realxwq316</span>
+                    <span class="comment-text">EVEforever 发表于 2026-6-15 13:53
+感觉你帧生成像没生效一样。固定到2倍或者3倍，重启下游戏试试
+
+应该是生效了的，这个自动档应该是动态匹配的逻辑。应该还是地平线6的光追对性能消耗太大了。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">issues</span>
-                    <span class="comment-text">正常。（我想起当时玩5800X3D的时候怕遇到这种情况还专门买过HEATKILLER的防拔扣具</span>
+                    <span class="comment-author">cyberms</span>
+                    <span class="comment-text">zen2太弱鸡了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">leogcry22</span>
-                    <span class="comment-text">AM4拔之前我都是先开机预热一会儿再关机，拔的时候左右拧一下</span>
+                    <span class="comment-author">甘尼克斯</span>
+                    <span class="comment-text">CPU和内存性能太弱鸡了，别说5070，就是给你5080也嘎嘎乱杀不了
+
+现在闲鱼上78X3D+B650M二手价格才2100左右，升级一下会有惊喜</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">Sagitar2009</span>
-                    <span class="comment-text">其实开机用一段时间，关机再拔下来，就行了</span>
+                    <span class="comment-author">lWINSKI</span>
+                    <span class="comment-text">乱杀不了，5070玩地平线6，开了2x帧后 虽然稳120帧不动，但总有细微的跳帧 不够丝滑。而且我OLED屏开不了VRR，会很闪，捏鼻子忍了。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">DiamondBall</span>
-                    <span class="comment-text">没类似经历的都不好意思说自己是老diyer</span>
+                    <span class="comment-author">realxwq316</span>
+                    <span class="comment-text">lWINSKI 发表于 2026-6-15 14:08
+乱杀不了，5070玩地平线6，开了2x帧后 虽然稳120帧不动，但总有细微的跳帧 不够丝滑。而且我OLED屏开不了VR ...
+
+你是光追全拉满了嘛？我俩这个帧数差距有点大啊</span>
                 </div>
                 
             </div>
@@ -784,82 +855,90 @@ PS：鱼线就挺好，下次记得拔下来之前烤一下机，然后左右扭
         <div class="post" id="post-6">
             <div class="post-header">
                 <span class="post-number">#7</span>
-                <span class="post-title" onclick="togglePost(6)">飞利浦显示器就是AOC旗下的, 是吧?</span>
+                <span class="post-title" onclick="togglePost(6)">杂牌主板用起来还是不省心啊~</span>
                 <span class="expand-icon" id="icon-6">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 monei</span>
-                <span>📅 2026-6-14 18:00</span>
-                <span>💬 7 回复</span>
-                <span>👁️ 796 浏览</span>
+                <span>👤 9w050uo1</span>
+                <span>📅 2026-6-15 11:04</span>
+                <span>💬 22 回复</span>
+                <span>👁️ 1320 浏览</span>
             </div>
             <div class="post-body" id="body-6" style="display:none">
             
             <div class="post-content">
-                飞利浦显示器就是AOC旗下的, 是吧?  都是AOC设计的?
+                图便宜买了张昂达B760ITX主板，3050用着一直挺正常，偶尔PCIE跑在X1频率上，重新插拔就好了（不确定是不是没插好导致的），最近玩CF有点掉帧，买了张5060升级下，到货装上去能显示但进系统黑屏，折腾半天还是不行，害我退货又买一张，还是黑屏，寻思官网下载个BIOS更新一下，结果发现官网有公告，不支持pcie 5.0要改为4.0才能正常使用。闹了个大乌龙~
             </div>
             
             <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/14/193553xqd17vdia5vvffvu.png" loading="lazy" onerror="this.style.display='none'" />
+                <img src="https://cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (8条)</div>
+                <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">飞利浦显示器就是AOC旗下的, 是吧?  都是AOC设计的?</span>
+                    <span class="comment-author">9w050uo1</span>
+                    <span class="comment-text">图便宜买了张昂达B760ITX主板，3050用着一直挺正常，偶尔PCIE跑在X1频率上，重新插拔就好了（不确定是不是没插好导致的），最近玩CF有点掉帧，买了张5060升级下，到货装上去能显示但进系统黑屏，折腾半天还是不行，害我退货又买一张，还是黑屏，寻思官网下载个BIOS更新一下，结果发现官网有公告，不支持pcie 5.0要改为4.0才能正常使用。闹了个大乌龙~</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">干儿狼</span>
-                    <span class="comment-text">2004 年飞利浦就把显示器和平板电视业务卖给冠捷了。
-https://news.xidian.edu.cn/info/1012/19826.htm</span>
+                    <span class="comment-author">朝夕问道</span>
+                    <span class="comment-text">看来只能用阿苏斯了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">DiamondBall</span>
-                    <span class="comment-text">https://www-cdn.tpv-tech.com/solutions.html
-tpv.png (77.72 KB, 下载次数:
-0)
+                    <span class="comment-author">scpe</span>
+                    <span class="comment-text">下次碰到奇怪问题deepseek（chatxxx）>B站油管>论坛>客服</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">megathread</span>
+                    <span class="comment-text">鸡架z690i b650i的pcie4.0都出过问题呢 对杂牌不要太苛求了
 
-下载附件
-2026-6-14 19:35 上传</span>
+不过很多bios默认是4.0 杂牌厂是没有能力改默认值吗</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">T43P</span>
-                    <span class="comment-text">DiamondBall 发表于 2026-6-14 19:36
-https://www-cdn.tpv-tech.com/solutions.html
+                    <span class="comment-author">9w050uo1</span>
+                    <span class="comment-text">megathread 发表于 2026-6-15 11:15
+鸡架z690i b650i的pcie4.0都出过问题呢 对杂牌不要太苛求了
 
-长城 也是啊</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">ttsammammb</span>
-                    <span class="comment-text">DiamondBall 发表于 2026-6-14 19:36
-https://www-cdn.tpv-tech.com/solutions.html
+不过很多bios默认是4.0 杂牌厂是没有能力改默 ...
 
-长城电源卖的授权么</span>
+没有默认5.0，我改的时候默认是自动</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">cmh</span>
-                    <span class="comment-text">呆鹅的不少显示器也是AOC的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">fushia</span>
-                    <span class="comment-text">T43P 发表于 2026-6-14 20:23
-长城 也是啊
-
-11年收购的长城，你能看到的显示器大牌比如华硕 联想 DELL HP NEC，三只鸟等等等都有可冠捷代工的</span>
+                    <span class="comment-author">zzc02063</span>
+                    <span class="comment-text">昂达不算杂牌儿吧</span>
                 </div>
                 
                 <div class="comment">
                     <span class="comment-author">zs009</span>
-                    <span class="comment-text">前天刚买了个AOC的AGON27寸4K显示器。</span>
+                    <span class="comment-text">昂达曾经也是很历害的哦。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">9w050uo1</span>
+                    <span class="comment-text">zs009 发表于 2026-6-15 11:28
+昂达曾经也是很历害的哦。
+
+10年左右买过他家的显卡和平板</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zhgna</span>
+                    <span class="comment-text">昂达也算很老牌子了，曾经有段时间还火过，至少跟凄惨红差不多的。坚持了这么多年都不怎么长进呢？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zs009</span>
+                    <span class="comment-text">9w050uo1 发表于 2026-6-15 11:30
+10年左右买过他家的显卡和平板
+
+十几年前用过他家的主板显卡，那会昂达还算是可以的。现在感觉消声匿迹了啊。</span>
                 </div>
                 
             </div>
@@ -871,19 +950,19 @@ https://www-cdn.tpv-tech.com/solutions.html
         <div class="post" id="post-7">
             <div class="post-header">
                 <span class="post-number">#8</span>
-                <span class="post-title" onclick="togglePost(7)">哪个爱快版本好用些</span>
+                <span class="post-title" onclick="togglePost(7)">麻烦大家推荐一款用于285K的散热器</span>
                 <span class="expand-icon" id="icon-7">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 该ID用户不存在</span>
-                <span>📅 2026-6-14 18:51</span>
-                <span>💬 22 回复</span>
-                <span>👁️ 628 浏览</span>
+                <span>👤 luziweitcc</span>
+                <span>📅 2026-6-15 12:16</span>
+                <span>💬 24 回复</span>
+                <span>👁️ 721 浏览</span>
             </div>
             <div class="post-body" id="body-7" style="display:none">
             
             <div class="post-content">
-                准备回归爱快，不知道现在哪个版本好用些，BUG少点
+                现在的散热器是多年前的酷冷至尊冰魔240水冷，负载不大的时候42度左右，要全速运行立马死机重启（win11系统）。麻烦大家推荐一款靠谱的性价比高的散热器（机箱最大只能安装240水冷）风冷、水冷都可以，谢谢！
             </div>
             
             
@@ -891,58 +970,66 @@ https://www-cdn.tpv-tech.com/solutions.html
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">该ID用户不存在</span>
-                    <span class="comment-text">准备回归爱快，不知道现在哪个版本好用些，BUG少点</span>
+                    <span class="comment-author">luziweitcc</span>
+                    <span class="comment-text">现在的散热器是多年前的酷冷至尊冰魔240水冷，负载不大的时候42度左右，要全速运行立马死机重启（win11系统）。麻烦大家推荐一款靠谱的性价比高的散热器（机箱最大只能安装240水冷）风冷、水冷都可以，谢谢！</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">fyc858</span>
-                    <span class="comment-text">都有后门你要用吗</span>
+                    <span class="comment-author">ffback</span>
+                    <span class="comment-text">本帖最后由 ffback 于 2026-6-15 12:47 编辑
+过热一般就是降频吧，咋还能死机重启呢，我的270KP用的猫头鹰的D15G2,机箱原因无法 双风扇，只上了一个风扇，烤鸡最多就是降频，没遇到过死机</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">C_Y___________</span>
-                    <span class="comment-text">没多大区别。只是个路由器</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">echang88</span>
-                    <span class="comment-text">3.7.21 x64 Build202508211345，养老了，4.0没去。买了个防火墙，但是好像一般。其实是为AdGuard Home选的软路由，硬路由以前没有Q3000，Q6000啥的，只能配电脑搞X86。OP路由内存都太小了。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">雪凛</span>
-                    <span class="comment-text">fyc858 发表于 2026-6-14 19:09
-都有后门你要用吗
+                    <span class="comment-author">luziweitcc</span>
+                    <span class="comment-text">ffback 发表于 2026-6-15 12:46
+过热一般就是降频吧，咋还能死机重启呢
 
-比如什么后门？有没有实锤的抓包的数据或者主流媒体的新闻报道？</span>
+我也不知道，要不是内存的问题？降到4800试试先。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">gaoyi124</span>
-                    <span class="comment-text">4.0有正式版了,已经有一台在用了,感觉还行,反正爱快也就这样</span>
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">攀威 Z06D EX不知道如何，准备压pbo的9700x，看看如何</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">SolaAoiii</span>
-                    <span class="comment-text">3.7.21是3.0的最后一个版本了 ，用着也没啥大问题4.0就不尝咸淡了</span>
+                    <span class="comment-author">luziweitcc</span>
+                    <span class="comment-text">lizzak 发表于 2026-6-15 13:02
+攀威 Z06D EX不知道如何，准备压pbo的9700x，看看如何
+
+好的，我正在测试是不是内存额问题，内存降到4800后临时没出现问题。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">Ricotta</span>
-                    <span class="comment-text">3.7.21 ,4.0有点说不出来的难用</span>
+                    <span class="comment-author">daihaoyuan</span>
+                    <span class="comment-text">应该是内存没散热小风扇的问题吧 d5挺热的而且不耐热</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">thirty6</span>
-                    <span class="comment-text">4.0多了几个docker应用，方便了一丢丢。</span>
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">daihaoyuan 发表于 2026-6-15 13:14
+应该是内存没散热小风扇的问题吧 d5挺热的而且不耐热
+用的那个牌子型号的？我买的金百达和佰维的Adie d5条子，散热片厚重呀，atx和matx箱子里看温度平时一直4x</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">七尺大汉</span>
-                    <span class="comment-text">还在用3.7.21
-暂时还没升级到4.0
-等过段时间再说。</span>
+                    <span class="comment-author">luziweitcc</span>
+                    <span class="comment-text">lizzak 发表于 2026-6-15 13:18
+用的那个牌子型号的？我买的金百达和佰维的Adie d5条子，散热片厚重呀，atx和matx箱子里看温度平时一直4x ...
+
+玖合5600的条子，现在降到4800测试了一下，临时没问题。看来是频率在5600无法高负载下长时间运行，真有可能散热的问题。在试一段时间看看。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Sirlion</span>
+                    <span class="comment-text">我的245k也这样，用的利民ba120
+待机40，一跑fpu直接上80多，一直跑90多，功耗从160降到120多</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">r147909</span>
+                    <span class="comment-text">PL200，再不夠180</span>
                 </div>
                 
             </div>
@@ -954,107 +1041,68 @@ https://www-cdn.tpv-tech.com/solutions.html
         <div class="post" id="post-8">
             <div class="post-header">
                 <span class="post-number">#9</span>
-                <span class="post-title" onclick="togglePost(8)">我被新BIOS坑了一下</span>
+                <span class="post-title" onclick="togglePost(8)">刚把液金清除了</span>
                 <span class="expand-icon" id="icon-8">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 eckl</span>
-                <span>📅 2026-6-14 22:54</span>
-                <span>💬 7 回复</span>
-                <span>👁️ 815 浏览</span>
+                <span>👤 fofo</span>
+                <span>📅 2026-6-15 14:44</span>
+                <span>💬 6 回复</span>
+                <span>👁️ 961 浏览</span>
             </div>
             <div class="post-body" id="body-8" style="display:none">
             
             <div class="post-content">
-                MSI X870E CARBON WIFI的BIOS又更新了。
+                笔记本用了近2年，尤其是最近一次4月的bios更新后，是能明显感受到经常降频，3dmark测试cpu分直接少了1/3，显卡温度同一个程序基本两周上升一度。怀疑是bios或散热，bios问题不好查，就查散热，用网上的办法看偏移说是压cpu核心温度在15度以上这个肯定有了，而平时有4个e核一直在97度以上所以怀疑是偏移了。因为自己手抖所以找了联想售后中心，师傅表示只要没漏出来可以坚持用，但本着怀疑了就要解决的思路还是选了换相变。拆开，偏移了吗？就偏移了一点，应该是涂抹的时候就差一些使用中液态张力又拉开一点点，不知道是老化了还是温度不够显得有点点干。换完后这边温度由于设计问题每天都是过热早习惯了，现在更热一点没啥，cpu分回去了一点，但gpu又差了一点
 
-PixPin_2026-06-14_22-44-50.png (86.63 KB, 下载次数:
-0)
+给其他人提供一些做决定前的参考吧
 
-下载附件
+以下是液态金属的真实优点，也是我换相变决定错的地方：
+1. 确实完全没有漏，封得严实也确实不该漏，偏移确实不严重，至少没有我想的那么糟
+2. 覆盖上的地方导热能力还是远大于相变的，我选择相信售后的相变应该不是假的，相变把e核初始温度拉下来了但压不住两个主核心一直往100度跑,显卡温度继续上升了
+3. 待机总温度低一些，就算偏移了也是低的
 
-2026-6-14 22:45 上传
-
-更新后，按原来的超频设置一下。结果，启动、登录、进桌面异常缓慢
-
-PixPin_2026-06-14_21-18-53.png (252.77 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-14 22:45 上传
-
-重进BIOS确认一下自己没输错
-PPT Limits(mW): 200
-啥时候变的mW ，我不记得曾输过200000
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/14/224503h88n5g8395gke3k7.png" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/14/224545hsxnqn7nxkcczydz.png" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/14/233150zcz3cxx5rlbqg6tn.jpg" loading="lazy" onerror="this.style.display='none'" />
+液金的缺点，也是换的优点：
+1. e核的温度基本全拉平了，p核除了压力大的两个主核心其他核心基本差不多了，原来撞温度墙是没怎么用的小核先撞降频的，现在撞是真压不住大核
+2. 不怕斜放了，之前总平放，结果热胀冷缩有形变也是会被压偏移的，保护了个铲铲。然后经过了清洗，应该是没有残留了，以后终于又可以自己愉快拆机了
+3. cpu gpu和散热器接触面的中间都有一些灰白色的侵蚀痕迹，cpu和gpu上的字被吃掉了几个，这些也可能是造成换了相变接触还是不好的原因。再继续侵蚀表面可能更遭，就算换散热器两个芯片表面怎么办
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (8条)</div>
+                <div class="comments-title">💬 热门评论 (5条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">eckl</span>
-                    <span class="comment-text">MSI X870E CARBON WIFI的BIOS又更新了。
-PixPin_2026-06-14_22-44-50.png (86.63 KB, 下载次数:
-0)
+                    <span class="comment-author">fofo</span>
+                    <span class="comment-text">笔记本用了近2年，尤其是最近一次4月的bios更新后，是能明显感受到经常降频，3dmark测试cpu分直接少了1/3，显卡温度同一个程序基本两周上升一度。怀疑是bios或散热，bios问题不好查，就查散热，用网上的办法看偏移说是压cpu核心温度在15度以上这个肯定有了，而平时有4个e核一直在97度以上所以怀疑是偏移了。因为自己手抖所以找了联想售后中心，师傅表示只要没漏出来可以坚持用，但本着怀疑了就要解决的思路还是选了换相变。拆开，偏移了吗？就偏移了一点，应该是涂抹的时候就差一些使用中液态张力又拉开一点点，不知道是老化了还是温度不够显得有点点干。换完后这边温度由于设计问题每天都是过热早习惯了，现在更热一点没啥，cpu分回去了一点，但gpu又差了一点
 
-下载附件
-2026-6-14 22:45 上传
-更新后，按原来的超频设置一下。结果，启动、登录、进桌面异常缓慢
-PixPin_2026-06-14_21-18-53.png (252.77 KB, 下载次数:
-0)
+给其他人提供一些做决定前的参考吧
 
-下载附件
-2026-6-14 22:45 上传
-重进BIOS确认一下自己没输错
-PPT Limits(mW): 200
-啥时候变的mW ，我不记得曾输过200000</span>
+以下是液态金属的真实优点，也是我换相变决定错的地方：
+1. 确实完全没有漏，封得严实也确实不该漏，偏移确实</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">dzddz</span>
-                    <span class="comment-text">AMD AUTO.....</span>
+                    <span class="comment-author">mcXelNaga</span>
+                    <span class="comment-text">既然更新以前没有明显问题，不考虑恢复到此前的BIOS版本么。液金笔记本个人见过的用户最后都换成了相变片，基本上都是为了安全性和使用方便。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">yubeii</span>
-                    <span class="comment-text">9aQk78-j0rZdT1kSe8-cy.jpg (90.01 KB, 下载次数:
-0)
+                    <span class="comment-author">fofo</span>
+                    <span class="comment-text">mcXelNaga 发表于 2026-6-15 17:11
+既然更新以前没有明显问题，不考虑恢复到此前的BIOS版本么。液金笔记本个人见过的用户最后都换成了相变片， ...
 
-下载附件
-2026-6-14 23:31 上传</span>
+怀疑了就试一下，反正bios我搞不定</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">mofeielva</span>
-                    <span class="comment-text">两个地方设置PBO的单位不一样，一个是MW，一个是W</span>
+                    <span class="comment-author">pzy2222</span>
+                    <span class="comment-text">楼主有没有推荐的相变片型号</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">joyeehappy</span>
-                    <span class="comment-text">yubeii 发表于 2026-6-14 23:31
-
-看林大这面相，被折腾的不轻啊！！！</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zhjook</span>
-                    <span class="comment-text">msi 一直是 mW</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">yylwm1314</span>
-                    <span class="comment-text">螃蟹中毒者出现了嘛？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">od5gb9oi</span>
-                    <span class="comment-text">我还以为你也像DELL BIOS一样，把你CPU锁了</span>
+                    <span class="comment-author">scpe</span>
+                    <span class="comment-text">终极解决方案就是不用游戏本，也不用纠结液金和相变片了，当然可能会开始担心啃显卡和显卡下垂了。</span>
                 </div>
                 
             </div>
@@ -1066,29 +1114,25 @@ PPT Limits(mW): 200
         <div class="post" id="post-9">
             <div class="post-header">
                 <span class="post-number">#10</span>
-                <span class="post-title" onclick="togglePost(9)">咋办 ？有一块 4tb ssd 在吃灰</span>
+                <span class="post-title" onclick="togglePost(9)">60mm厚度以内的5080是不是只有看曜夜X3了？</span>
                 <span class="expand-icon" id="icon-9">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 98327471</span>
-                <span>📅 2026-6-14 04:31</span>
-                <span>💬 29 回复</span>
-                <span>👁️ 2313 浏览</span>
+                <span>👤 叶子烟</span>
+                <span>📅 2026-6-15 21:10</span>
+                <span>💬 20 回复</span>
+                <span>👁️ 403 浏览</span>
             </div>
             <div class="post-body" id="body-9" style="display:none">
             
             <div class="post-content">
-                咋办 ？
+                因为手头有两个U.2的SSD要用第二个槽。
 
-有一块
+所以厚度得严格控制在62mm以内。
 
-4  tb  - ssd
+目前是用的PNY的4080S，刚好61MM，属于贴着在用。
 
-在吃灰
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/15/092756yha9hcabvhv0gi0v.jpg" loading="lazy" onerror="this.style.display='none'" />
+看到抖子上倒是有8099的曜夜X3，有点纠结要不要趁现在换掉得了。
             </div>
             
             
@@ -1096,62 +1140,72 @@ PPT Limits(mW): 200
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">98327471</span>
-                    <span class="comment-text">咋办 ？
+                    <span class="comment-author">叶子烟</span>
+                    <span class="comment-text">因为手头有两个U.2的SSD要用第二个槽。
 
-有一块
-4  tb  - ssd
-在吃灰</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">thxx</span>
-                    <span class="comment-text">当移动硬盘用</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">98327471</span>
-                    <span class="comment-text">23319858 发表于 2026-6-14 04:53
-卖了回血！
+所以厚度得严格控制在62mm以内。
 
-不好卖 的</span>
+目前是用的PNY的4080S，刚好61MM，属于贴着在用。
+
+看到抖子上倒是有8099的曜夜X3，有点纠结要不要趁现在换掉得了。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">hcym</span>
-                    <span class="comment-text">嘛嘛嘚，除了傲腾16有一堆吃灰
-最大的ssd只有2T</span>
+                    <span class="comment-author">sthuasheng</span>
+                    <span class="comment-text">还有5080FE？</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">Nospel</span>
-                    <span class="comment-text">看不惯楼主这么难受，我就牺牲一下我自己，50块顺丰包邮卖我解君愁</span>
+                    <span class="comment-author">allensakura</span>
+                    <span class="comment-text">有钱就换，但4080S换5080有什么意义？</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">gaoyi124</span>
-                    <span class="comment-text">现在有价无市,又不舍的低价卖,确实有点尴尬了</span>
+                    <span class="comment-author">叶子烟</span>
+                    <span class="comment-text">sthuasheng 发表于 2026-6-15 21:16
+还有5080FE？
+
+那玩意儿咱们当不存在好吗</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">44434610</span>
-                    <span class="comment-text">送我好了，替你解忧~~~</span>
+                    <span class="comment-author">liu8866543</span>
+                    <span class="comment-text">也没必要换吧就提升了百分之十几的性能，当然你对6x帧生成情有独钟另说。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">龟派气功波</span>
-                    <span class="comment-text">当然是送给我</span>
+                    <span class="comment-author">叶子烟</span>
+                    <span class="comment-text">liu8866543 发表于 2026-6-15 21:23
+也没必要换吧就提升了百分之十几的性能，当然你对6x帧生成情有独钟另说。 ...
+
+主要想着趁现在4080S能改32G比较保值逢高出了，加点钱顺便把保修也更新了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">zzc02063</span>
-                    <span class="comment-text">送我 我是学生~~~~~</span>
+                    <span class="comment-author">yuechsh</span>
+                    <span class="comment-text">5080在高位现在，以后出了5080s 24g或者6080 24g，这玩意得跌不少。还不如不要折腾。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">yakeyyy</span>
-                    <span class="comment-text">本帖最后由 yakeyyy 于 2026-6-14 11:28 编辑
-留着继续当传家贝吃灰</span>
+                    <span class="comment-author">寒蝉鸣泣</span>
+                    <span class="comment-text">ultra是59mm  挡板是60mm</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">寒蝉鸣泣</span>
+                    <span class="comment-text">换掉是明智的选择，把握手里的机会，不要相信所谓的super
+目前吹出的80super居然是32G的
+我也不知道怎么就能32G  跟魔改一样上双面显存吗？ 我依旧认为老黄没有更新super的动力，而且GB203是完整核心，如果出super 意味着核心一模一样，核心一模一样的话 意味着所有的5080 都能直接刷该BIOS 支持大显存.........</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">叶子烟</span>
+                    <span class="comment-text">yuechsh 发表于 2026-6-15 21:49
+5080在高位现在，以后出了5080s 24g或者6080 24g，这玩意得跌不少。还不如不要折腾。 ...
+
+60的事估计得27年底或者28年去了吧。
+
+至于传说中的super，反正我不信老黄给你24G显存价格会在一万以内</span>
                 </div>
                 
             </div>
@@ -1163,22 +1217,19 @@ PPT Limits(mW): 200
         <div class="post" id="post-10">
             <div class="post-header">
                 <span class="post-number">#11</span>
-                <span class="post-title" onclick="togglePost(10)">看了半个月32寸IPS显示器太少选择了，有推荐吗</span>
+                <span class="post-title" onclick="togglePost(10)">请教一下，想买个笔记本电脑</span>
                 <span class="expand-icon" id="icon-10">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 allen1688</span>
-                <span>📅 2026-6-14 14:58</span>
-                <span>💬 11 回复</span>
-                <span>👁️ 731 浏览</span>
+                <span>👤 A399</span>
+                <span>📅 2026-6-15 12:46</span>
+                <span>💬 21 回复</span>
+                <span>👁️ 677 浏览</span>
             </div>
             <div class="post-body" id="body-10" style="display:none">
             
             <div class="post-content">
-                不要VA、OLED、MINILED，只要IPS，2K 32寸不知道文字清晰不，选考虑4K吧，，主要办公刷网页、编辑文档整理资料、剪视频，不打游戏！
-二千以下，性价比很高可以加到二千多，预算不高，后续想换55寸电视办公!  机子有USB-C功能，有硬件护眼最好，买了有防蓝光眼镜，没有也行，如果效果好就不戴眼镜了。
-
-二手的要能凭序列号保修才敢买，看了半个月感觉戴尔P3225QE价格挺符合，准备买官网官翻版现涨价3499，好多人2194买的，直接涨价一千多，拼多多2999，淘宝2499，闲鱼官翻用过的也要二千左右，各位大佬还有机子推荐吗，要质量好的，不要刚过保就坏，对刷新率没要求，三星、AOC品牌不要，之前用的二台刚过保就坏
+                家里娃要买一个电脑，按他的需求来说不打游戏，主要是图片处理，爱好摄影，但水平稀烂，需要对拍好的照片进行处理，他的要求是需要运行lightroom，我感觉应该对屏幕的色域和色准也有要求，我的预算也有限，在5k左右。请大家大力推荐一下。
             </div>
             
             
@@ -1186,56 +1237,66 @@ PPT Limits(mW): 200
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">allen1688</span>
-                    <span class="comment-text">不要VA、OLED、MINILED，只要IPS，2K 32寸不知道文字清晰不，选考虑4K吧，，主要办公刷网页、编辑文档整理资料、剪视频，不打游戏！
-二千以下，性价比很高可以加到二千多，预算不高，后续想换55寸电视办公!  机子有USB-C功能，有硬件护眼最好，买了有防蓝光眼镜，没有也行，如果效果好就不戴眼镜了。
+                    <span class="comment-author">A399</span>
+                    <span class="comment-text">家里娃要买一个电脑，按他的需求来说不打游戏，主要是图片处理，爱好摄影，但水平稀烂，需要对拍好的照片进行处理，他的要求是需要运行lightroom，我感觉应该对屏幕的色域和色准也有要求，我的预算也有限，在5k左右。请大家大力推荐一下。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">A399</span>
+                    <span class="comment-text">A399 发表于 2026-6-15 12:46
+家里娃要买一个电脑，按他的需求来说不打游戏，主要是图片处理，爱好摄影，但水平稀烂，需要对拍好的照片进 ...
 
-二手的要能凭序列号保修才敢买，看了半个月感觉戴尔P3225QE价格挺符合，准备买官网官翻版现涨价3499，好多人2194买的，直接涨价一千多，拼多多2999，淘宝2499，闲鱼官翻用过的也要二千左右，各位大佬还有机子推荐吗，要质量好的，不要刚过保就坏，对刷新率没要求，三星、AOC品牌不要，之前用的二台刚过保就坏</span>
+是预算太低了，拖累了论坛平均水平？那就再加一点10k吧，再多就不能加了。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">日常冒泡泡</span>
-                    <span class="comment-text">不是选择少，是你要求多</span>
+                    <span class="comment-author">solder</span>
+                    <span class="comment-text">从五千秒加到一万…
+真的是这种需求的话，买个7840以上配置的联想yoga就行了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">某A</span>
-                    <span class="comment-text">买的u3225，满意</span>
+                    <span class="comment-author">jaycty</span>
+                    <span class="comment-text">本帖最后由 jaycty 于 2026-6-15 13:03 编辑
+5000元，大概可以买个二手的macbook air 13寸 M2（8+10核） 24G 512G的版本
+5800元，大概可以买个二手的macbook pro 16寸 M1pro（10+16核） 32G 512G的版本
+肯定够用了，苹果电脑还适合文艺青年（P图、做视频、玩音乐什么的），带出去也较为轻便，续航时间还长</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">富哥V我五万</span>
+                    <span class="comment-text">macbook air 没有其他选择了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">无奈的精灵</span>
+                    <span class="comment-text">现在1线品牌的屏幕色准都很好了，有1万预算可以买3代Ultra5-338H的Xiaomi Book Pro 14</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">诺亚方舟</span>
+                    <span class="comment-text">处理图片无脑入M5的丐版MBA，这方面苹果优势明显，或者买小米荣耀今年新出的也还行，去线下店体验体验</span>
                 </div>
                 
                 <div class="comment">
                     <span class="comment-author">zzc02063</span>
-                    <span class="comment-text">这要求 想想我都脑仁儿疼~</span>
+                    <span class="comment-text">二手 MBP 32内存</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">jhhuang</span>
-                    <span class="comment-text">u3225 满意</span>
+                    <span class="comment-author">ITNewTyper</span>
+                    <span class="comment-text">本帖最后由 ITNewTyper 于 2026-6-15 13:53 编辑
+推荐还是windows笔记本，最新的散热好点的 即可。
+
+看什么用途吧，如果涉及到的开发环境偏向于windows那就用windows。mac用的比较少 办公问题不大。专业软件方面可能比windows小众一点吧。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">351799</span>
-                    <span class="comment-text">u3225 满意</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">savioler</span>
-                    <span class="comment-text">想知道u3225qe靠谱的购买渠道。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">334161200</span>
-                    <span class="comment-text">3223满意，尤其自带的HUB扩展</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">高桥凉介</span>
-                    <span class="comment-text">S3225QS.....也护眼啊</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">slgxgls</span>
-                    <span class="comment-text">u3225 满意</span>
+                    <span class="comment-author">上火的小M</span>
+                    <span class="comment-text">诺亚方舟 发表于 2026-6-15 13:37
+处理图片无脑入M5的丐版MBA，这方面苹果优势明显，或者买小米荣耀今年新出的也还行，去线下店体验体验 ...
+
+256的硬盘，扣除系统软件占用，放不了几张图片就满了，总不能一直挂尿袋</span>
                 </div>
                 
             </div>
@@ -1247,137 +1308,68 @@ PPT Limits(mW): 200
         <div class="post" id="post-11">
             <div class="post-header">
                 <span class="post-number">#12</span>
-                <span class="post-title" onclick="togglePost(11)">350W显卡塞进ITX的结果，有经验的小伴伙给些建议</span>
+                <span class="post-title" onclick="togglePost(11)">硬盘问题求助</span>
                 <span class="expand-icon" id="icon-11">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 psone</span>
-                <span>📅 2026-6-14 17:10</span>
-                <span>💬 41 回复</span>
-                <span>👁️ 1254 浏览</span>
+                <span>👤 Sharkgo7</span>
+                <span>📅 2026-6-15 13:51</span>
+                <span>💬 6 回复</span>
+                <span>👁️ 445 浏览</span>
             </div>
             <div class="post-body" id="body-11" style="display:none">
             
             <div class="post-content">
-                本帖最后由 psone 于 2026-6-14 03:40 编辑
-
-经常逛论坛刷贴子心里长草，想装台ITX，结果是350W的显卡直接从电老虎缩成小猫
-
-re9_2026_06_14_16_52_05_478.jpg (203.76 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-14 17:04 上传
-
-3080TI满功耗350W运行平均温度在78度左右，风扇2200转，原地起飞
-锁电压0.825V跑1800核心，功耗300W，温度70度，风扇1900
-锁电压0.825V跑1800核心，功耗降到70%，温度66，风扇1600转，频率只剩1600多了，这性能还要不？
-
-没办法了，有经验的朋友给些建议。
-
-继续降频降压，降到0.762V和1400核心频率才能达到50多度，这个ITX机箱得出结论是：200W左右才算好看。。。。这换算好亏啊
-
-生化.jpg (126.6 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-14 21:36 上传
-
-帧率从默认近100，到降压降频50多帧。。。。
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/13/230424dine77ch533je58k.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/14/033645ju5mh15fpyho5qux.jpg" loading="lazy" onerror="this.style.display='none'" />
+                事情是这样的，我哥的机械革命16pro，22年买的，不经常使用，今年开始发现电脑开机很卡，cpu占用也不高，看任务管理器中磁盘占用时不时会突然100%，然后电脑操作就很卡，过会还会蓝屏，蓝屏代码是：WHEA_UNCORRECTABLE_ERROR
+我帮他拆开看了发现没硅脂了，买了硅脂涂上后，开机不卡了，相应都挺快，但是使用十几分钟后，电脑就变回卡了，磁盘100%的问题依旧，接着就是变卡-蓝屏。用diskgenius扫盘发现有一个坏块，但是扫到那个标红的坏块的时候，就会卡死然后重启，没办法扫完全部，这种情况应该如何处理呢
+是1t的m2固态，六千多买的笔记本当时
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (10条)</div>
+                <div class="comments-title">💬 热门评论 (7条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">psone</span>
-                    <span class="comment-text">本帖最后由 psone 于 2026-6-14 03:40 编辑
-经常逛论坛刷贴子心里长草，想装台ITX，结果是350W的显卡直接从电老虎缩成小猫
-re9_2026_06_14_16_52_05_478.jpg (203.76 KB, 下载次数:
-0)
+                    <span class="comment-author">Sharkgo7</span>
+                    <span class="comment-text">事情是这样的，我哥的机械革命16pro，22年买的，不经常使用，今年开始发现电脑开机很卡，cpu占用也不高，看任务管理器中磁盘占用时不时会突然100%，然后电脑操作就很卡，过会还会蓝屏，蓝屏代码是：WHEA_UNCORRECTABLE_ERROR
+我帮他拆开看了发现没硅脂了，买了硅脂涂上后，开机不卡了，相应都挺快，但是使用十几分钟后，电脑就变回卡了，磁盘100%的问题依旧，接着就是变卡-蓝屏。用diskgenius扫盘发现有一个坏块，但是扫到那个标红的坏块的时候，就会卡死然后重启，没办法扫完全部，这种情况应该如何处理呢
+是1t的m2固态，六千多买的笔记本当时</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">nekotheo</span>
+                    <span class="comment-text">有没有装ACE反作弊</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">uuyyhhjj</span>
+                    <span class="comment-text">4年过保了吧，那只能全盘格式化了，坏块得格式化</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Sharkgo7</span>
+                    <span class="comment-text">uuyyhhjj 发表于 2026-6-15 15:09
+4年过保了吧，那只能全盘格式化了，坏块得格式化
 
-下载附件
-2026-6-14 17:04 上传
-3080TI满功耗350W运行平均温度在78度左右，风扇2200转，原地起飞
-锁电压0.825V跑1800核心，功耗300W，温度70度，风扇1900
-锁电压0.825V跑1800核心，功耗降到70%，温度66，风扇1600转，频率只剩1600多了，这性能还要不？
+ok大佬，我回去跟他整下</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Sharkgo7</span>
+                    <span class="comment-text">nekotheo 发表于 2026-6-15 14:32
+有没有装ACE反作弊
 
-没办法了，有经验的朋友给些建议。
-继续降频降压，降到0.762V和1400核心频率才能达到50多度，这个ITX机箱得出结论是：200W左右才算好看。。。。这换算好亏啊
-生化.jpg (126.6 KB, 下载次数:
-0)
-
-下载</span>
+那倒是没有，他不打游戏的，中登</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">exnavi</span>
-                    <span class="comment-text">我的3080改水冷四年了，說實話，是我所有改裝最滿意的一項，又穩定又安靜。
-有空間外接冷排，有心臟敢衝的，我很推薦。</span>
+                    <span class="comment-author">PPXG</span>
+                    <span class="comment-text">硬盘smart看看</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">psone</span>
-                    <span class="comment-text">exnavi 发表于 2026-6-13 23:28
-我的3080改水冷四年了，說實話，是我所有改裝最滿意的一項，又穩定又安靜。
-有空間外接冷排，有心臟敢衝的 ...
-
-改水确实是好，以前显卡改水，后来想玩ITX，外接冷排也是个好办法。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">lk_yeah</span>
-                    <span class="comment-text">刚好我也是3080ti，而我的主机是猛兽峡谷，比ITX散热还差。结果就是这样，想小巧又想性能高是不可能的，我一开始就有觉悟了，所以我根本不在乎性能合理的下降。
-调整好心态，别被人带了节奏，主机体积小了散热必然的差，既要又要是很不合理的，追究极致只能付出巨大成本，效果还不见得好。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">psone</span>
-                    <span class="comment-text">lk_yeah 发表于 2026-6-13 23:35
-刚好我也是3080ti，而我的主机是猛兽峡谷，比ITX散热还差。结果就是这样，想小巧又想性能高是不可能的，我 ...
-
-说真的，以前只看别人ITX，以为好整，原来难度非常大
-了解，合理运用。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">hycsy2896</span>
-                    <span class="comment-text">30系本来就功耗高啊，38ti要350w，你换成4070s就会好很多，性能也差不多</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">人生几何</span>
-                    <span class="comment-text">exnavi 发表于 2026-6-14 17:28
-我的3080改水冷四年了，說實話，是我所有改裝最滿意的一項，又穩定又安靜。
-有空間外接冷排，有心臟敢衝的 ...
-
-这是哪个游戏</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">psone</span>
-                    <span class="comment-text">hycsy2896 发表于 2026-6-13 23:42
-30系本来就功耗高啊，38ti要350w，你换成4070s就会好很多，性能也差不多
-
-4070S贵啊，现在3080TI就2000多一点</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">yuechsh</span>
-                    <span class="comment-text">40系制程进步很大，你买块4070s再降压调一调又能静音性能还不会少。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">arboby</span>
-                    <span class="comment-text">我之前用过一段时间3080ti 丐版，因为电源的原因好像是0.8v 锁17xx，具体忘记了， 用起来还挺不错的
-3080ti不是旗舰型号散热压力都挺大的，差不多就行了热不死，最多折腾一下更换硅脂导热垫</span>
+                    <span class="comment-author">kyofuu</span>
+                    <span class="comment-text">硬盘坏的概率挺大</span>
                 </div>
                 
             </div>
@@ -1389,81 +1381,104 @@ re9_2026_06_14_16_52_05_478.jpg (203.76 KB, 下载次数:
         <div class="post" id="post-12">
             <div class="post-header">
                 <span class="post-number">#13</span>
-                <span class="post-title" onclick="togglePost(12)">现在主流的23.8寸1080p显示器都是侧入式背光?</span>
+                <span class="post-title" onclick="togglePost(12)">B650M迫击炮  BIOS更新</span>
                 <span class="expand-icon" id="icon-12">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 monei</span>
-                <span>📅 2026-6-14 17:28</span>
+                <span>👤 宫小艾</span>
+                <span>📅 2026-6-15 17:05</span>
                 <span>💬 8 回复</span>
-                <span>👁️ 480 浏览</span>
+                <span>👁️ 458 浏览</span>
             </div>
             <div class="post-body" id="body-12" style="display:none">
             
             <div class="post-content">
-                现在主流的23.8寸1080p显示器都是侧入式背光?  有没有直下式背光的?
+                最近更新挺快的呀，值得更不，有没有更过的
+
+AMI BIOS  7D76vAO1  2026-06-10
+
+18.06 MB
+描述:
+- 更新 AGESA PI-1.3.0.1b。
+- 采用 AMD EXPO 技术优化：提供超低延迟表现。
+
+AMI BIOS  7D76vAN  2026-05-18  18.04 MB
+描述:
+- 更新 AGESA ComboAm5 1.3.0.1 released.
+- 对旧款显卡有更好的兼容性。
+- 修正 AC Power Loss 功能异常。
+- 支持 AMD EXPO 技术：具备超低延迟
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (9条)</div>
+                <div class="comments-title">💬 热门评论 (8条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">现在主流的23.8寸1080p显示器都是侧入式背光?  有没有直下式背光的?</span>
+                    <span class="comment-author">宫小艾</span>
+                    <span class="comment-text">最近更新挺快的呀，值得更不，有没有更过的
+AMI BIOS  7D76vAO1  2026-06-10
+18.06 MB
+描述:
+- 更新 AGESA PI-1.3.0.1b。
+- 采用 AMD EXPO 技术优化：提供超低延迟表现。
+AMI BIOS  7D76vAN  2026-05-18  18.04 MB
+描述:
+- 更新 AGESA ComboAm5 1.3.0.1 released.
+- 对旧款显卡有更好的兼容性。
+- 修正 AC Power Loss 功能异常。
+- 支持 AMD EXPO 技术：具备超低延迟</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">林雷</span>
-                    <span class="comment-text">你是不是怕漏光或者色彩不均匀，如果是这样，你可以考虑miniled或者oled</span>
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">我的x670e还是去年3月版本</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">林雷 发表于 2026-6-14 19:00
-你是不是怕漏光或者色彩不均匀，如果是这样，你可以考虑miniled或者oled
+                    <span class="comment-author">fingtn13127</span>
+                    <span class="comment-text">最新的没必要更新 你需要特殊支持技术的内存才可以享受到
+在等一等吧</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">宫小艾</span>
+                    <span class="comment-text">fingtn13127 发表于 2026-6-15 17:10
+最新的没必要更新 你需要特殊支持技术的内存才可以享受到
+在等一等吧
 
-感谢大大</span>
+ok 那我不更了，我还是去年的版本</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">supty</span>
-                    <span class="comment-text">液晶显示器基本没见到过 直下背光的，都是侧边背光，包括早期CCFL灯管和现在LED灯条.
-直下背光的一般会比较厚，只有液晶电视有很多用的直下背光.
+                    <span class="comment-author">mofeielva</span>
+                    <span class="comment-text">更了，内存多了几个小参调节，其他没啥区别</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">宫小艾</span>
+                    <span class="comment-text">mofeielva 发表于 2026-6-15 17:19
+更了，内存多了几个小参调节，其他没啥区别
 
-miniled, oled 都是自发光，不需要外部光源.</span>
+我现在电脑打开了 内存杀手和内存最高级别的默认超频方案，更还是不更，我看隔壁有说彻底解决PCI-E的问题</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">theworkbench</span>
-                    <span class="comment-text">侧入背光做的好也是可以的，不用纠结，要显示效果好的话提升下分辨率把，现在这个分辨率的显示器一般都不怎么下料的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">ttsammammb</span>
-                    <span class="comment-text">supty 发表于 2026-6-14 20:57
-液晶显示器基本没见到过 直下背光的，都是侧边背光，包括早期CCFL灯管和现在LED灯条.
-直下背光的一般会比较 ...
+                    <span class="comment-author">mofeielva</span>
+                    <span class="comment-text">宫小艾 发表于 2026-6-15 17:25
+我现在电脑打开了 内存杀手和内存最高级别的默认超频方案，更还是不更，我看隔壁有说彻底解决PCI-E的问题 ...
 
-miniled还是led背光，可以看作直下式背光的升级版，microled才是自发光</span>
+PCIE 出问题基本上都是X670E, b650 有问题的很少</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">fjxyx</span>
-                    <span class="comment-text">我用的友达面板，基本不漏光，但是对比度发灰，这个是天生的除非换oled</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zhao137314</span>
-                    <span class="comment-text">2026 年了，1080？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">weindy</span>
-                    <span class="comment-text">zhao137314 发表于 2026-6-15 01:43
-2026 年了，1080？
+                    <span class="comment-author">fingtn13127</span>
+                    <span class="comment-text">宫小艾 发表于 2026-6-15 17:17
+ok 那我不更了，我还是去年的版本
 
-这个ID都看了年打年的显示器了，各种求助帖子发了一堆，就是没买。所以就别较真了哈哈哈。</span>
+去年的版本那确实是有点过时了
+你还是更吧 
+主要是我bios还都是4月份版本感觉没啥必要</span>
                 </div>
                 
             </div>
@@ -1475,93 +1490,88 @@ miniled还是led背光，可以看作直下式背光的升级版，microled才�
         <div class="post" id="post-13">
             <div class="post-header">
                 <span class="post-number">#14</span>
-                <span class="post-title" onclick="togglePost(13)">目前华硕灵耀魔方BD4 BE3600路由器还值得入手吗</span>
+                <span class="post-title" onclick="togglePost(13)">难道SA电压长期1.4V+  IMC体制会下降吗？</span>
                 <span class="expand-icon" id="icon-13">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 fifaplayer88</span>
-                <span>📅 2026-6-14 19:42</span>
-                <span>💬 13 回复</span>
-                <span>👁️ 431 浏览</span>
+                <span>👤 Cn-Fix</span>
+                <span>📅 2026-6-15 22:42</span>
+                <span>💬 0 回复</span>
+                <span>👁️ 205 浏览</span>
             </div>
             <div class="post-body" id="body-13" style="display:none">
             
             <div class="post-content">
-                本帖最后由 fifaplayer88 于 2026-6-14 19:56 编辑
+                U是126kf 板是B660M TUF D4 颗粒是b-die
+最高G1能到4100 但是不稳
+所以一直4000频率跑着 小参基本和现在一样 sa电压1.45V  内存电压1.5v
 
-今天在上京东看到华硕的wifi7路由器华硕灵耀魔方BD4 BE3600 大概420 好久没有关注了华硕路由器 问下兄弟们这个型号性价比如何 值得入手吗
+跑了大概一年左右，后来玩游戏时不时游戏闪退
+索性就只开XMP用了，过些日子又看了下XMP sa自动的情况下电压如何
+没想到自动都给了1.4V 这样又用了有半年
+
+今天想着再超一超这个内存，一样拉到4000 sa1.45V  内存电压1.55V
+yc测试死活过不去  提高时许 提高内存电压到1.6 都没用 
+TM5 777也是报错14
+
+降频到3900  sa1.45 内存电压1.55稳过yc和tm5
+然后sa降到1.35  内存电压降到1.45v  也一样稳过yc和tm5
+
+感觉应该是imc缩了
+
+屏幕截图 2026-06-15 223105.png (591.81 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 22:41 上传
+
+屏幕截图 2026-06-15 223205.png (95.43 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 22:42 上传
+
+屏幕截图 2026-06-15 223239.png (57.56 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 22:42 上传
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/224159fzmd11j2293ml555.png" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/224200pg07kq7d05xzuuud.png" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/224200hmy68luukohheo7y.png" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (10条)</div>
+                <div class="comments-title">💬 热门评论 (1条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">fifaplayer88</span>
-                    <span class="comment-text">本帖最后由 fifaplayer88 于 2026-6-14 19:56 编辑
-今天在上京东看到华硕的wifi7路由器华硕灵耀魔方BD4 BE3600 大概420 好久没有关注了华硕路由器 问下兄弟们这个型号性价比如何 值得入手吗</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">八一半自动</span>
-                    <span class="comment-text">同问我也想买</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">cokebear</span>
-                    <span class="comment-text">只有两个2.5g口，组aimesh挺好</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">fifaplayer88</span>
-                    <span class="comment-text">cokebear 发表于 2026-6-14 20:09
-只有两个2.5g口，组aimesh挺好
+                    <span class="comment-author">Cn-Fix</span>
+                    <span class="comment-text">U是126kf 板是B660M TUF D4 颗粒是b-die
+最高G1能到4100 但是不稳
+所以一直4000频率跑着 小参基本和现在一样 sa电压1.45V  内存电压1.5v
 
-感谢兄弟的建议 兄弟的意思是值得入手，好久没有关注华硕路由器</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">八一半自动</span>
-                    <span class="comment-text">fifaplayer88 发表于 2026-6-14 20:14
-感谢兄弟的建议 兄弟的意思是值得入手，好久没有关注华硕路由器
+跑了大概一年左右，后来玩游戏时不时游戏闪退
+索性就只开XMP用了，过些日子又看了下XMP sa自动的情况下电压如何
+没想到自动都给了1.4V 这样又用了有半年
 
-为啥我的价格是440</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">fifaplayer88</span>
-                    <span class="comment-text">八一半自动 发表于 2026-6-14 20:15
-为啥我的价格是440
+今天想着再超一超这个内存，一样拉到4000 sa1.45V  内存电压1.55V
+yc测试死活过不去  提高时许 提高内存电压到1.6 都没用 
+TM5 777也是报错14
 
-可能我的店不是直营店吧</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">雪凛</span>
-                    <span class="comment-text">不要买灵耀这个系列，固件支持的很差，华硕对1000以下的机型都不是很上心的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">fifaplayer88</span>
-                    <span class="comment-text">雪凛 发表于 2026-6-14 20:26
-不要买灵耀这个系列，固件支持的很差，华硕对1000以下的机型都不是很上心的
-...
+降频到3900  sa1.45 内存电压1.55稳过yc和tm5
+然后sa降到1.35  内存电压降到1.45v  也一样稳过yc和tm5
 
-哦哦哦 原来如此 好久没有关注华硕的路由器了</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">冬鱼</span>
-                    <span class="comment-text">组mesh挺好的，我主路由是be88U 2个比较远的房间都是BD4，用了半年左右，智能家居和手机正常联网都很稳定。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">流浪的蛙蛙</span>
-                    <span class="comment-text">雪凛 发表于 2026-6-14 20:26
-不要买灵耀这个系列，固件支持的很差，华硕对1000以下的机型都不是很上心的
-...
+感觉应该是imc缩了
+屏幕截图 2026-06-15 223105.png (591.81 KB, 下载次数:
+0)
 
-TUF BE6500还行吧，更新挺多的。</span>
+下载附件
+202</span>
                 </div>
                 
             </div>
@@ -1573,80 +1583,140 @@ TUF BE6500还行吧，更新挺多的。</span>
         <div class="post" id="post-14">
             <div class="post-header">
                 <span class="post-number">#15</span>
-                <span class="post-title" onclick="togglePost(14)">AI 翻译大模型还会进化吧?</span>
+                <span class="post-title" onclick="togglePost(14)">入了个270KP，还不错</span>
                 <span class="expand-icon" id="icon-14">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 monei</span>
-                <span>📅 2026-6-14 21:35</span>
-                <span>💬 7 回复</span>
-                <span>👁️ 830 浏览</span>
+                <span>👤 1滴小汗</span>
+                <span>📅 2026-6-15 19:42</span>
+                <span>💬 19 回复</span>
+                <span>👁️ 883 浏览</span>
             </div>
             <div class="post-body" id="body-14" style="display:none">
             
             <div class="post-content">
-                本帖最后由 monei 于 2026-6-14 21:37 编辑
+                本帖最后由 1滴小汗 于 2026-6-15 19:44 编辑
 
-有一些法语对话的无字幕的视频需要翻译，请问大家那些AI 翻译大模型会一直进化吧？
-这些视频不着急翻译，过个两三年翻译也行，想等靠谱的AI 翻译大模型。
+蛮喜欢Z890M FORCE DUO X WIFI7这个板子，无光，5个M2
+缺点是6层板 ，供电稍微弱一点，12x60a 很勉强
+
+CPU原本想买个带体质的，奈何618 JD力度太大 板U套装实际到手3200不到，
+就买了套装，结果难得运气不错，貌似避雷成功，最后细调后可以P5.6G/E5.0G YC花式烤机
+P95会降频，没法讨论5.6/5.0频率下的实际稳定性（讲主板缺点时会说）
+
+说一下感受
+舍弃HT后，真的功耗很好，很凉快，裸机+普通360水冷跑R23在60都上下
+问题是这代CPU就像兄弟们所说，频率墙厚实，大核8x5.7G 也许只有雕中雕才可以（如momoka的）
+至于主板的优点是超内存容易，优化参数傻瓜（这个主板自己认真调节内存参数真的毫无收益），
+我这一套内存8600@38-52-52-102非常容易，再往上似乎就不稳，收益也不大，就不想调节了
+延迟66.2-68.0，算是满意
+板子的缺点，现在貌似是所有技嘉Z890共有的缺点，
+就是定频定压后频率不能完全锁定，尤其是在P95这种超级压力的烧机下，YC、cinebench这些都暂时没有发现会降频的问题
+查了很多资料，不能锁频貌似是输入电压（DLVR in Vcore）和输出电压(Internal Vcore)的变动调节引起的，技嘉主板现在貌似无解
+据说MSI可以锁住 ASUS暂时未知
+但是这个缺点同时也带来了优点：设置得当可以有效减少发热，但是调节很烧脑（我上班开始折腾，甚至错过了午餐）
+输入电压（DLVR in Vcore）和输出电压(Internal Vcore)官方给的区间是大于0.05v小于0.12v，后来发现配合ac load curve可以作弊到0.03v的样子
+但为了安全我还是把压差设置了0.06v
+
+废话了那么多，总体我还是挺满
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/193809tqf8x77tq2ahxfgm.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/193809b8fdff6d1gffm8xs.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/193808atyo20did9nd4z9o.jpg" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (8条)</div>
+                <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">本帖最后由 monei 于 2026-6-14 21:37 编辑
-有一些法语对话的无字幕的视频需要翻译，请问大家那些AI 翻译大模型会一直进化吧？
-这些视频不着急翻译，过个两三年翻译也行，想等靠谱的AI 翻译大模型。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">kongzheng3333</span>
-                    <span class="comment-text">用whisper large v3语音转录文字再配合混元mt2翻译试试</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">kongzheng3333 发表于 2026-6-14 21:45
-用whisper large v3语音转录文字再配合混元mt2翻译试试
+                    <span class="comment-author">1滴小汗</span>
+                    <span class="comment-text">本帖最后由 1滴小汗 于 2026-6-15 19:44 编辑
+蛮喜欢Z890M FORCE DUO X WIFI7这个板子，无光，5个M2
+缺点是6层板 ，供电稍微弱一点，12x60a 很勉强
 
-请问混元mt2需要购买token吗？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">kongzheng3333</span>
-                    <span class="comment-text">monei 发表于 2026-6-14 21:53
-请问混元mt2需要购买token吗？
+CPU原本想买个带体质的，奈何618 JD力度太大 板U套装实际到手3200不到，
+就买了套装，结果难得运气不错，貌似避雷成功，最后细调后可以P5.6G/E5.0G YC花式烤机
+P95会降频，没法讨论5.6/5.0频率下的实际稳定性（讲主板缺点时会说）
 
-有个8gb显存应该就能本地部署</span>
+说一下感受
+舍弃HT后，真的功耗很好，很凉快，裸机+普通360水冷跑R23在60都上下
+问题是这代CPU就像兄弟们所说，频率墙厚实，大核8x5.7G 也许只有雕中雕才可以（如momoka的）
+至于主板的优点是超内存容易，优化参数傻瓜（这个主板自己认真调节内存参数真的毫无收益），
+我这一套内存8600@38-52-52-102非常容易，再往上似</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">叶子烟</span>
-                    <span class="comment-text">**不是已经带这个功能了</span>
+                    <span class="comment-author">toddler</span>
+                    <span class="comment-text">就这，没看出哪里好，上游戏看看</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">老饭</span>
-                    <span class="comment-text">现在随便一个模型翻译这些都没问题</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">kongzheng3333 发表于 2026-6-14 22:18
-有个8gb显存应该就能本地部署
+                    <span class="comment-author">1滴小汗</span>
+                    <span class="comment-text">toddler 发表于 2026-6-15 20:06
+就这，没看出哪里好，上游戏看看
 
-我6G显存</span>
+我只会玩KOF和NBA
+我电脑的作用只有跑分和看片</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">monei</span>
-                    <span class="comment-text">叶子烟 发表于 2026-6-14 23:59
-**不是已经带这个功能了
+                    <span class="comment-author">momoka</span>
+                    <span class="comment-text">本帖最后由 momoka 于 2026-6-15 20:24 编辑
+技嘉用dlvrin和internal电压的方式，能耗比和温度非常好的。能用这种方式上56/50，体质也挺好的了，我在技嘉890上折腾过的俩270KP都只有84的饼干分，靠dlvrin调节，很难稳定56/50的，yc和R15（50次）都是跑不过的。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">momoka</span>
+                    <span class="comment-text">toddler 发表于 2026-6-15 20:06
+就这，没看出哪里好，上游戏看看
 
-您能把被屏蔽的两个字分开写, 然后可能就能显示了, 谢谢您哦.</span>
+“裸机+普通360水冷跑R23在60都上下”
+
+我觉得这个就挺好。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">1滴小汗</span>
+                    <span class="comment-text">momoka 发表于 2026-6-15 20:23
+技嘉用dlvrin和internal电压的方式，能耗比和温度非常好的。能用这种方式上56/50，体质也挺好的了，我在技 ...
+
+R15我就跑了一两遍 这代R15还是很难？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">momoka</span>
+                    <span class="comment-text">本帖最后由 momoka 于 2026-6-15 20:37 编辑
+1滴小汗 发表于 2026-6-15 20:28
+R15我就跑了一两遍 这代R15还是很难？
+200s跑R15依然明显比R23难。
+
+我在不降频的微星主板上，甚至出现过能撑一会prime95的设置，跑不过50轮R15的情况，推测是没有HT后，prime95相对容易跑了一点点。不像之前带HT那些，高频下，不降频跑prime95和boom没啥两样。
+如果换成12~14代，能跑prime95的电压，足够日常使用高的多的频率了。但是200s，能跑prime95的电压，远远不够+0.1G频率日常用的电压 ，我P核心加0.05V，E核心加了0.07V，才够+0.1G的日常，能耗比就崩了，囧。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">1滴小汗</span>
+                    <span class="comment-text">momoka 发表于 2026-6-15 20:32
+200s跑R15依然明显比R23难。
+
+我在不降频的微星主板上，甚至出现过能撑一会prime95的设置，跑不过50轮R15 ...
+
+BUT你的散热规模无敌啊</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">mode1</span>
+                    <span class="comment-text">13900K有必要升级吗？
+我的鸡架主板上的那个插NVME的小板爆浆了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">momoka</span>
+                    <span class="comment-text">1滴小汗 发表于 2026-6-15 20:42
+BUT你的散热规模无敌啊
+
+我怎么觉得47000分我都没法60度左右啊。</span>
                 </div>
                 
             </div>
@@ -1658,81 +1728,158 @@ TUF BE6500还行吧，更新挺多的。</span>
         <div class="post" id="post-15">
             <div class="post-header">
                 <span class="post-number">#16</span>
-                <span class="post-title" onclick="togglePost(15)">可能没救的一块主板</span>
+                <span class="post-title" onclick="togglePost(15)">通过open**访问局域网改如何设置</span>
                 <span class="expand-icon" id="icon-15">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 ZZY3312</span>
-                <span>📅 2026-6-14 22:17</span>
-                <span>💬 7 回复</span>
-                <span>👁️ 750 浏览</span>
+                <span>👤 霸天虎撤退</span>
+                <span>📅 2026-6-15 15:52</span>
+                <span>💬 18 回复</span>
+                <span>👁️ 538 浏览</span>
             </div>
             <div class="post-body" id="body-15" style="display:none">
             
             <div class="post-content">
-                如图，拔线时拔掉了一个接口，SATA针脚还弄断一根。
-板子目前能亮，但我准备出了，不修好会有什么影响吗？
+                先说明一下现在的环境
 
-C2C6353F5AF968BF78287CAD486D6CA6.jpg (154.74 KB, 下载次数:
-0)
+1、云服务器一台，搭建了openv~p~n服务器，虚拟网段10.99.0.0
 
-下载附件
+2、公司内网网段10.9.0.0，群晖作为openv~p~n的客户端，v~p~n ip为10.99.0.0，本地IP为10.9.0.3
 
-2026-6-14 22:14 上传
-            </div>
-            
-            <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/14/221418wktdwl7k013rcolt.jpg" loading="lazy" onerror="this.style.display='none'" />
+3、异地电脑A作为openv~p~n的客户端，v~p~n ip为10.99.0.100，本地IP为192.168.2.7
+
+我改如何才能使用电脑A直接访问到公司的局域网10.9.0.0？
+
+在openv~p~n服务器的server.conf中。已添加：
+client-to-client
+route 10.9.0.0 255.255.255.0
+push "route 10.9.0.0 255.255.255.0"
+
+群晖的openv~p~n客户端CCD配置中已有：
+ifconfig-push 10.99.0.3 255.255.255.0
+iroute 10.9.0.0 255.255.255.0
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (8条)</div>
+                <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">ZZY3312</span>
-                    <span class="comment-text">如图，拔线时拔掉了一个接口，SATA针脚还弄断一根。
-板子目前能亮，但我准备出了，不修好会有什么影响吗？
-C2C6353F5AF968BF78287CAD486D6CA6.jpg (154.74 KB, 下载次数:
-0)
+                    <span class="comment-author">霸天虎撤退</span>
+                    <span class="comment-text">先说明一下现在的环境
 
-下载附件
-2026-6-14 22:14 上传</span>
+1、云服务器一台，搭建了openv~p~n服务器，虚拟网段10.99.0.0
+
+2、公司内网网段10.9.0.0，群晖作为openv~p~n的客户端，v~p~n ip为10.99.0.0，本地IP为10.9.0.3
+
+3、异地电脑A作为openv~p~n的客户端，v~p~n ip为10.99.0.100，本地IP为192.168.2.7
+
+我改如何才能使用电脑A直接访问到公司的局域网10.9.0.0？
+在openv~p~n服务器的server.conf中。已添加：
+client-to-client
+route 10.9.0.0 255.255.255.0
+push "route 10.9.0.0 255.255.255.0"
+群晖的openv~p~n客户端CCD配置中已有：
+ifconfig-push 10.99.0.3 255.255.255.0
+iroute 1</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">林雷</span>
-                    <span class="comment-text">并没有什么影响，卖的实话实说即可</span>
+                    <span class="comment-author">yyu0378</span>
+                    <span class="comment-text">检查客户端连接后的系统路由表,是不是有正确添加对应的项,如果没有就需要检查对应的日志,查看具体原因.</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">basiak</span>
-                    <span class="comment-text">花个二三十找人焊个sata座子呗</span>
+                    <span class="comment-author">ghwwx</span>
+                    <span class="comment-text">不太可行吧，你这个只能通过异地电脑访问群晖吧，公司的局域网又没有加入open**.
+如果要异地电脑访问公司的局域网，得把服务器架在公司的路由器上。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">zhjook</span>
-                    <span class="comment-text">不用修，把针脚  全部掰断，或用指甲刀减掉就行了，避免短路导致主板报错</span>
+                    <span class="comment-author">霸天虎撤退</span>
+                    <span class="comment-text">ghwwx 发表于 2026-6-15 15:58
+不太可行吧，你这个只能通过异地电脑访问群晖吧，公司的局域网又没有加入open**.
+如果要异地电脑访问公司的 ...
+
+我搜索相关功能是可以的，我也短暂成功过，但是我当时没发现成功了，被我又改掉了配置</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">弯道王子</span>
-                    <span class="comment-text">实话实说即可，80%的人用不上所有的sata接口，不过确实对残值有些影响，不想多折腾你卖的时候适当减点钱，或者搭点别的东西送送。</span>
+                    <span class="comment-author">霸天虎撤退</span>
+                    <span class="comment-text">yyu0378 发表于 2026-6-15 15:57
+检查客户端连接后的系统路由表,是不是有正确添加对应的项,如果没有就需要检查对应的日志,查看具体原因. ...
+电脑A的路由表
+IPv4 路由表
+===========================================================================
+活动路由:
+网络目标
+网络掩码
+网关
+接口
+跃点数
+0.0.0.0
+0.0.0.0
+192.168.2.2
+192.168.2.7
+271
+10.9.0.0
+255.255.255.0
+10.99.0.1
+10.99.0.100
+257
+10.99.0.0
+255.255.255.0
+在链路上
+10.99.0.100
+257
+10.99.0.100  255.255.255.255
+在链路上
+10.99.0.100
+257
+10.99.0.25</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">猪圈</span>
-                    <span class="comment-text">什么板子，怎么出</span>
+                    <span class="comment-author">yyu0378</span>
+                    <span class="comment-text">霸天虎撤退 发表于 2026-6-15 16:04
+电脑A的路由表
+IPv4 路由表
+======================================================================== ...
+
+看路由,访问10.9.0.0是通过10.99.0.1的,建议检查是否访问这个ip,然后测试这个ip机器是否正确处理你的请求.</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">好球男</span>
-                    <span class="comment-text">大厂不都有帮修吗，走个流程</span>
+                    <span class="comment-author">霸天虎撤退</span>
+                    <span class="comment-text">yyu0378 发表于 2026-6-15 16:46
+看路由,访问10.9.0.0是通过10.99.0.1的,建议检查是否访问这个ip,然后测试这个ip机器是否正确处理你的请求 ...
+
+没错的，10.99.0.1是虚拟网关</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">gaoyi124</span>
-                    <span class="comment-text">俩办法吧,找个修机器的换个sata底座,估摸着也就30块钱的事,这是个简单活,最好本地找,外地加上运费就不划算了,另外一个办法就是把上面的金属针脚全剪下来,别连电是最主要的,就当不存在这个口,不用也不是不行</span>
+                    <span class="comment-author">腿毛飘飘</span>
+                    <span class="comment-text">现在还在用上古的open**么？ 有没有可能被运营商ban了？open**这东西跟夜幕里的探照灯一样醒目，运营商封掉一点也不稀奇.
+
+试试wireguard呢？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">nn1122</span>
+                    <span class="comment-text">腿毛飘飘 发表于 2026-6-15 16:56
+现在还在用上古的open**么？ 有没有可能被运营商ban了？open**这东西跟夜幕里的探照灯一样醒目，运营商封掉 ...
+
+你以为wg在运营商流量分析设备里面逃得过？wg协议是最容易被标记的！</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">腿毛飘飘</span>
+                    <span class="comment-text">nn1122 发表于 2026-6-15 17:06
+你以为wg在运营商流量分析设备里面逃得过？wg协议是最容易被标记的！
+
+我的意思是如果wg也不通，那就是确认运营商不允许你搞**。
+
+如果wg可以连上，就是open**没配置对。</span>
                 </div>
                 
             </div>
@@ -1744,106 +1891,121 @@ C2C6353F5AF968BF78287CAD486D6CA6.jpg (154.74 KB, 下载次数:
         <div class="post" id="post-16">
             <div class="post-header">
                 <span class="post-number">#17</span>
-                <span class="post-title" onclick="togglePost(16)">关于紧凑型matx机箱机械大师c28的一些问题，求大神解答~~~~~~~~~~</span>
+                <span class="post-title" onclick="togglePost(16)">折腾上了铭瑄里程碑11800H</span>
                 <span class="expand-icon" id="icon-16">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 rockfag</span>
-                <span>📅 2026-6-14 17:40</span>
-                <span>💬 8 回复</span>
-                <span>👁️ 373 浏览</span>
+                <span>👤 Phil_Libra</span>
+                <span>📅 2026-6-15 16:27</span>
+                <span>💬 5 回复</span>
+                <span>👁️ 609 浏览</span>
             </div>
             <div class="post-body" id="body-16" style="display:none">
             
             <div class="post-content">
-                关键配置如下：
+                本帖最后由 Phil_Libra 于 2026-6-15 17:28 编辑
 
-机箱：机械大师c28
-散热：hyper 612 单塔风冷
-显卡：5080 （长度应该300mm以上）
-主板：微星b850刀锋钛max wifi （显卡在一槽）
+心水很久，二手700多买了一个，主要是内存现在好贵啊，450买了对镁光铂胜MAX 3600 8G*2。
 
-我就想咨询下，14cm的标准atx电源能否装的下。。。因为电源的标准安装方式是接头朝向是向下，插上接头后不清楚是否会顶住显卡的背面。另外我看c28的介绍，貌似电源有另一种安装方式，接头的朝向是侧面，不知道是否属实。。。我真的不想买sfx电源啊。。。。。。。。。。
+到手第一天测试，开XMP和4倍频了，单烤FPU直接100度降频，功耗只有70多W。把顶盖和核心填充换成了翻出来的TFX，FPU能跑130W了。
+
+然后买了极客温控他们自己那个牌子的8540相变片和6530硅脂，换上以后稳140W，待机温度也更低了。
+
+再然后想到11800H是个长方形核心，原来那个追风者S4单塔的热管排布不适合这U，翻出了闲置已久的利民银箭，FPU直接干到了175-180W……看来还是双塔好。
+
+四倍频全核4.6GHz，FPU稳定在175W，内存只能开XMP调不了小参，延迟59ns：
+
+未标题-1.jpg (204.5 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 17:28 上传
+
+R23基本稳定1W5+：
+
+屏幕截图 2026-06-15 171852.png (71.42 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 17:22 上传
+
+感觉和5700x差不多，但价格便宜很多，功耗也低不少，而且M.2一个4.0一个3.0，扩展性其实还可以。
+
+缺点：
+没有MOS散热，挡板没有给WIFI天线开孔，这两项花钱能解决；BIOS官网更新了一个1.3，刷入之后其实没啥区别，超频选项基本没有，有也不起作用，内存无法调小参，虽然3600 gear1其实已经是最优解；BIOS汉化还不完全，还有部分文字错误……风扇调节很难用只能默认；HM570却好像不支持傲腾H10/H20那个混合技术。
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/172820txkdy1x6j1iz7zj7.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/172228v373vrz9s79hjlmh.png" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (9条)</div>
+                <div class="comments-title">💬 热门评论 (6条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">rockfag</span>
-                    <span class="comment-text">关键配置如下：
+                    <span class="comment-author">Phil_Libra</span>
+                    <span class="comment-text">本帖最后由 Phil_Libra 于 2026-6-15 17:28 编辑
+心水很久，二手700多买了一个，主要是内存现在好贵啊，450买了对镁光铂胜MAX 3600 8G*2。
 
-机箱：机械大师c28
-散热：hyper 612 单塔风冷
-显卡：5080 （长度应该300mm以上）
-主板：微星b850刀锋钛max wifi （显卡在一槽）
+到手第一天测试，开XMP和4倍频了，单烤FPU直接100度降频，功耗只有70多W。把顶盖和核心填充换成了翻出来的TFX，FPU能跑130W了。
 
-我就想咨询下，14cm的标准atx电源能否装的下。。。因为电源的标准安装方式是接头朝向是向下，插上接头后不清楚是否会顶住显卡的背面。另外我看c28的介绍，貌似电源有另一种安装方式，接头的朝向是侧面，不知道是否属实。。。我真的不想买sfx电源啊。。。。。。。。。。</span>
+然后买了极客温控他们自己那个牌子的8540相变片和6530硅脂，换上以后稳140W，待机温度也更低了。
+
+再然后想到11800H是个长方形核心，原来那个追风者S4单塔的热管排布不适合这U，翻出了闲置已久的利民银箭，FPU直接干到了175-180W……看来还是双塔好。
+
+四倍频全核4.6GHz，FPU稳定在175W，内存只能开XMP调不了小参，延迟59ns：
+未标题-1.jpg (204.5 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 17:28 上传
+R</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">散落烟灰</span>
-                    <span class="comment-text">真的巧，我遇到一样的问题
-
-现在用的相当于c26那么大的，就是因为14cm电源线头只能朝下，挡显卡了想换机箱。
-
-C24 C28 c34我都用过，就是电源线朝向侧面板的，现在在考虑要不要再换回c28，想想那个螺丝数量就头皮麻</span>
+                    <span class="comment-author">popgame</span>
+                    <span class="comment-text">这个是不是119的马甲，还是说笔记本制程工艺不一样，我记得性能比119好</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">散落烟灰</span>
-                    <span class="comment-text">机械大师c系列的侧面电源线位置基本都有块挡板，就是为了挡侧面电源线，为了美观用的
+                    <span class="comment-author">Phil_Libra</span>
+                    <span class="comment-text">popgame 发表于 2026-6-15 16:42
+这个是不是119的马甲，还是说笔记本制程工艺不一样，我记得性能比119好
 
-不知道有没有c28的平替</span>
+笔记本tiger lake是10nm，可以理解成12代的青春版</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">rockfag</span>
-                    <span class="comment-text">散落烟灰 发表于 2026-6-14 17:49
-真的巧，我遇到一样的问题
-
-现在用的相当于c26那么大的，就是因为14cm电源线头只能朝下，挡显卡了想换机箱 ...
-
-没明白你意思呢？ 你说的c26的话atx电源小了，那c28呢？  另外c28用atx电源的话能电源线朝向侧面么？</span>
+                    <span class="comment-author">pukema</span>
+                    <span class="comment-text">现在这行情拿来当炒股机网游机都挺好的 只有板U的话 性能是不是不如Q1J2这种 我记得D4也是700出头</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">散落烟灰</span>
-                    <span class="comment-text">rockfag 发表于 2026-6-14 18:51
-没明白你意思呢？ 你说的c26的话atx电源小了，那c28呢？  另外c28用atx电源的话能电源线朝向侧面么？ ...
+                    <span class="comment-author">momoka</span>
+                    <span class="comment-text">本帖最后由 momoka 于 2026-6-15 21:33 编辑
+11代 modt啊，展示下我的山寨11980hk es
 
-C28可以电源线朝侧面板的！
+因为体质有潜力可挖，所以请咸鱼diyer改造了vrm散热片，cpu核心改相变填充。
 
-C26 只能用sfx吧</span>
+用途1.全核心5G  1.27V日常，但是放弃满载跑分（会降频），作为10~11代那个时期的代表。。。（最便宜的方案了）
+用途2.全核心4.8G 1.145V，基本不降频，R23 16000+，高负载avx烤鸡除外。
+
+是山寨，所以甚至有完整的超频选项。。是es，所以真的不锁倍频可以突破46限制，里程碑的正式版这里反而成了折腾的阻碍
+所以一直没去搞里程碑，比较可惜，不然这个板子的布局还挺好的。没有散热片也能解决。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">散落烟灰</span>
-                    <span class="comment-text">看了一圈，下单了机械大师iF25</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">rockfag</span>
-                    <span class="comment-text">散落烟灰 发表于 2026-6-14 19:16
-C28可以电源线朝侧面板的！
+                    <span class="comment-author">Phil_Libra</span>
+                    <span class="comment-text">momoka 发表于 2026-6-15 20:50
+11代 modt啊，展示下我的山寨11980hk es
 
-C26 只能用sfx吧
+因为体质有潜力可挖，所以请咸鱼diyer改造了vrm散热片，cpu核心改 ...
 
-谢谢解答~~~~~，最后一个问题，那接口朝向侧面，电源的风扇朝向是哪里？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xobu</span>
-                    <span class="comment-text">电源风扇朝外</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">散落烟灰</span>
-                    <span class="comment-text">rockfag 发表于 2026-6-14 20:20
-谢谢解答~~~~~，最后一个问题，那接口朝向侧面，电源的风扇朝向是哪里？
-
-电源风扇朝向前面板</span>
+你这个太夸张了。我试过10分钟FPU，MOS散热片温度能接受，P95不知道为什么反而没有FPU功耗高。
+其实里程碑就是多个X4，不过我现在没有薄的M.2散热，显卡下那个装不了这个X4还真用上了。</span>
                 </div>
                 
             </div>
@@ -1855,55 +2017,102 @@ C26 只能用sfx吧
         <div class="post" id="post-17">
             <div class="post-header">
                 <span class="post-number">#18</span>
-                <span class="post-title" onclick="togglePost(17)">求助分析丢包原因</span>
+                <span class="post-title" onclick="togglePost(17)">技嘉主板在D5内存超频方面的造诣，似乎强过微星华硕</span>
                 <span class="expand-icon" id="icon-17">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 thirty6</span>
-                <span>📅 2026-6-14 21:05</span>
-                <span>💬 2 回复</span>
-                <span>👁️ 267 浏览</span>
+                <span>👤 甘尼克斯</span>
+                <span>📅 2026-6-15 14:51</span>
+                <span>💬 19 回复</span>
+                <span>👁️ 1022 浏览</span>
             </div>
             <div class="post-body" id="body-17" style="display:none">
             
             <div class="post-content">
-                本帖最后由 thirty6 于 2026-6-14 21:07 编辑
+                24年最早用B650M电竞雕的时候，海力士原厂ADIE 16G×2可以轻松跑稳6200 FK2067  C28 36 30 30 400T的紧参
+25年换了B850M重炮手一代，发现同样的参数居然跑不稳，但当时没去深究 ，因为很快又换了6000C28 24G×2的MDIE冰刃上了8000C36
+26年无聊，又买了一块B850重炮手二代、一块B650M迫击炮及一块B850M PWOER回来测
 
-这几天刷d2s频繁掉线，换区换uu节点还是一样，掉线时uu提示丢包严重。 
-本来以为光猫不太行了，先下单个5582a试试。
+结果发现MDIE 24G×2在上述主板上的表现差不多，8000 FK2000  C36 76 76 96这组参数大家都能跑，8000以上我的CPU MIC偏雷均跑不稳。
+但是用老ADIE 16G×2的话，表现最好依旧是B650M电竞雕（B850M POWER也能跑6200C28紧参，但毕竟是双槽板），B850M重炮手二代表现次之能跑6200C28松参6200C28 36 36 72、B650M迫击炮和B850M重炮手一代垫底，只能日常跑稳6000 FK2000 C28 36 30 30 400T
 
-联通的千兆，还留着公网ip。
-
-又有大神说先winmtr看看哪里丢包。
-
-是节点的问题？怎么跳来跳去的。。。
+B850M电竞雕没买过，具体表现如何不清楚，单看外观就是B650M电竞雕的换皮。
+所以就我自己这一堆主板用下来，似乎技嘉主板在内存超频方面略胜一筹，不知有没有人同感？
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (3条)</div>
+                <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">thirty6</span>
-                    <span class="comment-text">本帖最后由 thirty6 于 2026-6-14 21:07 编辑
-这几天刷d2s频繁掉线，换区换uu节点还是一样，掉线时uu提示丢包严重。 
-本来以为光猫不太行了，先下单个5582a试试。
+                    <span class="comment-author">甘尼克斯</span>
+                    <span class="comment-text">24年最早用B650M电竞雕的时候，海力士原厂ADIE 16G×2可以轻松跑稳6200 FK2067  C28 36 30 30 400T的紧参
+25年换了B850M重炮手一代，发现同样的参数居然跑不稳，但当时没去深究 ，因为很快又换了6000C28 24G×2的MDIE冰刃上了8000C36
+26年无聊，又买了一块B850重炮手二代、一块B650M迫击炮及一块B850M PWOER回来测
 
-联通的千兆，还留着公网ip。
-
-又有大神说先winmtr看看哪里丢包。
-
-是节点的问题？怎么跳来跳去的。。。</span>
+结果发现MDIE 24G×2在上述主板上的表现差不多，8000 FK2000  C36 76 76 96这组参数大家都能跑，8000以上我的CPU MIC偏雷均跑不稳。
+但是用老ADIE 16G×2的话，表现最好依旧是B650M电竞雕（B850M POWER也能跑6200C28紧参，但毕竟是双槽板），B850M重炮手二代表现次之能跑6200C28松参6200C28 36 36 72、B650M迫击炮和</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">thirty6</span>
-                    <span class="comment-text">ping -t 网站ip也会无规律偶发超时。</span>
+                    <span class="comment-author">xy.</span>
+                    <span class="comment-text">mpower 没打过不应该啊
+另外 a die 也可以玩玩 1:2</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">blanksign</span>
-                    <span class="comment-text">连路由器都有丢包，那还有啥说的。。。</span>
+                    <span class="comment-author">猫LOVE</span>
+                    <span class="comment-text">本帖最后由 猫LOVE 于 2026-6-15 15:42 编辑
+说实话这几张主板在同步模式下几乎不可能有瓶颈，我当初一颗大雕7500f玩了b650m的两炮+华擎黑潮风暴全都可以6600c28紧参，想要判断主板内存超频能力说实话还得看异步分频模式，不然你这个比较方法能得出b650m电竞雕强于b850mpower，后者几乎是目前amd阵容最强的内存超频板梯队的，跑不过一张6层pcb的四槽板你觉得可能吗？
+
+另外我注意到你说的是海力士原厂adie这组测试里只有电竞雕表现最好，其他表现一般，这个条子是海力士小绿条吗？如果是的话很大概率是内存的锅，华硕微星在600系上对小绿条的优化很差，我有一对能跑在z790apex上8600c36的小绿条，低频6800c30也是毫无压力（再低没测了），在当时的zen4+b650平台上压参也是很困难</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">jrtop3</span>
+                    <span class="comment-text">吃鸡都凉了，还超内存干嘛呢</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">megathread</span>
+                    <span class="comment-text">b650i x870i VDD最大1.43v无法参与讨论
+写一下鸡架哪几块板子不锁电压比较有用</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">兵库北的微笑</span>
+                    <span class="comment-text">正用着B850M电竞雕，可能U比较雷没有特别的感觉，也就是B650M电竞雕多个快拆版吧</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">甘尼克斯</span>
+                    <span class="comment-text">猫LOVE 发表于 2026-6-15 15:38
+说实话这几张主板在同步模式下几乎不可能有瓶颈，我当初一颗大雕7500f玩了b650m的两炮+华擎黑潮风暴全都可 ...
+
+可能是论述有歧义，B850M POWER确实是最强的，但它是双槽板，去和四槽板比超频胜之不武。
+
+所以我主要是在另外几张四槽内存主板里进行比较。
+
+然后我指的海力士原厂条就是小绿条，那确实可能是你说的微星华硕在AM4主板上对其优化巨烂的原因，B650M迫击炮甚至套用6200C28紧参后连开机点亮都不行（BIOS已刷最新版）</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">chujixu</span>
+                    <span class="comment-text">技嘉升bios 不能保存 每次升完用 U 盘恢复就黑屏，华硕没这个问题</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">甘尼克斯</span>
+                    <span class="comment-text">xy. 发表于 2026-6-15 14:55
+mpower 没打过不应该啊
+另外 a die 也可以玩玩 1:2
+
+在我现有的几个U和主板下互测，可能是体质不够雕，同步内存超频MPOWER和电竞雕是打平手的，异步的话POWER更强。</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">可以抱的萝卜</span>
+                    <span class="comment-text">错觉，一定是错觉</span>
                 </div>
                 
             </div>
@@ -1915,21 +2124,66 @@ C26 只能用sfx吧
         <div class="post" id="post-18">
             <div class="post-header">
                 <span class="post-number">#19</span>
-                <span class="post-title" onclick="togglePost(18)">目前ITX主板自带的音频模块音质最佳的是哪块？</span>
+                <span class="post-title" onclick="togglePost(18)">783D浅试AGESA PI-1.3.0.1b</span>
                 <span class="expand-icon" id="icon-18">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 pcinife</span>
-                <span>📅 2026-6-14 08:27</span>
-                <span>💬 19 回复</span>
-                <span>👁️ 943 浏览</span>
+                <span>👤 yysneet</span>
+                <span>📅 2026-6-15 00:04</span>
+                <span>💬 11 回复</span>
+                <span>👁️ 1076 浏览</span>
             </div>
             <div class="post-body" id="body-18" style="display:none">
             
             <div class="post-content">
-                本帖最后由 pcinife 于 2026-6-14 08:58 编辑
+                783D+X670E CARBON+VESTA II 6000CL30(16GBX2)
+又一年的今日无聊(忙,但碎片时间多)看见EXPO ULL就升级BIOS顺便测试些设置和拷机.
+从以往AGESA来看,高情商:战未来,低情商:草,几年才完善.
 
-现在全面转向ITX桌面小箱子，miniPC和笔记本，外置解码我也有，但其实更依赖主板自带的音频输出，我用的四路音源切换，有一路直接接主板输出，不用开外置解码，方便简单，直通有源音箱，但音质过度依赖主板音频输出的质量。我用过的音质最佳的ITX板是华擎的Z370 Gaming-ITX，就这个小玩意，自带的音频模块，用的是ALC1220，还做了隔离，音质相当不错，还能硬解DSD，可惜被我白菜价出掉升级了。后来前前后后用了不少ITX板，都是一水的螃蟹897，再也没有音质超越他的了。
+擷取.JPG (61.04 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-14 22:10 上传
+
+1.3.0.1b许多电压基本都可下调后能稳且性能不降,
+FCLK VDCI MODE PREF打开后FLCK可从2133到2200读写提高,代价延迟约+1ns.
+
+听说ADIE套条6000-7200都是同一条,只是厂家帮你设好而已,然后就测试下
+SOC:1.24 VDDIO:1.26 FCLK2133
+6400CL30-38-38-76
+
+1.4V TIGHTER 过测
+6600CL34-40-40-105  1.4V TIGHTER 过测
+6800CL32-45-45-108  1.4V TIGHTER 过测
+7200CL34-45-45-115  1.4V TIGHTER 过测
+结果还真是
+
+然后问题出现了
+FCLK VDCI MODE PREF :PREDICTIVE
+
+SOC:1.24 VDDIO:1.26 FCLK2200
+6400CL30-38-38-76
+
+1.4V TIGHTER 过测
+
+6600CL34-40-40-105  1.4V TIGHTER 报错
+
+SOC:1.3V VDDIO:1.35 FCLK2200
+6600CL34-40-40-105  1.45V RELAX  还是报错
+
+FCLK2200死活无法6600,还请各位懂的指点下
+目前SOC:1.24 VDDIO:1.26 FCLK2200
+6400CL30-38-38-76
+
+1.4V TIGHTER 使用中
+
+还有783D温度墙下降至80
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/14/221016jtcrcpzdz60rvcdo.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/101609snq2lhu62qv4693c.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/102518lnhq9k3x10x3tde3.png" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
@@ -1937,68 +2191,89 @@ C26 只能用sfx吧
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">pcinife</span>
-                    <span class="comment-text">本帖最后由 pcinife 于 2026-6-14 08:58 编辑
-现在全面转向ITX桌面小箱子，miniPC和笔记本，外置解码我也有，但其实更依赖主板自带的音频输出，我用的四路音源切换，有一路直接接主板输出，不用开外置解码，方便简单，直通有源音箱，但音质过度依赖主板音频输出的质量。我用过的音质最佳的ITX板是华擎的Z370 Gaming-ITX，就这个小玩意，自带的音频模块，用的是ALC1220，还做了隔离，音质相当不错，还能硬解DSD，可惜被我白菜价出掉升级了。后来前前后后用了不少ITX板，都是一水的螃蟹897，再也没有音质超越他的了。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">beasy</span>
-                    <span class="comment-text">就是同样规格最贵的最好。呵呵。表示听不出任何区别。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">nanjiqq</span>
-                    <span class="comment-text">ALC1220 就不错了，高端板子才会用好声卡，往贵了看吧</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">zhgna</span>
-                    <span class="comment-text">再好的内置声卡，都绕不过系统和内部干扰，肯定不如usb直通解码器，bit完美输出。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xobu</span>
-                    <span class="comment-text">华硕rog 的m8i呢，
-应该是独立声卡，当年也是宣传的亮点之一</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xobu</span>
-                    <span class="comment-text">查了下，是这个
+                    <span class="comment-author">yysneet</span>
+                    <span class="comment-text">783D+X670E CARBON+VESTA II 6000CL30(16GBX2)
+又一年的今日无聊(忙,但碎片时间多)看见EXPO ULL就升级BIOS顺便测试些设置和拷机.
+从以往AGESA来看,高情商:战未来,低情商:草,几年才完善.
+擷取.JPG (61.04 KB, 下载次数:
+0)
 
-华硕 Maximus VIII Impact (M8I) 声卡：
-- Codec：Realtek ALC1150
-- DAC：ESS ES9023P 
-- 音效方案：SupremeFX Impact III</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">人生几何</span>
-                    <span class="comment-text">你都没说你目前哪个芯片组的z板</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">yakeyyy</span>
-                    <span class="comment-text">又要itx小板子，又要最好的音频，
-主板厂商：你这是成心为难我胖虎是吧</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">gartour</span>
-                    <span class="comment-text">本帖最后由 gartour 于 2026-6-14 13:21 编辑
-我从微星z690pro换到z890p，听感明显变差了。
+下载附件
+2026-6-14 22:10 上传
+1.3.0.1b许多电压基本都可下调后能稳且性能不降,
+FCLK VDCI MODE PREF打开后FLCK可从2133到2200读写提高,代价延迟约+1ns.
 
-这种东西光看做工看不出来的。要实测。
-
-而且还不是光测客观指标，指标高和好听是两码事。
-
-但是又没人测这个。</span>
+听说ADIE套条6000-7200都是同一条,只是厂家帮你设好而已,然后就测试下
+SOC:1.24 VDDIO:1.26 FCLK2133
+6400CL30-38-38-76
+1.4V TIGHTER 过测
+6600CL34-40-40-105  1.4V TIGHTER 过测
+680</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">Phil_Libra</span>
-                    <span class="comment-text">没啥意义，打不过好的小尾巴，买个dx1ii吧</span>
+                    <span class="comment-author">oeoe</span>
+                    <span class="comment-text">1.3后据说60度就强制降频了，不知真假</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">370390490590</span>
+                    <span class="comment-text">SOC 1.35V?</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">a_skywalker</span>
+                    <span class="comment-text">所以Agesa 1.3.0.0之后9800X3D加了HTFmax墙是真消息还是假消息？我找了各种资料要么是老版本的Agesa明确提到没给983加HTFmax没任何参考价值，要么就是虽然新版本的Agesa但只提到了9850X3D和9950X3D，剩下的都是论坛里面或者B站评论回复了一嘴~</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">秦南瓜</span>
+                    <span class="comment-text">soc1.35太高了。会烧的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">yysneet</span>
+                    <span class="comment-text">370390490590 发表于 2026-6-15 00:23
+SOC 1.35V?
+
+1.2.0.0之后锁了上限1.3v，哪来1.35v</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">xy.</span>
+                    <span class="comment-text">a_skywalker 发表于 2026-6-15 08:16
+所以Agesa 1.3.0.0之后9800X3D加了HTFmax墙是真消息还是假消息？我找了各种资料要么是老版本的Agesa明确提 ...
+
+是 9853</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">1滴小汗</span>
+                    <span class="comment-text">2200跑分比2133低就说明SOC电压不够
+极端情况下会不稳定
+AM5就是这种表现</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">miu9889</span>
+                    <span class="comment-text">1.3版电压降不少
+微信图片_20260507163611_2560_107.jpg (266.96 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 10:16 上传</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">silverse</span>
+                    <span class="comment-text">6600上不去是UCLK不行，别折腾了...
+
+跟风贴个我的...看楼里大佬们准备再试试把VDDP压低点
+1000005381.png (254.25 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 10:25 上传</span>
                 </div>
                 
             </div>
@@ -2010,79 +2285,75 @@ C26 只能用sfx吧
         <div class="post" id="post-19">
             <div class="post-header">
                 <span class="post-number">#20</span>
-                <span class="post-title" onclick="togglePost(19)">AR眼镜为什么连HDR都没普及？</span>
+                <span class="post-title" onclick="togglePost(19)">在h810主板上，230f和245kf差距大吗？</span>
                 <span class="expand-icon" id="icon-19">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 megathread</span>
-                <span>📅 2026-6-14 08:35</span>
+                <span>👤 newsun</span>
+                <span>📅 2026-6-15 12:24</span>
                 <span>💬 7 回复</span>
-                <span>👁️ 568 浏览</span>
+                <span>👁️ 460 浏览</span>
             </div>
             <div class="post-body" id="body-19" style="display:none">
             
             <div class="post-content">
-                去年初买的时候没注意，以为OLED默认有HDR，结果年底的air 4 pro才是首款支持HDR的？
-本来手痒想买2077限量款virtue，溢价严重也没有hdr，配不上switch2了
-厂商每年都出新品宣传得天花乱坠，结果到现在还是1080p，就是个臭看电影的怎么连HDR都普及不了？
+                想给itx升个级。看pdd上板u套装，铭瑄h810itx 搭配230f 11xx元，245kf 14xx元。
+
+买哪个更合适一些？谢谢
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (8条)</div>
+                <div class="comments-title">💬 热门评论 (7条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">megathread</span>
-                    <span class="comment-text">去年初买的时候没注意，以为OLED默认有HDR，结果年底的air 4 pro才是首款支持HDR的？
-本来手痒想买2077限量款virtue，溢价严重也没有hdr，配不上switch2了
-厂商每年都出新品宣传得天花乱坠，结果到现在还是1080p，就是个臭看电影的怎么连HDR都普及不了？</span>
+                    <span class="comment-author">newsun</span>
+                    <span class="comment-text">想给itx升个级。看pdd上板u套装，铭瑄h810itx 搭配230f 11xx元，245kf 14xx元。
+买哪个更合适一些？谢谢</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">fyc858</span>
-                    <span class="comment-text">HDR功耗翻倍，眼镜抗不住</span>
+                    <span class="comment-author">ylw1945</span>
+                    <span class="comment-text">230F就挺好，现在的价格便宜实惠，如果还想再高点，建议来个250K/KF plus，当然这俩U最高弄个入门的Z890更香</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">strangeplace</span>
-                    <span class="comment-text">hdr方案只有视涯0.6寸microoled的方案，现在x/v/雷三家都有产品，雷家主推。不过分辨率确实，全部都是1080p/1200p，综合显示效果目前最好的是luma ultra。</span>
+                    <span class="comment-author">翡翠月牙</span>
+                    <span class="comment-text">建议别碰铭瑄h810i，要用WiFi的话网卡残疾。还有上市一年半只更新一次bios。
+另外要买245kf的话建议去鱼，盒装900左右就行</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">megathread</span>
-                    <span class="comment-text">fyc858 发表于 2026-6-14 17:27
-HDR功耗翻倍，眼镜抗不住
+                    <span class="comment-author">zx0550</span>
+                    <span class="comment-text">买带集显的 245k
+h810iwifi可以换的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">r147909</span>
+                    <span class="comment-text">翡翠月牙 发表于 2026-6-15 16:59
+建议别碰铭瑄h810i，要用WiFi的话网卡残疾。还有上市一年半只更新一次bios。
+另外要买245kf的话建议去鱼， ...
 
-只是手机看电影扛不住吧 玩游戏的都是外接电源
-120hz耗电也普及了啊 手动关掉就好了</span>
+换个AX211就16元，这个价格我可以</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">bloodwar</span>
-                    <span class="comment-text">贴眼的不需要那么亮</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">megathread</span>
-                    <span class="comment-text">strangeplace 发表于 2026-6-14 18:18
-hdr方案只有视涯0.6寸microoled的方案，现在x/v/雷三家都有产品，雷家主推。不过分辨率确实，全部都是1080p ...
+                    <span class="comment-author">newsun</span>
+                    <span class="comment-text">翡翠月牙 发表于 2026-6-15 16:59
+建议别碰铭瑄h810i，要用WiFi的话网卡残疾。还有上市一年半只更新一次bios。
+另外要买245kf的话建议去鱼， ...
 
-luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太高了
-不过我的air3效果非常一般 边缘模糊感觉反光严重 粗略对比连viture one lite都不如</span>
+问题是也没有同价位itx主板了……</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">strangeplace</span>
-                    <span class="comment-text">megathread 发表于 2026-6-14 18:43
-luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太高了
-不过我的air3效果非常一般 边缘模糊感 ...
-
-游戏用户不需要hdr，显示质量好就行，想要hdr可以考虑雷鸟gt或者雷鸟4pro，但是这两个的边缘模糊和调色都不如luma u，luma u这个618最低价格已经干到26xx了，还行吧。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">Bloodyevil</span>
-                    <span class="comment-text">解决可怜超窄的FOV，比HDR重要多了</span>
+                    <span class="comment-author">孤狼saya</span>
+                    <span class="comment-text">245不上z版太烂了
+铭瑄这个810几个问题
+网卡烂 自己换211
+前置后置都没有c口
+dmi总线问题，插了显卡和2块m2之后爆了，建议禁用板载网卡声卡，音频走小尾巴或者带dac的音响</span>
                 </div>
                 
             </div>
@@ -2094,43 +2365,30 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
         <div class="post" id="post-20">
             <div class="post-header">
                 <span class="post-number">#21</span>
-                <span class="post-title" onclick="togglePost(20)">说一个大家似乎都没提过的点，微星的RGB灯光似乎没华硕的好看</span>
+                <span class="post-title" onclick="togglePost(20)">精粤也是妖起来了</span>
                 <span class="expand-icon" id="icon-20">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 sthuasheng</span>
-                <span>📅 2026-6-14 11:14</span>
-                <span>💬 9 回复</span>
-                <span>👁️ 536 浏览</span>
+                <span>👤 fpd92axv</span>
+                <span>📅 2026-6-15 00:46</span>
+                <span>💬 34 回复</span>
+                <span>👁️ 2804 浏览</span>
             </div>
             <div class="post-body" id="body-20" style="display:none">
             
             <div class="post-content">
-                最近刚从华硕的B850A大吹雪换成了微星的X870E暗黑，发现了一个好多人都没提过的情况：同样的风扇和内存，都是采用彩虹模式，微星主板的彩虹模式更艳更刺眼，华硕的更柔和更顺眼
-
-因为华硕当初没拍照，只能从网上找了两张符合我肉眼观感的图片给大家做一下对比
-
-华硕的类似这样
-
-925005bc263e4c950d2804e99bab8179.jpg (100.33 KB, 下载次数:
+                1000096069.jpg (785.41 KB, 下载次数:
 0)
 
 下载附件
 
-2026-6-14 11:14 上传
+2026-6-15 00:45 上传
 
-微星的类似这样
-
-6ed651f4e42a1c4f493633e4b27726db.jpeg (158.17 KB, 下载次数:
-0)
-
-下载附件
-
-2026-6-14 11:14 上传
+精粤，我滴超人！
             </div>
             
             <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/14/111420f1hhpp9149slils8.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/14/111420nes26357xk2r0ve8.jpeg" loading="lazy" onerror="this.style.display='none'" />
+                <img src="https://static.chiphell.com/forum/202606/15/004542mo7yz7227drrscod.jpg" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
@@ -2138,70 +2396,66 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">sthuasheng</span>
-                    <span class="comment-text">最近刚从华硕的B850A大吹雪换成了微星的X870E暗黑，发现了一个好多人都没提过的情况：同样的风扇和内存，都是采用彩虹模式，微星主板的彩虹模式更艳更刺眼，华硕的更柔和更顺眼
-
-因为华硕当初没拍照，只能从网上找了两张符合我肉眼观感的图片给大家做一下对比
-
-华硕的类似这样
-925005bc263e4c950d2804e99bab8179.jpg (100.33 KB, 下载次数:
+                    <span class="comment-author">fpd92axv</span>
+                    <span class="comment-text">1000096069.jpg (785.41 KB, 下载次数:
 0)
 
 下载附件
-2026-6-14 11:14 上传
-微星的类似这样
-6ed651f4e42a1c4f493633e4b27726db.jpeg (158.17 KB, 下载次数:
-0)
+2026-6-15 00:45 上传
+精粤，我滴超人！</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">yumen77</span>
+                    <span class="comment-text">欲三家和你开玩笑的？</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">Serenität</span>
+                    <span class="comment-text">比华南那个晚了很久了吧，有啥优势吗，多了根pcie?</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">ujmeo7897</span>
+                    <span class="comment-text">记得去年就出了吧</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">mypchas6fans</span>
+                    <span class="comment-text">ujmeo7897 发表于 2026-6-15 07:44
+记得去年就出了吧
 
-下载附件
-2026-6-14 11:14 上传</span>
+去年应该是华南</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">boreaskal</span>
-                    <span class="comment-text">谁家能装好几个这玩意啊..一般就一个
-其次很多人都有路径依赖，像我一直只考虑爱国嘉的主板，根本不考虑华硕和微星
-没法对比</span>
+                    <span class="comment-author">a_skywalker</span>
+                    <span class="comment-text">AMD的AIB你开玩笑呢
+话又说回来了，国内这些厂子差的是硬件吗~差的是BIOS水平啊~</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">可以抱的萝卜</span>
-                    <span class="comment-text">RGB颜色不是可以自己调的吗？你把RGB值设置成一样再看看</span>
+                    <span class="comment-author">doom4</span>
+                    <span class="comment-text">这个品牌走性价比路线，当初买了它家的B650ITX，差不多是御三家的一半价，但其实还是能用。BIOS要是能改进些，这个品牌还是可以的。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">水图腾</span>
-                    <span class="comment-text">御三家的rgb灯控华硕的是最好的。</span>
+                    <span class="comment-author">Jutean</span>
+                    <span class="comment-text">a_skywalker 发表于 2026-6-15 08:19
+AMD的AIB你开玩笑呢
+话又说回来了，国内这些厂子差的是硬件吗~差的是BIOS水平啊~ ...
+
+对商用不是很重要，便宜能跑能过维保就行。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">lk_yeah</span>
-                    <span class="comment-text">微星我没用过不清楚，阿速死和拒保嘉我都用过，我的感受是，阿速死的灯效相对来说暗一点，变化速度慢一点，拒保嘉的相反，这会导致一个结果，拒保嘉的灯效，灯珠位置有些过于醒目和晃眼，变化速度调快了会显得很俗气，有一股山寨味，而阿速死的灯效，灯珠跟周围显得没那么突出，不同颜色过渡也比较自然，优雅很多。</span>
+                    <span class="comment-author">keqikeqi</span>
+                    <span class="comment-text">尝鲜了精粤的主板，安装的12100F，几年用下来，没任何问题，稳定得很呢</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">A2305</span>
-                    <span class="comment-text">好看在哪？还不如买个迪斯科球‌</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">tiantian80</span>
-                    <span class="comment-text">技嘉、微星、华硕都在用，这点楼主的感觉没错，灯控方面，打人家确实是遥遥领先，控制、柔和度、速度控制等等，都是断档领先别家</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">nanjiqq</span>
-                    <span class="comment-text">技嘉GCC软件关了灯效就同步就不起作用了，不能存进BIOS设置，有大神能解决么，第一次用技嘉主板，感觉BIOS比 那两家设置麻烦</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">xinxin1982</span>
-                    <span class="comment-text">俺的显示器支架也带rgb。。。。俺从来都不开。。。</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">hippias</span>
-                    <span class="comment-text">微星玩灯是末流，要折腾灯不如一步到位上rgb异步控制器</span>
+                    <span class="comment-author">forfans</span>
+                    <span class="comment-text">华南金牌，精粤，还有哪家？</span>
                 </div>
                 
             </div>
@@ -2213,21 +2467,19 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
         <div class="post" id="post-21">
             <div class="post-header">
                 <span class="post-number">#22</span>
-                <span class="post-title" onclick="togglePost(21)">笔记本4060升级比较新的驱动玩游戏就容易出现掉驱动问题</span>
+                <span class="post-title" onclick="togglePost(21)">哪款笔记本电脑的屏幕有硬件低蓝光?</span>
                 <span class="expand-icon" id="icon-21">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 linhang028</span>
-                <span>📅 2026-6-14 16:56</span>
+                <span>👤 monei</span>
+                <span>📅 2026-6-15 18:37</span>
                 <span>💬 2 回复</span>
-                <span>👁️ 208 浏览</span>
+                <span>👁️ 194 浏览</span>
             </div>
             <div class="post-body" id="body-21" style="display:none">
             
             <div class="post-content">
-                rt，23款r9000p 4060，大概是升级到支持dlss4.5的驱动版本后，玩游戏一段时间就出现掉驱动14/153，回退到早前的驱动就一切正常，网上有搜到说和nvidia音频驱动相关，试过禁用不安装没有用，但是只要回退驱动到旧版本就一切正常
-
-这个问题纯驱动问题还是硬件可能也有问题？
+                哪款笔记本电脑的屏幕有硬件低蓝光? 好久没关注笔记本了, 问问大佬们.
             </div>
             
             
@@ -2235,20 +2487,21 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
                 <div class="comments-title">💬 热门评论 (3条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">linhang028</span>
-                    <span class="comment-text">rt，23款r9000p 4060，大概是升级到支持dlss4.5的驱动版本后，玩游戏一段时间就出现掉驱动14/153，回退到早前的驱动就一切正常，网上有搜到说和nvidia音频驱动相关，试过禁用不安装没有用，但是只要回退驱动到旧版本就一切正常
+                    <span class="comment-author">monei</span>
+                    <span class="comment-text">哪款笔记本电脑的屏幕有硬件低蓝光? 好久没关注笔记本了, 问问大佬们.</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">monei</span>
+                    <span class="comment-text">比较主流的cpu配置的</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">monei</span>
+                    <span class="comment-text">https://www.chiphell.com/thread-2824552-1-1.html
+这次无畏 16 2026酷睿版搭载的是英特尔酷睿Ultra 5 325处理器，采用了Intel 18A工艺制造，拥有8核心8线程，4P+4LP的组合，拥有12MB的L3缓存，最高睿频达4.5GHz；集成了Xe3架构的核显，支持XeSS 3技术，内置全新AIBoost NPU，协同CPU与GPU，带来最高47 TPOS的AI总算力。
 
-这个问题纯驱动问题还是硬件可能也有问题？</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">KazamiKazuki</span>
-                    <span class="comment-text">都有可能。供电/虚焊也会导致这个问题，而且这个笔记本很多虚焊的</span>
-                </div>
-                
-                <div class="comment">
-                    <span class="comment-author">人生几何</span>
-                    <span class="comment-text">就是cpu缩了</span>
+请问这款intel cpu如何？有雷吗？</span>
                 </div>
                 
             </div>
@@ -2260,19 +2513,52 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
         <div class="post" id="post-22">
             <div class="post-header">
                 <span class="post-number">#23</span>
-                <span class="post-title" onclick="togglePost(22)">67XT供电双8PIN，使用单线一分二是否可以。</span>
+                <span class="post-title" onclick="togglePost(22)">不懂就问，这颗9700x的体质有得玩吗</span>
                 <span class="expand-icon" id="icon-22">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 wdk35606</span>
-                <span>📅 2026-6-14 11:20</span>
-                <span>💬 16 回复</span>
-                <span>👁️ 509 浏览</span>
+                <span>👤 zhgna</span>
+                <span>📅 2026-6-15 11:14</span>
+                <span>💬 9 回复</span>
+                <span>👁️ 501 浏览</span>
             </div>
             <div class="post-body" id="body-22" style="display:none">
             
             <div class="post-content">
-                哪位高人这么使用，说说稳定程度。电源是850金牌。
+                很多年没有从零开始组装过电脑了，可算啥也不懂一族。最近趁618活动，组了一台开放式itx小机子，主板是七彩虹igame b850i mini，9700x散片，5060ti 8g mini卡。
+
+主板bios全默认下，满载时功耗88w，频率4.75GHz，电压在1.075-1.08之间，核心温度70°左右，is77xt风扇约1500，噪音尚可。据说通过满载时的核心电压可以看出u的体质，不知这u算是雷还雕呢？七彩虹这块新出的itx小板外带时钟发生器，可玩性比较高，不知u配合不。
+
+还有一点不解的是，在待机时，hwinfor显示cpu各核心频率和电压反而比满载时还要高，但此时功耗只有20w左右。
+
+1.jpg (247.1 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 11:12 上传
+
+u满载时
+
+2.jpg (351.08 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 11:09 上传
+
+待机时
+
+3.jpg (347.67 KB, 下载次数:
+0)
+
+下载附件
+
+2026-6-15 11:09 上传
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/111258rq53eni3xjzrqkw3.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/110959ua1m1ueeqem8tpa3.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/110959edbisrqs6rb6usss.jpg" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
@@ -2280,57 +2566,97 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
                 <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">wdk35606</span>
-                    <span class="comment-text">哪位高人这么使用，说说稳定程度。电源是850金牌。</span>
+                    <span class="comment-author">zhgna</span>
+                    <span class="comment-text">很多年没有从零开始组装过电脑了，可算啥也不懂一族。最近趁618活动，组了一台开放式itx小机子，主板是七彩虹igame b850i mini，9700x散片，5060ti 8g mini卡。
+
+主板bios全默认下，满载时功耗88w，频率4.75GHz，电压在1.075-1.08之间，核心温度70°左右，is77xt风扇约1500，噪音尚可。据说通过满载时的核心电压可以看出u的体质，不知这u算是雷还雕呢？七彩虹这块新出的itx小板外带时钟发生器，可玩性比较高，不知u配合不。
+
+还有一点不解的是，在待机时，hwinfor显示cpu各核心频率和电压反而比满载时还要高，但此时功耗只有20w左右。
+1.jpg (247.1 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 11:12 上传
+u满载时
+2.jpg (351.08 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 11</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">x5774179</span>
-                    <span class="comment-text">我以前就是这样用的.用了大半年卖了都没出问题</span>
+                    <span class="comment-author">megathread</span>
+                    <span class="comment-text">看单核电压 你的最大5.55Ghz@1.37v算普通体质吧（在本论坛算雷）
+全核频率低是因为撞了87W PPT功耗墙</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">不是菜鸟小白</span>
-                    <span class="comment-text">本帖最后由 不是菜鸟小白 于 2026-6-14 11:54 编辑
-怕的话，买个双大4D转显卡8P的线呗。 别买太便宜的，起火不是开玩笑。</span>
+                    <span class="comment-author">zs009</span>
+                    <span class="comment-text">电压低于1.3再说吧。得负压。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">coacold</span>
-                    <span class="comment-text">单路肯定没问题</span>
+                    <span class="comment-author">Z2227</span>
+                    <span class="comment-text">itx加下压风冷就不用考虑体质了，88w你都跑到70度，连pbo都不用开，调成105w模式，负压个20-30能跑r23和bkt就完事。</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">SolaAoiii</span>
-                    <span class="comment-text">原则上不可以，理论上可以，实际上不确定</span>
+                    <span class="comment-author">bestleone</span>
+                    <span class="comment-text">这个散热就别谈超频相关了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">A2305</span>
-                    <span class="comment-text">可以，但是显卡不能重载</span>
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">我分核负压后现在97x 5.55g是1.24v，不过你这itx散热空间感觉不如负压后再-100比较好</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">天道太酬勤</span>
-                    <span class="comment-text">看运气，用双8pin也不是说就能包你不烧，只是概率低点，但是概率只是统计学层面，落到你个人只有0和1两种</span>
+                    <span class="comment-author">后天</span>
+                    <span class="comment-text">U1S1  宁可去咸鱼找有体质的
+
+也别去摸体质
+
+AMD同一个U
+
+体质能差半个级别……</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">七尺大汉</span>
-                    <span class="comment-text">怕别用，用别怕。
-我现在一分二，带的3080。
-以后的事情以后再说。</span>
+                    <span class="comment-author">zhgna</span>
+                    <span class="comment-text">Z2227 发表于 2026-6-15 16:46
+itx加下压风冷就不用考虑体质了，88w你都跑到70度，连pbo都不用开，调成105w模式，负压个20-30能跑r23和bkt ...
+
+感谢，按你的方法做了。
+开启105w后，一满载功耗到140w，u温度直接95°撞墙。分别设负压20-25-30，温度依然到95°，自动降频。
+
+散热确实很菜，把PPT限到120w，核心频率5.35，电压1.155，温度在88左右，最高90。r23默认跑下来，多核22870分，单核2202，不知是否算正常，能否稳定使用？
+4.jpg (531.6 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 18:57 上传
+5.jpg (262.17 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 18:57 上传</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">vasomax</span>
-                    <span class="comment-text">好像不超过250W,一根线就够</span>
+                    <span class="comment-author">zhgna</span>
+                    <span class="comment-text">bestleone 发表于 2026-6-15 16:55
+这个散热就别谈超频相关了
+
+哈哈，是我想多了</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">tiantian80</span>
-                    <span class="comment-text">显卡8pin额定150w，记得极限冗余300w
-6700xt额定230w，单8pin一直处于超额定使用，但还是在极限冗余内，问题不大，不放心就用双线双8pin</span>
+                    <span class="comment-author">zhgna</span>
+                    <span class="comment-text">lizzak 发表于 2026-6-15 17:03
+我分核负压后现在97x 5.55g是1.24v，不过你这itx散热空间感觉不如负压后再-100比较好 ...
+
+目前负压30，ppt限120w，大概5.33g，1.15v，温度90以内。跑了个r23，其它没试，不知能不能稳定使用。</span>
                 </div>
                 
             </div>
@@ -2342,33 +2668,101 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
         <div class="post" id="post-23">
             <div class="post-header">
                 <span class="post-number">#24</span>
-                <span class="post-title" onclick="togglePost(23)">有人实际用过新出的这些u2成品nas么？</span>
+                <span class="post-title" onclick="togglePost(23)">有人试过ddr5 笔记本内存转接台式机吗</span>
                 <span class="expand-icon" id="icon-23">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 zmruc</span>
-                <span>📅 2026-6-14 17:06</span>
-                <span>💬 1 回复</span>
-                <span>👁️ 336 浏览</span>
+                <span>👤 qjj2857</span>
+                <span>📅 2026-6-15 11:09</span>
+                <span>💬 19 回复</span>
+                <span>👁️ 727 浏览</span>
             </div>
             <div class="post-body" id="body-23" style="display:none">
             
             <div class="post-content">
-                温度和兼容性如何？之前记得有人买qnap的epyc那款一堆问题
+                之前玩nuc，212 买的镁光ddr5 笔记本内存
+跟风轮大买了270k plus套装，游戏机是5900x 4000M皇家戟DDR4 9070xt，然后现在玩游戏只要哪里不爽就会想着换270k 会不会好，有点蛋疼，所以想试试，又不想掏钱买天价台式机内存
+            </div>
+            
+            <div class="post-images">
+                <img src="https://static.chiphell.com/forum/202606/15/112735ermnz82hoxs2ajz2.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/164039r7dvgdsv3g3sj6dd.jpg" loading="lazy" onerror="this.style.display='none'" /><img src="https://static.chiphell.com/forum/202606/15/164046s93uygmumrygyq3p.jpg" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (2条)</div>
+                <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">zmruc</span>
-                    <span class="comment-text">温度和兼容性如何？之前记得有人买qnap的epyc那款一堆问题</span>
+                    <span class="comment-author">qjj2857</span>
+                    <span class="comment-text">之前玩nuc，212 买的镁光ddr5 笔记本内存
+跟风轮大买了270k plus套装，游戏机是5900x 4000M皇家戟DDR4 9070xt，然后现在玩游戏只要哪里不爽就会想着换270k 会不会好，有点蛋疼，所以想试试，又不想掏钱买天价台式机内存</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">散落烟灰</span>
-                    <span class="comment-text">必然凉快不了，起码50多度起步</span>
+                    <span class="comment-author">山东001</span>
+                    <span class="comment-text">记得前些日子有坛友装机用的转接卡，转的笔记本内存，这玩意B站一搜一大堆吧</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">xy.</span>
+                    <span class="comment-text">转接这行为本身用起来没毛病, 但是它不解决你的问题呀
+
+现在玩游戏只要哪里不爽就会想着换270k 会不会好
+
+换上之后你游戏卡了可能是 我草是不是这 jedec 内存导致的, 早知道换个 xmp 的就好了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">qjj2857</span>
+                    <span class="comment-text">xy. 发表于 2026-6-15 11:13
+转接这行为本身用起来没毛病, 但是它不解决你的问题呀
+
+换上之后你游戏卡了可能是 我草是不是这 jedec 内存 ...
+
+哈哈哈哈，有道理</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">megathread</span>
+                    <span class="comment-text">看运气吧 反正我的x570用DDR4转接卡都开不了机 据说intel平台能用的几率高一点</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zhgna</span>
+                    <span class="comment-text">跟你一样想法，不久前尝试过，40多元了买了图片这张转接卡，无论用海力士32g或英睿达24g，主板都不支持，插单条，连开机自检都过不了。
+不过用的比较冷门牌子itx主板，不知其它大众主板行不行。
+231.jpg (114.68 KB, 下载次数:
+0)
+
+下载附件
+2026-6-15 11:27 上传</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">qjj2857</span>
+                    <span class="comment-text">megathread 发表于 2026-6-15 11:26
+看运气吧 反正我的x570用DDR4转接卡都开不了机 据说intel平台能用的几率高一点 ...
+
+x570 我弄3900x 3800都跑不了得降3600，换5900x 同样条子能跑到4000 连续开机一周都没有whea。这次跟风买的intel，知道imc好所以问问</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">榴莲飘飘</span>
+                    <span class="comment-text">本帖最后由 榴莲飘飘 于 2026-6-15 11:36 编辑
+曾经用过跟6楼一样的转接卡，把一根三星4800的8g笔记本条子插在B760小吹雪上临时用了几天，插的是第二槽，一次点亮，使用上没有任何问题，供参考</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">beauti0an</span>
+                    <span class="comment-text">DDR4转过 一个b550可以用 一个b350就用不了</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">qjj2857</span>
+                    <span class="comment-text">榴莲飘飘 发表于 2026-6-15 11:33
+曾经用过跟6楼一样的转接卡，把一根三星4800的8g笔记本条子插在B760小吹雪上临时用了几天，插的是第二槽， ...
+
+决定了，买个回来试试，不能点亮就退货</span>
                 </div>
                 
             </div>
@@ -2380,70 +2774,111 @@ luma ultra官网没提HDR啊 看到有人评论也是不支持 价格还是太�
         <div class="post" id="post-24">
             <div class="post-header">
                 <span class="post-number">#25</span>
-                <span class="post-title" onclick="togglePost(24)">M2散热鳍片方向会影响散热效率么？</span>
+                <span class="post-title" onclick="togglePost(24)">商家存货不少啊，刚买的d5 adie 还是25年中的</span>
                 <span class="expand-icon" id="icon-24">▸</span>
             </div>
             <div class="post-meta">
-                <span>👤 Phil_Libra</span>
-                <span>📅 2026-6-14 13:12</span>
-                <span>💬 4 回复</span>
-                <span>👁️ 449 浏览</span>
+                <span>👤 lizzak</span>
+                <span>📅 2026-6-15 13:50</span>
+                <span>💬 14 回复</span>
+                <span>👁️ 996 浏览</span>
             </div>
             <div class="post-body" id="body-24" style="display:none">
             
             <div class="post-content">
-                如图
+                本帖最后由 lizzak 于 2026-6-15 14:21 编辑
 
-IMG_4308.jpeg (131.13 KB, 下载次数:
+新组了台二奶机，买的adie条子，jd 金百达自营店的，日期还是25年8月的，看来存货很多啊，快1年了还没卖完呢
+
+微信图片_20260615141949_201_103.png (711.27 KB, 下载次数:
 0)
 
 下载附件
 
-2026-6-14 13:10 上传
-
-一般来说M2是横向的，那么横向布置鳍片是否能在前进后出结构有更好的散热效率？纵向布置的话，即使是下进上出结构，如果上面有风冷下面有显卡，是不是也会造成负面影响？
+2026-6-15 14:20 上传
             </div>
             
             <div class="post-images">
-                <img src="https://static.chiphell.com/forum/202606/14/131059txir9xte1eici77i.jpeg" loading="lazy" onerror="this.style.display='none'" />
+                <img src="https://static.chiphell.com/forum/202606/15/142001ws5y38vzs85h86z6.png" loading="lazy" onerror="this.style.display='none'" />
             </div>
             
             
             <div class="comments-section">
-                <div class="comments-title">💬 热门评论 (5条)</div>
+                <div class="comments-title">💬 热门评论 (10条)</div>
                 
                 <div class="comment">
-                    <span class="comment-author">Phil_Libra</span>
-                    <span class="comment-text">如图
-IMG_4308.jpeg (131.13 KB, 下载次数:
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">本帖最后由 lizzak 于 2026-6-15 14:21 编辑
+新组了台二奶机，买的adie条子，jd 金百达自营店的，日期还是25年8月的，看来存货很多啊，快1年了还没卖完呢
+微信图片_20260615141949_201_103.png (711.27 KB, 下载次数:
 0)
 
 下载附件
-2026-6-14 13:10 上传
-一般来说M2是横向的，那么横向布置鳍片是否能在前进后出结构有更好的散热效率？纵向布置的话，即使是下进上出结构，如果上面有风冷下面有显卡，是不是也会造成负面影响？</span>
+2026-6-15 14:20 上传</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">lzhdim</span>
-                    <span class="comment-text">在CPU和显卡之间那个M2，风冷的话CPU风扇会提供主动散热，相对好一些。。。</span>
+                    <span class="comment-author">再未见Z</span>
+                    <span class="comment-text">a die是不是停产了？</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">散落烟灰</span>
-                    <span class="comment-text">我用的全是左边那种的，顺应风道</span>
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">再未见Z 发表于 2026-6-15 14:13
+a die是不是停产了？
+百度了下说bdie停产了，不过颗粒肯定少了，毕竟都去搞ai了
+我手里有3gb颗粒的mdie 和adie,性能感觉差不了太多</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">Phil_Libra</span>
-                    <span class="comment-text">散落烟灰 发表于 2026-6-14 15:58
-我用的全是左边那种的，顺应风道
+                    <span class="comment-author">9w050uo1</span>
+                    <span class="comment-text">入手价格多少？参考下</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">本帖最后由 lizzak 于 2026-6-15 14:28 编辑
+9w050uo1 发表于 2026-6-15 14:21
+入手价格多少？参考下
+现在价格肯定不好2k9，去年我48g mdie才7xx买的，威刚32g adie 6xx买的，但是散热片好单薄，高价时候3k出头卖了
+但是二奶玩旧东西不爽了，才继续搞新件的二奶</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">9w050uo1</span>
+                    <span class="comment-text">lizzak 发表于 2026-6-15 14:23
+现在价格肯定不好2k9，去年我48g mdie才7xx买的，
+就是旧东西用了不爽了，才搞了套二奶am5 ...
 
-但横向的规模好像很少有比纵向大的，不知道为什么</span>
+我有一套16X2的辣鸡威刚，1680不知道卖亏了没</span>
                 </div>
                 
                 <div class="comment">
-                    <span class="comment-author">fdgfdhfh</span>
-                    <span class="comment-text">看风道，我ITX小机箱下压风道用的是右边那类鳍片排列</span>
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">9w050uo1 发表于 2026-6-15 14:27
+我有一套16X2的辣鸡威刚，1680不知道卖亏了没
+哈哈 我之前也是威刚 adie的d300，6xx买3千出头卖了
+留了48g的佰维hx100 ，散热片厚重散热给力
+这次换的这个kingbank散热也不错</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zuochen</span>
+                    <span class="comment-text">现在商家手上基本是存货吧，出厂价比卖价还要高</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">lizzak</span>
+                    <span class="comment-text">9w050uo1 发表于 2026-6-15 14:27
+我有一套16X2的辣鸡威刚，1680不知道卖亏了没
+
+其实我是先买的光威adie32g的灯条。。。。但是兼容性不行，x670e只能单根点亮。。。。才换了威刚</span>
+                </div>
+                
+                <div class="comment">
+                    <span class="comment-author">zs009</span>
+                    <span class="comment-text">那我去买五月买的比你这早一个月，去年4月生产的。
+还好去年装了主机，今年装那就贵不少了。</span>
                 </div>
                 
             </div>
@@ -2453,7 +2888,7 @@ IMG_4308.jpeg (131.13 KB, 下载次数:
         </div>
     
         <div class="footer">
-            <p>由 OpenClaw 自动生成 · 2026/6/15 11:02:26</p>
+            <p>由 OpenClaw 自动生成 · 2026/6/16 08:02:25</p>
         </div>
     </div>
     <script>
